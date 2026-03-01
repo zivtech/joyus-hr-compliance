@@ -1,0 +1,274 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1a1a2e;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-link: #2563eb;
+  --color-link-hover: #1d4ed8;
+  --color-active: #059669;
+  --color-active-bg: #d1fae5;
+  --color-pending: #d97706;
+  --color-pending-bg: #fef3c7;
+  --color-expired: #6b7280;
+  --color-expired-bg: #f3f4f6;
+  --color-repealed: #dc2626;
+  --color-repealed-bg: #fee2e2;
+  --color-superseded: #7c3aed;
+  --color-superseded-bg: #ede9fe;
+  --color-surface: #f9fafb;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "Fira Code", monospace;
+  --max-width: 72rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+/* Layout */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem 0;
+}
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+.site-title a {
+  color: var(--color-text);
+}
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Main content */
+main {
+  padding: 2rem 0;
+  min-height: 60vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 0.75rem;
+}
+h3 {
+  font-size: 1.125rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+.badge-active {
+  color: var(--color-active);
+  background: var(--color-active-bg);
+}
+.badge-pending {
+  color: var(--color-pending);
+  background: var(--color-pending-bg);
+}
+.badge-expired {
+  color: var(--color-expired);
+  background: var(--color-expired-bg);
+}
+.badge-repealed {
+  color: var(--color-repealed);
+  background: var(--color-repealed-bg);
+}
+.badge-superseded {
+  color: var(--color-superseded);
+  background: var(--color-superseded-bg);
+}
+
+/* Cards / regulation list */
+.reg-list {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+.reg-card {
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  transition: box-shadow 0.15s;
+}
+.reg-card:hover {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.reg-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.reg-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+}
+.reg-card-meta {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Detail page */
+.reg-detail {
+  max-width: 52rem;
+}
+.reg-detail .meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.meta-item {
+  background: var(--color-surface);
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+}
+.meta-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+.meta-value {
+  font-size: 0.95rem;
+}
+
+.requirements-block {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin: 1rem 0;
+}
+.requirements-block pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+/* Browse page grids */
+.browse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+.browse-item {
+  border: 1px solid var(--color-border);
+  border-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.browse-item:hover {
+  background: var(--color-surface);
+  text-decoration: none;
+}
+.browse-count {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  font-weight: 400;
+}
+
+/* Pagefind overrides */
+.pagefind-ui {
+  margin: 1.5rem 0;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+}
+.site-footer p {
+  margin: 0.25rem 0;
+}
+.disclaimer-text {
+  font-style: italic;
+}
+
+/* Search page specifics */
+.search-intro {
+  max-width: 40rem;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .meta-grid {
+    grid-template-columns: 1fr;
+  }
+}

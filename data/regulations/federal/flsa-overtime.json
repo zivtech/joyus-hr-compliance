@@ -1,0 +1,86 @@
+{
+  "id": "flsa-overtime",
+  "jurisdiction": {
+    "level": "federal",
+    "state": null,
+    "locality": null
+  },
+  "law_type": "overtime",
+  "title": "Fair Labor Standards Act — Overtime Pay Requirements",
+  "statute_citation": "29 U.S.C. § 207",
+  "regulatory_citation": "29 CFR Part 541",
+  "summary": "The federal FLSA requires covered employers to pay non-exempt employees overtime at a rate of not less than 1.5 times their regular rate of pay for all hours worked over 40 in a workweek. There is no federal requirement for daily overtime. Certain employees are exempt from overtime based on salary level and duties tests, including executive, administrative, professional, outside sales, and computer employees. The standard salary threshold for the white-collar exemptions is $684 per week ($35,568 annually). Highly compensated employees earning at least $107,432 annually may also qualify for exemption under a reduced duties test. Computer employees may alternatively be paid at an hourly rate of not less than $27.63 per hour.",
+  "effective_date": "1938-10-24",
+  "sunset_date": null,
+  "last_amended": "2024-07-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "overtime_threshold": {
+      "period": "workweek",
+      "hours": 40,
+      "description": "Overtime is calculated on a workweek basis. A workweek is a fixed, recurring period of 168 hours (seven consecutive 24-hour periods). It need not coincide with the calendar week but must remain consistent. Each workweek stands alone; hours cannot be averaged across multiple workweeks."
+    },
+    "overtime_rate": {
+      "multiplier": 1.5,
+      "basis": "regular_rate",
+      "description": "Non-exempt employees must be paid at least 1.5 times their regular rate of pay for each hour worked beyond 40 in a workweek. The regular rate includes all remuneration for employment except specific statutory exclusions (e.g., gifts, vacation pay, certain benefit plan contributions)."
+    },
+    "daily_overtime": {
+      "required": false,
+      "description": "Federal law does not require overtime pay for work on weekends, holidays, or daily hours exceeding 8. Any daily overtime obligation comes from state law, not FLSA."
+    },
+    "exemptions": {
+      "white_collar_salary_threshold": {
+        "amount_per_week": 684,
+        "amount_annual": 35568,
+        "description": "To qualify for the executive, administrative, or professional exemption, an employee must be paid on a salary basis at a rate of not less than $684 per week ($35,568 annually). The salary must be a predetermined, fixed amount not subject to reduction based on quality or quantity of work."
+      },
+      "highly_compensated_employee": {
+        "total_annual_compensation": 107432,
+        "description": "An employee who earns at least $107,432 in total annual compensation (which must include at least $684 per week on a salary or fee basis) is exempt if they customarily and regularly perform at least one of the exempt duties of an executive, administrative, or professional employee."
+      },
+      "computer_employee": {
+        "minimum_hourly_rate": 27.63,
+        "minimum_weekly_salary": 684,
+        "description": "Computer systems analysts, programmers, software engineers, and similarly skilled workers may be exempt if paid at least $27.63 per hour on an hourly basis, or on a salary basis at not less than $684 per week. They must perform specific computer-related duties as their primary duty."
+      },
+      "executive_duties_test": {
+        "description": "Primary duty must be management of the enterprise or a recognized department/subdivision. Must customarily and regularly direct the work of at least two full-time equivalent employees. Must have authority to hire or fire, or their recommendations on these matters must be given particular weight."
+      },
+      "administrative_duties_test": {
+        "description": "Primary duty must be office or non-manual work directly related to management or general business operations of the employer or its customers. Must include the exercise of discretion and independent judgment with respect to matters of significance."
+      },
+      "professional_duties_test": {
+        "description": "Primary duty must be work requiring knowledge of an advanced type in a field of science or learning customarily acquired by a prolonged course of specialized intellectual instruction (learned professional), or work requiring invention, imagination, originality, or talent in a recognized field of artistic or creative endeavor (creative professional)."
+      },
+      "outside_sales_exemption": {
+        "description": "Primary duty must be making sales or obtaining orders or contracts for services. Must be customarily and regularly engaged away from the employer's place of business. No salary requirement applies to outside sales employees."
+      }
+    },
+    "calculation_notes": {
+      "regular_rate_inclusions": "The regular rate includes hourly pay, salary, piecework earnings, commissions, non-discretionary bonuses, and shift differentials.",
+      "regular_rate_exclusions": "The regular rate excludes gifts and special-occasion payments, expense reimbursements, discretionary bonuses, employer contributions to benefit plans, premium pay for weekend/holiday/overtime work, and income from stock options.",
+      "fluctuating_workweek": "Under the fluctuating workweek method (29 CFR § 778.114), if an employee works hours that vary from week to week and is paid a fixed salary as straight-time compensation for all hours worked, the overtime premium is calculated at 0.5 times (not 1.5 times) the regular rate for hours over 40."
+    }
+  },
+  "penalties": {
+    "description": "Employers who willfully or repeatedly violate overtime provisions may be assessed civil money penalties of up to $2,451 per violation. Employees may recover unpaid overtime, an equal amount in liquidated damages, and reasonable attorney fees. Willful violations carry a 3-year statute of limitations; non-willful violations have a 2-year limitation.",
+    "per_violation_amount": 2451,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "The DOL issued a final rule in April 2024 to raise the salary threshold to $844/week ($43,888 annualized) effective July 1, 2024, and to $1,128/week ($58,656 annualized) effective January 1, 2025, with the HCE threshold rising to $132,964 on July 1, 2024 and $151,164 on January 1, 2025. However, a federal district court vacated this rule nationwide in November 2024 (State of Texas v. U.S. DOL), reverting the thresholds to the 2019 levels of $684/week and $107,432 HCE. The thresholds in this record reflect the currently enforceable amounts as of last verification. States may impose lower salary thresholds or additional overtime requirements.",
+  "source_urls": [
+    "https://www.law.cornell.edu/uscode/text/29/207",
+    "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-V/subchapter-A/part-541",
+    "https://www.dol.gov/agencies/whd/overtime",
+    "https://www.dol.gov/agencies/whd/fact-sheets/17a-overtime"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

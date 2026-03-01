@@ -1,0 +1,49 @@
+{
+  "id": "co-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "CO",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Colorado Meal Break Requirements",
+  "statute_citation": "C.R.S. § 8-12-103",
+  "regulatory_citation": "COMPS Order #39, 7 CCR 1103-1, Rule 5.2",
+  "summary": "Colorado requires employers to provide a 30-minute uninterrupted meal break to employees who work 5 or more consecutive hours. The meal break is unpaid if the employee is completely relieved of duties. If the nature of the work prevents a duty-free meal break, the employer must permit an on-duty meal period that counts as paid time worked.",
+  "effective_date": "1963-01-01",
+  "sunset_date": null,
+  "last_amended": "2024-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 1,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_break_duration_minutes": 30,
+    "consecutive_hours_trigger": 5,
+    "uninterrupted": true,
+    "paid": false,
+    "paid_conditions": "The meal break is unpaid only if the employee is completely relieved of all duties for the entire 30-minute period. If the employee performs any work or is required to remain available, the entire meal period must be paid.",
+    "on_duty_meal_period_allowed": true,
+    "on_duty_meal_period_conditions": "When the nature of the work prevents the employee from being completely relieved of all duties, the employer must allow an on-duty meal period. The on-duty meal period counts as time worked and must be paid at the employee's regular rate.",
+    "timing": "The meal period should be provided approximately in the middle of the shift, though no specific window is mandated by the COMPS Order.",
+    "additional_meal_breaks": {
+      "description": "Additional meal breaks may be required for extended shifts, consistent with the 5-hour trigger rule.",
+      "note": "For shifts exceeding 10 hours, a second 30-minute meal break should be provided."
+    }
+  },
+  "penalties": {
+    "description": "Failure to provide required meal breaks may result in the employer owing the employee compensation for the missed meal period plus potential penalties under the Colorado Wage Claim Act.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Colorado's meal break requirement applies broadly across industries. The on-duty meal period exception is an important distinction: unlike some states that simply penalize missed breaks, Colorado requires a paid on-duty alternative when operational needs prevent a full duty-free meal break. Employees cannot waive their right to a meal break under the COMPS Order.",
+  "source_urls": [
+    "https://cdle.colorado.gov/wage-and-hour-law/meal-and-rest-periods",
+    "https://cdle.colorado.gov/comps-order"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

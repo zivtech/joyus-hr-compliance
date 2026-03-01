@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/zivtech/joyus-hr-compliance/data/schema/regulation.schema.json",
+  "title": "HR Compliance Regulation",
+  "description": "Schema for a single labor law regulation record in the Joyus HR Compliance database.",
+  "type": "object",
+  "required": [
+    "id",
+    "jurisdiction",
+    "law_type",
+    "title",
+    "statute_citation",
+    "summary",
+    "effective_date",
+    "status",
+    "requirements",
+    "source_urls",
+    "last_verified"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Unique slug identifier (lowercase, hyphen-separated)."
+    },
+    "jurisdiction": {
+      "type": "object",
+      "required": ["level"],
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": ["federal", "state", "local"]
+        },
+        "state": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Z]{2}$",
+          "description": "Two-letter state abbreviation. Null for federal regulations."
+        },
+        "locality": {
+          "type": ["string", "null"],
+          "description": "City or county name. Null unless jurisdiction.level is 'local'."
+        }
+      },
+      "if": {
+        "properties": { "level": { "const": "federal" } }
+      },
+      "then": {
+        "properties": { "state": { "const": null }, "locality": { "const": null } }
+      }
+    },
+    "law_type": {
+      "type": "string",
+      "enum": [
+        "overtime",
+        "meal-breaks",
+        "rest-breaks",
+        "predictive-scheduling",
+        "minor-labor",
+        "reporting-time-pay",
+        "split-shift",
+        "maximum-hours",
+        "minimum-wage",
+        "pay-frequency",
+        "recordkeeping",
+        "nursing-breaks"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "statute_citation": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Official legal citation (e.g., '29 U.S.C. § 207' or 'Cal. Lab. Code § 510')."
+    },
+    "regulatory_citation": {
+      "type": ["string", "null"],
+      "description": "Administrative regulation citation if distinct from statute."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Plain-language description of the regulation."
+    },
+    "effective_date": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date (YYYY-MM-DD) when the regulation took effect."
+    },
+    "sunset_date": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "ISO 8601 date when the regulation expires. Null if no expiration."
+    },
+    "last_amended": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "ISO 8601 date of the most recent amendment. Null if never amended."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "pending", "repealed", "superseded", "expired"]
+    },
+    "applicability": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "employer_size_minimum": {
+          "type": ["integer", "null"],
+          "description": "Minimum number of employees for the regulation to apply. Null if no minimum."
+        },
+        "industries": {
+          "type": ["array", "null"],
+          "items": { "type": "string" },
+          "description": "Specific industries the regulation applies to. Null if all industries."
+        },
+        "employee_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["non-exempt", "exempt", "all"]
+          }
+        },
+        "age_groups": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["adult", "16-17", "14-15", "under-14"]
+          }
+        }
+      }
+    },
+    "requirements": {
+      "type": "object",
+      "description": "Regulation-specific requirements. Structure varies by law_type.",
+      "minProperties": 1
+    },
+    "penalties": {
+      "type": ["object", "null"],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "per_violation_amount": {
+          "type": ["number", "null"]
+        },
+        "statute_of_limitations_years": {
+          "type": ["number", "null"]
+        }
+      }
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Additional context, edge cases, or important caveats."
+    },
+    "source_urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1,
+      "description": "Links to official law text or authoritative source."
+    },
+    "last_verified": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date when this data was last verified against official sources."
+    },
+    "contributors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "GitHub usernames or identifiers of contributors to this record."
+    }
+  }
+}

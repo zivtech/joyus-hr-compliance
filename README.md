@@ -1,30 +1,66 @@
 # joyus-hr-compliance
 
-Because who knew that HR compliance could be so... *Joyus*?
+A searchable static database of U.S. labor law scheduling compliance regulations, built with [Eleventy](https://www.11ty.dev/) and [Pagefind](https://pagefind.app/), deployed on GitHub Pages.
 
-Spoiler: it can't. It's a nightmarish patchwork of 50 states, countless municipalities, and a federal government that couldn't agree on whether you deserve a lunch break. California alone has more scheduling rules than most countries have laws. But *somebody* has to deal with it — and that somebody is now an AI skill.
+## What This Is
 
-**joyus-hr-compliance** is a compliance guardrail skill that ensures employee scheduling adheres to local, state, and federal HR laws and regulations. It covers overtime, breaks, shift scheduling, predictive scheduling, and minor/youth labor protections — because apparently letting a 15-year-old work past 7 PM requires a regulatory framework spanning thousands of pages.
+A structured, schema-validated collection of federal, state, and local labor law regulations covering:
 
-## What It Does
+- **Overtime** — weekly and daily thresholds, pay rates, exemptions
+- **Meal Breaks** — timing, duration, waivers, penalty pay
+- **Rest Breaks** — frequency, duration, pay requirements
+- **Minor/Youth Labor** — hour limits, time-of-day windows, work permits, prohibited occupations
+- **Predictive Scheduling** — advance notice, schedule change premiums, right to rest
+- **Reporting Time Pay** — minimum pay when sent home early
+- **Split Shift Premiums** — extra pay for non-consecutive shifts
 
-- Validates shift schedules against applicable labor laws
-- Checks break and meal period compliance (yes, California, we see you and your premium pay penalties)
-- Calculates overtime obligations across jurisdictions that can't agree on what "overtime" means
-- Enforces minor/youth work restrictions so teenagers don't accidentally violate 17 Hazardous Occupation Orders they've never heard of
-- Applies predictive scheduling rules for the lucky cities that decided employers should plan ahead
+## Current Coverage
+
+- **Federal** — FLSA overtime, breaks, child labor, PUMP Act
+- **California** — daily/weekly overtime, meal breaks, rest breaks, minor labor, split shift, reporting time
+- **New York** — spread of hours, minor labor, reporting time
+- **Washington** — overtime, meal breaks, rest breaks, minor labor
+- **Colorado** — overtime (daily + weekly), meal breaks, rest breaks, minor labor
+- **Oregon** — meal breaks, rest breaks, predictive scheduling, minor labor
 
 ## How It Works
 
-Works as both a **standalone Claude skill** for conversational compliance checking and a **reusable guardrail module** that other Joyus AI applications invoke automatically to validate HR decisions before they're applied.
+Regulation data is stored as individual JSON files in `data/regulations/`, validated against a [JSON Schema](data/schema/regulation.schema.json) on every PR. An Eleventy build generates a static site with Pagefind search, deployed to GitHub Pages.
 
-## Coverage
+### Browse the Data
 
-- Federal (FLSA, OSHA, PUMP Act)
-- All 50 states
-- Local ordinances: Philadelphia, Los Angeles, New York City (more to come, because cities keep passing these)
-- Adults and minors/youth (ages 14-17)
+- **By jurisdiction** — federal, then state-by-state
+- **By law type** — overtime, breaks, scheduling, etc.
+- **Full-text search** — powered by Pagefind
+- **Filter by status** — active, pending, expired, repealed
 
-## Status
+## Contributing
 
-Research and planning phase.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add or update regulation data. Contributions from HR professionals, employment lawyers, and anyone familiar with labor law are welcome.
+
+## Development
+
+```bash
+npm install
+npm run validate   # Check all data files against schema
+npm run build      # Build the static site + Pagefind index
+npm run serve      # Local development server
+```
+
+## Architecture
+
+| Layer | Technology | Purpose |
+|---|---|---|
+| Data | JSON files + JSON Schema | Structured regulation records |
+| Validation | AJV (in CI) | Schema enforcement on every PR |
+| SSG | Eleventy v3 | HTML generation from data |
+| Search | Pagefind | Client-side full-text search + faceted filtering |
+| Hosting | GitHub Pages | Zero-infrastructure deployment |
+
+## Disclaimer
+
+This database is for informational purposes only and does not constitute legal advice. Laws change frequently. Verify all information against official sources before relying on it. See the full [disclaimer](/disclaimer/).
+
+## License
+
+MIT

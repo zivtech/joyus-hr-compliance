@@ -1,0 +1,97 @@
+{
+  "id": "wa-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "WA",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "Washington Minor Labor Standards",
+  "statute_citation": "RCW 49.12",
+  "regulatory_citation": "WAC 296-125",
+  "summary": "Washington has among the most restrictive child labor laws in the nation, particularly for 16-17 year olds. During school weeks, 16-17 year olds may work a maximum of 20 hours (28 with a variance), no more than 4 hours on a school day, and must stop work by 10 PM. Minors aged 14-15 follow rules similar to federal standards. All minors must have a minor work permit. Minors receive a 10-minute paid rest break for every 2 hours worked, which is more frequent than the adult rest break requirement.",
+  "effective_date": "1973-01-01",
+  "sunset_date": null,
+  "last_amended": "2024-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 1,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["16-17", "14-15", "under-14"]
+  },
+  "requirements": {
+    "work_permit_required": true,
+    "work_permit_details": "All minors under 18 must obtain a minor work permit from the Washington Department of Labor & Industries before beginning employment.",
+    "age_group_16_17": {
+      "school_week": {
+        "max_hours_per_week": 20,
+        "max_hours_per_week_with_variance": 28,
+        "max_hours_per_day_school_day": 4,
+        "max_hours_per_day_non_school_day": 8,
+        "curfew_time": "22:00",
+        "earliest_start_time": "07:00"
+      },
+      "non_school_week": {
+        "max_hours_per_week": 48,
+        "max_hours_per_day": 8,
+        "curfew_time": "00:00",
+        "earliest_start_time": "05:00"
+      },
+      "variance": {
+        "description": "Employers may obtain a variance to allow 16-17 year olds to work up to 28 hours during a school week.",
+        "requires_parental_consent": true,
+        "requires_school_consent": true
+      }
+    },
+    "age_group_14_15": {
+      "school_week": {
+        "max_hours_per_week": 16,
+        "max_hours_per_day_school_day": 3,
+        "max_hours_per_day_non_school_day": 8,
+        "curfew_time": "19:00",
+        "earliest_start_time": "07:00"
+      },
+      "non_school_week": {
+        "max_hours_per_week": 40,
+        "max_hours_per_day": 8,
+        "curfew_time": "21:00",
+        "earliest_start_time": "07:00"
+      }
+    },
+    "age_group_under_14": {
+      "description": "Children under 14 are generally prohibited from employment, with limited exceptions for agricultural work, newspaper delivery, and entertainment with permits."
+    },
+    "breaks": {
+      "rest_break_duration_minutes": 10,
+      "rest_break_frequency_hours": 2,
+      "paid": true,
+      "meal_break_duration_minutes": 30,
+      "meal_break_trigger_hours": 5,
+      "note": "Minors must receive a 10-minute paid rest break for every 2 hours worked, which is more frequent than the 4-hour interval required for adult workers."
+    },
+    "prohibited_occupations": [
+      "Manufacturing or processing occupations",
+      "Operation of power-driven machinery",
+      "Mining",
+      "Logging and sawmilling",
+      "Work involving exposure to radioactive substances",
+      "Work in establishments serving alcohol (limited exceptions for 16-17)",
+      "Roofing operations",
+      "Excavation operations"
+    ]
+  },
+  "penalties": {
+    "description": "Violations of minor labor laws may result in civil penalties per violation, criminal penalties for willful violations, and potential loss of the ability to employ minors.",
+    "per_violation_amount": 1000,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Washington is considered one of the most restrictive states for employing 16-17 year olds due to the 20-hour school-week cap and 10 PM curfew. The minor work permit system is administered by the Department of Labor & Industries. Employers must keep minor work permits on file for the duration of employment. Agricultural employment of minors has additional specific provisions under WAC 296-125.",
+  "source_urls": [
+    "https://app.leg.wa.gov/rcw/default.aspx?cite=49.12",
+    "https://app.leg.wa.gov/wac/default.aspx?cite=296-125",
+    "https://lni.wa.gov/workers-rights/youth-employment/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

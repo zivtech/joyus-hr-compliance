@@ -1,0 +1,55 @@
+{
+  "id": "or-rest-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "OR",
+    "locality": null
+  },
+  "law_type": "rest-breaks",
+  "title": "Oregon Rest Break Requirements",
+  "statute_citation": "ORS 653.261",
+  "regulatory_citation": "OAR 839-020-0050",
+  "summary": "Oregon requires employers to provide a paid 10-minute rest break for every 4 hours worked, or major fraction thereof. Rest breaks must be continuous and uninterrupted, and should be scheduled approximately in the middle of each 4-hour work segment. Rest breaks are compensated as time worked.",
+  "effective_date": "1967-01-01",
+  "sunset_date": null,
+  "last_amended": "2023-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 1,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "rest_break_duration_minutes": 10,
+    "hours_worked_per_break": 4,
+    "major_fraction_applies": true,
+    "major_fraction_definition": "A 'major fraction' of 4 hours is any period greater than 2 hours. An employee working more than 6 hours is entitled to 2 rest breaks.",
+    "paid": true,
+    "continuous_and_uninterrupted": true,
+    "timing": "Rest breaks must be scheduled approximately in the middle of each 4-hour work segment.",
+    "break_schedule_examples": {
+      "2_to_6_hour_shift": 1,
+      "6_to_10_hour_shift": 2,
+      "10_to_14_hour_shift": 3,
+      "14_to_18_hour_shift": 4
+    },
+    "cannot_be_waived": true,
+    "cannot_be_combined_with_meal_break": true,
+    "cannot_be_used_to_shorten_shift": true,
+    "employer_must_provide": true,
+    "note": "Rest breaks must be continuous and uninterrupted. An employer cannot split a 10-minute rest break into two 5-minute periods. The break must be taken approximately in the middle of each work segment to provide meaningful rest."
+  },
+  "penalties": {
+    "description": "Failure to provide required rest breaks may result in the employer owing compensation for missed breaks and potential civil penalties from the Bureau of Labor and Industries.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "Oregon's requirement that rest breaks be continuous and approximately in the middle of each 4-hour segment is more prescriptive than many states. BOLI has emphasized that employers must actively schedule and authorize rest breaks, not merely refrain from prohibiting them. The major fraction rule means employees who work slightly over a 4-hour multiple receive an additional rest break.",
+  "source_urls": [
+    "https://www.oregonlegislature.gov/bills_laws/ors/ors653.html",
+    "https://www.oregon.gov/boli/workers/pages/meals-and-breaks.aspx"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

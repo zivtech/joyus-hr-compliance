@@ -1,0 +1,57 @@
+{
+  "id": "wa-overtime",
+  "jurisdiction": {
+    "level": "state",
+    "state": "WA",
+    "locality": null
+  },
+  "law_type": "overtime",
+  "title": "Washington Overtime Requirements",
+  "statute_citation": "RCW 49.46.130",
+  "regulatory_citation": null,
+  "summary": "Washington requires employers to pay non-exempt employees overtime at 1.5 times their regular rate for all hours worked over 40 in a workweek. Washington's salary threshold for overtime exemption is higher than the federal threshold. Agricultural workers are being phased in to overtime coverage under a multi-year schedule.",
+  "effective_date": "1961-01-01",
+  "sunset_date": null,
+  "last_amended": "2024-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 1,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "weekly_overtime_threshold_hours": 40,
+    "overtime_multiplier": 1.5,
+    "salary_threshold": {
+      "description": "Washington's salary threshold for overtime exemption exceeds the federal level and is tied to the state minimum wage multiplier.",
+      "basis": "state_minimum_wage_multiplier",
+      "note": "The salary threshold is set at 2x the state minimum wage for employers with 51+ employees. Adjusted annually."
+    },
+    "agricultural_worker_phase_in": {
+      "description": "Agricultural workers are being phased in to overtime eligibility on a graduated schedule.",
+      "2022_threshold_hours": 55,
+      "2023_threshold_hours": 48,
+      "2024_and_beyond_threshold_hours": 40,
+      "note": "Dairy workers became eligible for overtime at 40 hours starting January 1, 2024."
+    },
+    "exemptions": [
+      "Executive, administrative, and professional employees meeting state salary threshold",
+      "Outside salespersons",
+      "Certain computer professionals",
+      "Certain agricultural workers (during phase-in period)"
+    ]
+  },
+  "penalties": {
+    "description": "Employers who violate overtime requirements may be liable for unpaid wages, liquidated damages equal to the unpaid wages, and reasonable attorney fees and costs.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Washington's salary threshold for the executive, administrative, and professional exemptions is significantly higher than the federal FLSA threshold. Employers must meet both state and federal requirements. Agricultural overtime was phased in through 2024 under the state's agricultural overtime law (RCW 49.46.130(2)).",
+  "source_urls": [
+    "https://app.leg.wa.gov/rcw/default.aspx?cite=49.46.130",
+    "https://lni.wa.gov/workers-rights/wages/overtime/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

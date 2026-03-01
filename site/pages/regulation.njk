@@ -1,0 +1,128 @@
+---
+pagination:
+  data: regulations
+  size: 1
+  alias: reg
+permalink: /regulation/{{ reg.id }}/
+layout: base.njk
+eleventyComputed:
+  title: "{{ reg.title }}"
+---
+
+<div class="reg-detail" data-pagefind-body>
+  <p><a href="/">&larr; Back to search</a></p>
+
+  <div class="reg-card-header">
+    <h1 data-pagefind-meta="title">{{ reg.title }}</h1>
+    <span class="badge {{ reg.computed_status | statusBadgeClass }}" data-pagefind-filter="status">{{ reg.computed_status }}</span>
+  </div>
+
+  <p data-pagefind-filter="jurisdiction:{{ reg.jurisdiction | jurisdictionLabel }}" data-pagefind-filter="type:{{ reg.law_type | lawTypeLabel }}">{{ reg.summary }}</p>
+
+  <div class="meta-grid">
+    <div class="meta-item">
+      <div class="meta-label">Jurisdiction</div>
+      <div class="meta-value">{{ reg.jurisdiction | jurisdictionLabel }}{% if reg.jurisdiction.level !== "federal" %} ({{ reg.jurisdiction.level }}){% endif %}</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Law Type</div>
+      <div class="meta-value">{{ reg.law_type | lawTypeLabel }}</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Status</div>
+      <div class="meta-value"><span class="badge {{ reg.computed_status | statusBadgeClass }}">{{ reg.computed_status }}</span></div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Citation</div>
+      <div class="meta-value">{{ reg.statute_citation }}</div>
+    </div>
+    {% if reg.regulatory_citation %}
+    <div class="meta-item">
+      <div class="meta-label">Regulatory Citation</div>
+      <div class="meta-value">{{ reg.regulatory_citation }}</div>
+    </div>
+    {% endif %}
+    <div class="meta-item">
+      <div class="meta-label">Effective Date</div>
+      <div class="meta-value">{{ reg.effective_date }}</div>
+    </div>
+    {% if reg.last_amended %}
+    <div class="meta-item">
+      <div class="meta-label">Last Amended</div>
+      <div class="meta-value">{{ reg.last_amended }}</div>
+    </div>
+    {% endif %}
+    {% if reg.sunset_date %}
+    <div class="meta-item">
+      <div class="meta-label">Sunset Date</div>
+      <div class="meta-value">{{ reg.sunset_date }}</div>
+    </div>
+    {% endif %}
+    <div class="meta-item">
+      <div class="meta-label">Last Verified</div>
+      <div class="meta-value">{{ reg.last_verified }}</div>
+    </div>
+  </div>
+
+  {% if reg.applicability %}
+  <h2>Applicability</h2>
+  <div class="meta-grid">
+    {% if reg.applicability.employer_size_minimum %}
+    <div class="meta-item">
+      <div class="meta-label">Employer Size</div>
+      <div class="meta-value">{{ reg.applicability.employer_size_minimum }}+ employees</div>
+    </div>
+    {% endif %}
+    {% if reg.applicability.industries %}
+    <div class="meta-item">
+      <div class="meta-label">Industries</div>
+      <div class="meta-value">{{ reg.applicability.industries | join(", ") }}</div>
+    </div>
+    {% endif %}
+    {% if reg.applicability.employee_types %}
+    <div class="meta-item">
+      <div class="meta-label">Employee Types</div>
+      <div class="meta-value">{{ reg.applicability.employee_types | join(", ") }}</div>
+    </div>
+    {% endif %}
+    {% if reg.applicability.age_groups %}
+    <div class="meta-item">
+      <div class="meta-label">Age Groups</div>
+      <div class="meta-value">{{ reg.applicability.age_groups | join(", ") }}</div>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <h2>Requirements</h2>
+  <div class="requirements-block">
+    <pre>{{ reg.requirements | jsonStringify }}</pre>
+  </div>
+
+  {% if reg.penalties %}
+  <h2>Penalties</h2>
+  <div class="requirements-block">
+    {% if reg.penalties.description %}
+    <p>{{ reg.penalties.description }}</p>
+    {% endif %}
+    {% if reg.penalties.per_violation_amount %}
+    <p><strong>Per violation:</strong> ${{ reg.penalties.per_violation_amount }}</p>
+    {% endif %}
+    {% if reg.penalties.statute_of_limitations_years %}
+    <p><strong>Statute of limitations:</strong> {{ reg.penalties.statute_of_limitations_years }} years</p>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% if reg.notes %}
+  <h2>Notes</h2>
+  <p>{{ reg.notes }}</p>
+  {% endif %}
+
+  <h2>Sources</h2>
+  <ul>
+    {% for url in reg.source_urls %}
+    <li><a href="{{ url }}" target="_blank" rel="noopener">{{ url }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

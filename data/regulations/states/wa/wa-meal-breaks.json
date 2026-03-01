@@ -1,0 +1,50 @@
+{
+  "id": "wa-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "WA",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Washington Meal Break Requirements",
+  "statute_citation": "RCW 49.12.480",
+  "regulatory_citation": "WAC 296-126-092",
+  "summary": "Washington requires employers to provide a 30-minute meal break to employees who work more than 5 consecutive hours. The meal break must be provided no less than 2 hours and no more than 5 hours from the beginning of the shift. The meal period is unpaid if the employee is completely relieved of duties.",
+  "effective_date": "1973-01-01",
+  "sunset_date": null,
+  "last_amended": "2023-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 1,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_break_duration_minutes": 30,
+    "consecutive_hours_trigger": 5,
+    "earliest_start_hour": 2,
+    "latest_start_hour": 5,
+    "paid": false,
+    "paid_conditions": "Unpaid if the employee is completely relieved of all duties. If the employee is required to remain on duty or at the workplace, the meal period must be paid.",
+    "on_duty_meal_period_allowed": true,
+    "on_duty_meal_period_conditions": "Permitted only when the nature of the work prevents the employee from being completely relieved of all duties. Must be paid as time worked.",
+    "additional_meal_breaks": {
+      "second_meal_break_trigger_hours": 10,
+      "second_meal_break_duration_minutes": 30,
+      "note": "An additional 30-minute meal period is required for shifts exceeding 10 hours."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide required meal breaks may be liable for payment of the employee's regular rate for each meal period not provided, plus potential penalties under RCW 49.48.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Employees may waive the meal period when the shift will be completed in 6 hours or less. Agricultural workers have specific meal break provisions. Certain healthcare employees may have different meal break requirements under WAC 296-126-092(4).",
+  "source_urls": [
+    "https://app.leg.wa.gov/wac/default.aspx?cite=296-126-092",
+    "https://lni.wa.gov/workers-rights/wages/getting-paid/meals-and-breaks"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

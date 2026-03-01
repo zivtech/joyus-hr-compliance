@@ -1,0 +1,28 @@
+name: Validate Regulations
+
+on:
+  pull_request:
+    paths:
+      - "data/regulations/**"
+      - "data/schema/**"
+  push:
+    branches: [main]
+    paths:
+      - "data/regulations/**"
+      - "data/schema/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate regulation data against schema
+        run: npm run validate

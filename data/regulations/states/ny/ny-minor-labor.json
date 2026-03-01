@@ -1,0 +1,87 @@
+{
+  "id": "ny-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "NY",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "New York Child Labor Laws",
+  "statute_citation": "NY Labor Law §§ 130-135",
+  "regulatory_citation": "12 NYCRR Part 190",
+  "summary": "New York restricts employment of minors under 18, requiring work permits (employment certificates) for all working minors. Minors aged 14-15 face strict hour and time-of-day limits similar to federal standards. Minors aged 16-17 may work up to 28 hours during school weeks, 4 hours on school days, with a 10:00 PM curfew (extendable to midnight with written parental consent for non-school nights). New York uses a color-coded permit system: blue for 14-15 year olds, green for 16-17 year olds, and other colors for special circumstances.",
+  "effective_date": "1960-01-01",
+  "sunset_date": null,
+  "last_amended": "2023-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt", "all"],
+    "age_groups": ["14-15", "16-17", "under-14"]
+  },
+  "requirements": {
+    "work_permit": {
+      "required": true,
+      "applies_to": "All minors under 18",
+      "issuing_authority": "School district where minor resides or attends school",
+      "color_coded_system": {
+        "blue_card": {
+          "applies_to": "14-15 year olds",
+          "description": "Employment certificate for minors aged 14-15, with the most restrictive work limitations."
+        },
+        "green_card": {
+          "applies_to": "16-17 year olds",
+          "description": "Employment certificate for minors aged 16-17, with less restrictive limitations than the blue card."
+        }
+      },
+      "description": "An employment certificate (work permit) must be obtained before a minor under 18 may begin work. Permits are issued by the school district and are employer-specific."
+    },
+    "age_14_15": {
+      "max_hours_school_day": 3,
+      "max_hours_non_school_day": 8,
+      "max_hours_school_week": 18,
+      "max_hours_non_school_week": 40,
+      "earliest_start_time": "07:00",
+      "latest_end_time": "19:00",
+      "latest_end_time_summer": "21:00",
+      "summer_period": "June 21 through Labor Day",
+      "description": "Minors aged 14-15 may work no more than 3 hours on a school day, 8 hours on a non-school day, 18 hours in a school week, and 40 hours in a non-school week. Work must occur between 7:00 AM and 7:00 PM (extended to 9:00 PM from June 21 through Labor Day)."
+    },
+    "age_16_17": {
+      "max_hours_school_day": 4,
+      "max_hours_non_school_day": 8,
+      "max_hours_school_week": 28,
+      "max_hours_non_school_week": 48,
+      "max_hours_per_day_absolute": 8,
+      "latest_end_time_school_night": "22:00",
+      "latest_end_time_non_school_night": "00:00",
+      "parental_permission_extension": {
+        "latest_end_time": "00:00",
+        "requires_written_consent": true,
+        "description": "With written parental consent, 16-17 year olds may work until midnight on nights not preceding a school day."
+      },
+      "description": "Minors aged 16-17 may work up to 4 hours on school days, 8 hours on non-school days, 28 hours during school weeks, and 48 hours during non-school weeks. The curfew is 10:00 PM on school nights and may be extended to midnight on non-school nights with written parental permission."
+    },
+    "meal_break": {
+      "trigger_hours": 6,
+      "duration_minutes": 30,
+      "description": "Working minors must receive a 30-minute meal break when working more than 6 consecutive hours."
+    },
+    "prohibited_occupations": {
+      "description": "Minors are prohibited from working in occupations deemed hazardous under New York law, including manufacturing, construction, operating power-driven machinery, and occupations involving exposure to toxic substances. Additional restrictions apply to 14-15 year olds."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate child labor laws are subject to civil penalties ranging from $1,000 to $10,000 per violation. Repeat or willful violations may result in higher penalties and criminal prosecution. Each day of violation constitutes a separate offense.",
+    "per_violation_amount": 10000,
+    "statute_of_limitations_years": 6
+  },
+  "notes": "New York child labor laws interact with federal FLSA provisions; the more restrictive standard applies in all cases. The color-coded permit system helps employers and inspectors quickly identify the applicable restrictions. During school vacation periods, the non-school-week limits apply. Minors in the entertainment industry are subject to additional requirements under NY Labor Law Article 4-A, including trust account provisions.",
+  "source_urls": [
+    "https://www.nysenate.gov/legislation/laws/LAB/A4-A",
+    "https://dol.ny.gov/child-labor"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

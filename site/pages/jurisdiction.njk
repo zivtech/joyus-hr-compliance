@@ -1,0 +1,27 @@
+---
+layout: base.njk
+title: Browse by Jurisdiction
+permalink: /jurisdiction/
+---
+
+<h1>Browse by Jurisdiction</h1>
+<p>Select a jurisdiction to see its applicable labor law regulations.</p>
+
+<div class="browse-grid">
+  <a href="/jurisdiction/federal/" class="browse-item">
+    Federal
+    <span class="browse-count">{{ regulations | where("jurisdiction.level", "federal") | length }} regulations</span>
+  </a>
+  {%- set states = [] %}
+  {%- for reg in regulations %}
+    {%- if reg.jurisdiction.state and reg.jurisdiction.state not in states %}
+      {%- set states = (states.push(reg.jurisdiction.state), states) %}
+    {%- endif %}
+  {%- endfor %}
+  {%- for state in states | sort %}
+  <a href="/jurisdiction/{{ state | lower }}/" class="browse-item">
+    {{ state }}
+    <span class="browse-count">{{ regulations | where("jurisdiction.state", state) | length }} regulations</span>
+  </a>
+  {%- endfor %}
+</div>

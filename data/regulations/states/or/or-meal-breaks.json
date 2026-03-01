@@ -1,0 +1,54 @@
+{
+  "id": "or-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "OR",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Oregon Meal Break Requirements",
+  "statute_citation": "ORS 653.261",
+  "regulatory_citation": "OAR 839-020-0050",
+  "summary": "Oregon requires employers to provide a 30-minute unpaid meal break for work shifts of 6 or more hours. The meal break must be provided between the 2nd and 5th hour of the shift. An additional 30-minute meal break is required for shifts of 14 or more hours. The meal period is unpaid if the employee is completely relieved of duties.",
+  "effective_date": "1967-01-01",
+  "sunset_date": null,
+  "last_amended": "2023-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 1,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_break_duration_minutes": 30,
+    "shift_length_trigger_hours": 6,
+    "earliest_start_hour": 2,
+    "latest_start_hour": 5,
+    "paid": false,
+    "paid_conditions": "The meal break is unpaid only when the employee is completely relieved of all duties. If the employee must remain on duty or on-call, the meal period must be paid as time worked.",
+    "on_duty_meal_period_allowed": true,
+    "on_duty_meal_period_conditions": "On-duty meal periods are permitted only when the nature of the work prevents complete relief from duties, and must be paid as time worked.",
+    "additional_meal_breaks": {
+      "second_meal_break_trigger_hours": 14,
+      "second_meal_break_duration_minutes": 30,
+      "description": "An additional 30-minute meal break is required for shifts of 14 hours or more."
+    },
+    "waiver": {
+      "allowed": false,
+      "note": "Employees generally cannot waive their meal break. Limited exceptions exist for certain occupations."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide required meal breaks may be liable for unpaid wages for the missed meal period and may face civil penalties from the Bureau of Labor and Industries (BOLI).",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "Oregon's meal break timing requirement (between the 2nd and 5th hour) is a notable restriction that requires careful scheduling. The 14-hour additional meal break provision is particularly relevant for industries with extended shifts such as healthcare, manufacturing, and emergency services. BOLI enforces these requirements and can investigate complaints.",
+  "source_urls": [
+    "https://www.oregonlegislature.gov/bills_laws/ors/ors653.html",
+    "https://www.oregon.gov/boli/workers/pages/meals-and-breaks.aspx"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

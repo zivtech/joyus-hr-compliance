@@ -1,0 +1,56 @@
+{
+  "id": "ny-spread-of-hours",
+  "jurisdiction": {
+    "level": "state",
+    "state": "NY",
+    "locality": null
+  },
+  "law_type": "split-shift",
+  "title": "New York Spread of Hours Pay",
+  "statute_citation": "NY Labor Law § 652",
+  "regulatory_citation": "12 NYCRR § 142-2.4",
+  "summary": "New York requires employers to pay an extra hour at the applicable minimum wage rate when an employee's workday spread of hours exceeds 10 hours. The spread of hours is the interval between the beginning and end of an employee's workday, including any breaks or time off. This provision applies to all employees in industries covered by New York wage orders, including hospitality, building service, and miscellaneous industries.",
+  "effective_date": "1960-01-01",
+  "sunset_date": null,
+  "last_amended": "2024-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "spread_of_hours_threshold": {
+      "max_spread_hours": 10,
+      "description": "The spread of hours is the interval between the start and end of an employee's workday, including working time, breaks, and non-working time. When this interval exceeds 10 hours, the spread of hours premium applies."
+    },
+    "premium": {
+      "amount_hours": 1,
+      "rate": "applicable minimum wage",
+      "description": "An additional hour of pay at the applicable minimum wage rate is required for each workday where the spread of hours exceeds 10 hours."
+    },
+    "covered_industries": {
+      "description": "The spread of hours provision applies to all industries covered by New York minimum wage orders, including hospitality, building service, laundry, restaurant, and miscellaneous industries and occupations.",
+      "wage_order_references": [
+        "12 NYCRR Part 137 (Restaurant Industry)",
+        "12 NYCRR Part 138 (Hotel Industry)",
+        "12 NYCRR Part 141 (Building Service Industry)",
+        "12 NYCRR Part 142 (Miscellaneous Industries and Occupations)"
+      ]
+    },
+    "calculation_note": "The spread of hours premium is one hour at the minimum wage rate, not the employee's regular rate. However, if an employee's total daily earnings (including overtime) already exceed the total of minimum wage for all hours plus the spread of hours premium, no additional payment is required."
+  },
+  "penalties": {
+    "description": "Employers who fail to pay spread of hours premiums are liable for unpaid wages plus interest, liquidated damages equal to 100% of underpayment, and reasonable attorney fees. Violations may also result in civil penalties assessed by the Department of Labor.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 6
+  },
+  "notes": "The spread of hours premium is conceptually similar to California's split shift premium but is triggered by the total span of the workday rather than a break in the schedule. The premium is calculated at the applicable minimum wage, which may differ based on employer size and geographic region within New York State. New York City, Long Island, and Westchester County may have different minimum wage rates than the rest of the state.",
+  "source_urls": [
+    "https://www.nysenate.gov/legislation/laws/LAB/652",
+    "https://dol.ny.gov/wages-and-hours-frequently-asked-questions"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

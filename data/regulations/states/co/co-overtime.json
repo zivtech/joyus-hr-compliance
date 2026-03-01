@@ -1,0 +1,62 @@
+{
+  "id": "co-overtime",
+  "jurisdiction": {
+    "level": "state",
+    "state": "CO",
+    "locality": null
+  },
+  "law_type": "overtime",
+  "title": "Colorado Overtime Requirements",
+  "statute_citation": "C.R.S. § 8-12-103",
+  "regulatory_citation": "COMPS Order #39, 7 CCR 1103-1",
+  "summary": "Colorado requires overtime pay at 1.5 times the regular rate for hours worked over 40 in a workweek (weekly overtime) and for hours worked over 12 in a single workday (daily overtime). Colorado is one of the few states that mandates both daily and weekly overtime. The COMPS Order (Colorado Overtime and Minimum Pay Standards) governs these requirements.",
+  "effective_date": "1963-01-01",
+  "sunset_date": null,
+  "last_amended": "2024-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 1,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "weekly_overtime_threshold_hours": 40,
+    "daily_overtime_threshold_hours": 12,
+    "overtime_multiplier": 1.5,
+    "daily_overtime": {
+      "threshold_hours": 12,
+      "multiplier": 1.5,
+      "description": "Employees must be paid 1.5x their regular rate for all hours worked beyond 12 in a single workday."
+    },
+    "weekly_overtime": {
+      "threshold_hours": 40,
+      "multiplier": 1.5,
+      "description": "Employees must be paid 1.5x their regular rate for all hours worked beyond 40 in a workweek."
+    },
+    "no_double_counting": "Hours that trigger daily overtime credit against weekly overtime obligations. An employer does not owe both daily and weekly overtime for the same hours.",
+    "salary_threshold": {
+      "description": "Colorado uses the COMPS Order salary threshold for white-collar exemptions, which is tied to the state minimum wage and may differ from the federal threshold.",
+      "note": "The salary threshold is recalculated annually based on the Colorado minimum wage."
+    },
+    "exemptions": [
+      "Bona fide executive, administrative, and professional employees meeting the COMPS Order salary threshold",
+      "Certain highly compensated employees",
+      "Certain agricultural employees",
+      "Elected officials and their staffs",
+      "Certain domestic service workers"
+    ]
+  },
+  "penalties": {
+    "description": "Employers who fail to pay overtime may be liable for the unpaid wages, penalties up to the full amount of the unpaid wages, and reasonable costs and attorney fees under the Colorado Wage Claim Act.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Colorado is one of only a few states (along with California, Alaska, and Nevada) that require daily overtime in addition to weekly overtime. The COMPS Order is updated annually by the Colorado Division of Labor Standards and Statistics. Employers must track both daily and weekly hours to ensure compliance with both thresholds.",
+  "source_urls": [
+    "https://leg.colorado.gov/sites/default/files/images/olls/crs2023-title-08.pdf",
+    "https://cdle.colorado.gov/wage-and-hour-law/overtime"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}
