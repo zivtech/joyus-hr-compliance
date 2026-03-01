@@ -1,0 +1,55 @@
+{
+  "id": "nc-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "NC",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "North Carolina Minor Labor Restrictions",
+  "statute_citation": "N.C. Gen. Stat. § 95-25.5",
+  "regulatory_citation": null,
+  "summary": "North Carolina restricts the employment of minors under 16 with hour limitations, mandatory breaks, and prohibited occupations. Minors under 16 must receive a 30-minute break for every 5 hours worked. They may work a maximum of 3 hours on a school day, 8 hours on a non-school day, and 18 hours during a school week.",
+  "effective_date": "1991-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["14-15", "under-14"]
+  },
+  "requirements": {
+    "under_16_hours": {
+      "description": "Minors under 16 are limited in the number of hours they may work.",
+      "max_hours_school_day": 3,
+      "max_hours_nonschool_day": 8,
+      "max_hours_school_week": 18,
+      "max_hours_nonschool_week": 40
+    },
+    "under_16_breaks": {
+      "description": "Minors under 16 must receive a 30-minute break for every 5 hours worked.",
+      "meal_break_minutes": 30,
+      "meal_break_trigger_hours": 5
+    },
+    "under_14": {
+      "description": "Children under 14 are generally prohibited from employment in North Carolina, with limited exceptions for agricultural work, newspaper delivery, and entertainment."
+    },
+    "prohibited_occupations": {
+      "description": "Minors under 16 may not work in manufacturing, mining, or other hazardous occupations as defined by state law."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate North Carolina's child labor laws may be assessed civil penalties by the North Carolina Department of Labor. Each violation constitutes a separate offense.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "North Carolina's 30-minute break per 5 hours for minors under 16 provides protections beyond the federal standard. The state does not require meal breaks or rest breaks for adult employees.",
+  "source_urls": [
+    "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_95/GS_95-25.5.html",
+    "https://www.labor.nc.gov/workplace-rights/youth-employment-rules"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

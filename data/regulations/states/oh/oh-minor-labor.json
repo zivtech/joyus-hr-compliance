@@ -1,0 +1,62 @@
+{
+  "id": "oh-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "OH",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "Ohio Minor Labor Restrictions",
+  "statute_citation": "ORC § 4109",
+  "regulatory_citation": null,
+  "summary": "Ohio regulates the employment of minors under 18 with work permit requirements, hour restrictions, and mandatory breaks. Work permits are required for all minors under 18, with Ohio offering an online permit system. Minors aged 14-15 may work up to 3 hours on a school day and 18 hours during a school week. Minors under 16 must receive a 30-minute break for every 5 hours worked.",
+  "effective_date": "1995-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["16-17", "14-15", "under-14"]
+  },
+  "requirements": {
+    "work_permits": {
+      "description": "Work permits are required for all minors under 18 in Ohio. Ohio has implemented an online work permit system for efficient processing.",
+      "required_ages": "under 18",
+      "issuing_authority": "Ohio Department of Commerce, Division of Industrial Compliance (online system)"
+    },
+    "ages_14_15": {
+      "description": "Minors aged 14-15 may work with significant hour restrictions and a valid work permit.",
+      "max_hours_school_day": 3,
+      "max_hours_nonschool_day": 8,
+      "max_hours_school_week": 18,
+      "max_hours_nonschool_week": 40,
+      "work_permit_required": true
+    },
+    "under_16_breaks": {
+      "description": "Minors under 16 must receive a 30-minute break for every 5 hours worked.",
+      "meal_break_minutes": 30,
+      "meal_break_trigger_hours": 5
+    },
+    "ages_16_17": {
+      "description": "Minors aged 16-17 must have valid work permits and are prohibited from hazardous occupations.",
+      "work_permit_required": true
+    },
+    "under_14": {
+      "description": "Children under 14 are generally prohibited from employment in Ohio, with limited exceptions."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate Ohio's child labor laws may be subject to fines and criminal penalties. The Ohio Department of Commerce enforces these provisions.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Ohio's online work permit system is a modern approach to child labor compliance that simplifies the process for employers and families. The 30-minute break requirement for minors under 16 provides protections beyond the federal standard.",
+  "source_urls": [
+    "https://codes.ohio.gov/ohio-revised-code/chapter-4109",
+    "https://com.ohio.gov/divisions-and-programs/industrial-compliance/wage-and-hour/minor-labor"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

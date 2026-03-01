@@ -1,0 +1,42 @@
+{
+  "id": "vt-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "VT",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Vermont Meal Break Requirements",
+  "statute_citation": "21 V.S.A. § 304",
+  "regulatory_citation": null,
+  "summary": "Vermont requires employers to provide employees with a reasonable opportunity to eat and use toilet facilities during work. While the statute does not mandate a specific duration for meal breaks, employers must ensure that employees have adequate time to eat during their shifts.",
+  "effective_date": "1995-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_opportunity": {
+      "description": "Employers must provide employees with a reasonable opportunity to eat and to use toilet facilities in order to protect the health and hygiene of the employee. Unlike many states, Vermont does not specify a minimum break duration or trigger threshold in hours.",
+      "specific_duration_required": false,
+      "standard": "Reasonable opportunity to eat during work"
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide reasonable meal opportunities may be subject to enforcement action by the Vermont Department of Labor.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Vermont's meal break law is less prescriptive than most states, requiring only a 'reasonable opportunity to eat' rather than a specific break duration. This gives employers flexibility but also creates some ambiguity. Courts and the Department of Labor interpret 'reasonable' based on the specific circumstances of each workplace.",
+  "source_urls": [
+    "https://legislature.vermont.gov/statutes/section/21/005/00304",
+    "https://labor.vermont.gov/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

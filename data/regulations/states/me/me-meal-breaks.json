@@ -1,0 +1,48 @@
+{
+  "id": "me-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "ME",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Maine Meal Break Requirements",
+  "statute_citation": "26 MRS § 601",
+  "regulatory_citation": null,
+  "summary": "Maine requires employers to provide a 30-minute meal break to employees who work 6 or more consecutive hours. The break must be provided as a consecutive rest period and may be unpaid if the employee is completely relieved of duties.",
+  "effective_date": "2009-09-12",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_period": {
+      "trigger_hours": 6,
+      "duration_minutes": 30,
+      "timing": "Must be provided during shifts of 6 or more consecutive hours.",
+      "duty_free": true,
+      "paid": false,
+      "description": "A 30-minute consecutive rest break must be provided to employees who work 6 or more consecutive hours."
+    },
+    "exemptions": {
+      "description": "Exemptions may apply in emergency situations or where only one employee is on duty and the employee is compensated for the break period."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate the meal break requirement may be subject to enforcement action by the Maine Department of Labor.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Maine's meal break law applies broadly across industries with limited exemptions. The 6-hour trigger is a common threshold among states with meal break laws.",
+  "source_urls": [
+    "https://legislature.maine.gov/statutes/26/title26sec601.html",
+    "https://www.maine.gov/labor/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

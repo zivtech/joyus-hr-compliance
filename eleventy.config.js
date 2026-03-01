@@ -2,11 +2,16 @@ import fs from "fs";
 import path from "path";
 
 export default function (eleventyConfig) {
-  // Load all regulation JSON files into a single collection
-  eleventyConfig.addGlobalData("regulations", () => {
+  // Single read of all regulation JSON files — derives regulations,
+  // jurisdictions, and lawTypes from one pass over the filesystem.
+  function loadAllData() {
     const regulationsDir = path.resolve("data/regulations");
     const regulations = [];
     const today = new Date().toISOString().slice(0, 10);
+    const jurKeys = new Set();
+    const jurisdictions = [];
+    const jurCounts = {};
+    const typeSet = new Set();
 
     function walkDir(dir) {
       for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -14,8 +19,7 @@ export default function (eleventyConfig) {
         if (entry.isDirectory()) {
           walkDir(full);
         } else if (entry.name.endsWith(".json")) {
-          const raw = fs.readFileSync(full, "utf-8");
-          const reg = JSON.parse(raw);
+          const reg = JSON.parse(fs.readFileSync(full, "utf-8"));
 
           // Compute status based on dates
           if (reg.effective_date > today) {
@@ -31,27 +35,8 @@ export default function (eleventyConfig) {
           }
 
           regulations.push(reg);
-        }
-      }
-    }
 
-    walkDir(regulationsDir);
-    return regulations;
-  });
-
-  // Unique jurisdictions for browse pages
-  eleventyConfig.addGlobalData("jurisdictions", () => {
-    const regulationsDir = path.resolve("data/regulations");
-    const keys = new Set();
-    const result = [];
-
-    function walkDir(dir) {
-      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-        const full = path.join(dir, entry.name);
-        if (entry.isDirectory()) {
-          walkDir(full);
-        } else if (entry.name.endsWith(".json")) {
-          const reg = JSON.parse(fs.readFileSync(full, "utf-8"));
+          // Derive jurisdiction key
           let key, label;
           if (reg.jurisdiction.level === "federal") {
             key = "federal";
@@ -65,46 +50,45 @@ export default function (eleventyConfig) {
             key = (reg.jurisdiction.state || "unknown").toLowerCase();
             label = reg.jurisdiction.state;
           }
-          if (!keys.has(key)) {
-            keys.add(key);
-            result.push({
-              key,
-              label,
-              level: reg.jurisdiction.level,
-            });
+
+          jurCounts[key] = (jurCounts[key] || 0) + 1;
+          if (!jurKeys.has(key)) {
+            jurKeys.add(key);
+            jurisdictions.push({ key, label, level: reg.jurisdiction.level });
           }
+
+          // Collect law types
+          typeSet.add(reg.law_type);
         }
       }
     }
 
     walkDir(regulationsDir);
-    return result.sort((a, b) => a.label.localeCompare(b.label));
-  });
 
-  // Unique law types for browse pages
-  eleventyConfig.addGlobalData("lawTypes", () => {
-    const regulationsDir = path.resolve("data/regulations");
-    const seen = new Set();
-    const result = [];
-
-    function walkDir(dir) {
-      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-        const full = path.join(dir, entry.name);
-        if (entry.isDirectory()) {
-          walkDir(full);
-        } else if (entry.name.endsWith(".json")) {
-          const reg = JSON.parse(fs.readFileSync(full, "utf-8"));
-          if (!seen.has(reg.law_type)) {
-            seen.add(reg.law_type);
-            result.push(reg.law_type);
-          }
-        }
-      }
+    // Attach counts to jurisdictions
+    for (const jur of jurisdictions) {
+      jur.count = jurCounts[jur.key] || 0;
     }
 
-    walkDir(regulationsDir);
-    return result.sort();
-  });
+    return {
+      regulations,
+      jurisdictions: jurisdictions.sort((a, b) =>
+        a.label.localeCompare(b.label)
+      ),
+      lawTypes: [...typeSet].sort(),
+    };
+  }
+
+  // Cache the single load so all three globals share one read
+  let _cache = null;
+  function getData() {
+    if (!_cache) _cache = loadAllData();
+    return _cache;
+  }
+
+  eleventyConfig.addGlobalData("regulations", () => getData().regulations);
+  eleventyConfig.addGlobalData("jurisdictions", () => getData().jurisdictions);
+  eleventyConfig.addGlobalData("lawTypes", () => getData().lawTypes);
 
   // Build date for footer
   eleventyConfig.addGlobalData("buildDate", () => {

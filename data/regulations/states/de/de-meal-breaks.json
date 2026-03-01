@@ -1,0 +1,48 @@
+{
+  "id": "de-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "DE",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Delaware Meal Break Requirements",
+  "statute_citation": "19 Del. C. § 707",
+  "regulatory_citation": null,
+  "summary": "Delaware requires employers to provide a 30-minute meal break to employees who work shifts of 7.5 or more consecutive hours. The meal break must be given after the first 2 hours of work and before the last 2 hours of the shift. The break may be unpaid if the employee is completely relieved of duties.",
+  "effective_date": "1957-07-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_period": {
+      "trigger_hours": 7.5,
+      "duration_minutes": 30,
+      "timing": "Must be provided after the first 2 hours of work and before the last 2 hours of the shift.",
+      "duty_free": true,
+      "paid": false,
+      "description": "A 30-minute meal break must be provided to employees who work shifts of 7.5 or more consecutive hours. The break must fall after the first 2 hours and before the last 2 hours of the shift."
+    },
+    "exemptions": {
+      "description": "The meal break requirement does not apply where compliance would adversely affect public safety, where only one employee performs the duties of the position, or where the employer's business requires employees to be available to respond to urgent conditions and the employee is compensated for the meal break."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate the meal break requirement may be subject to enforcement action by the Delaware Department of Labor. Employees may file complaints for violations.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Delaware's meal break law closely mirrors Connecticut's in its timing requirements (after the first 2 hours and before the last 2 hours of the shift). The law includes practical exemptions for public safety roles and sole-employee situations.",
+  "source_urls": [
+    "https://delcode.delaware.gov/title19/c007/index.html",
+    "https://labor.delaware.gov/divisions/industrial-affairs/labor-law/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

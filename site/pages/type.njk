@@ -8,16 +8,10 @@ permalink: /type/
 <p>Select a category to see regulations of that type across all jurisdictions.</p>
 
 <div class="browse-grid">
-  {%- set types = [] %}
-  {%- for reg in regulations %}
-    {%- if reg.law_type not in types %}
-      {%- set types = (types.push(reg.law_type), types) %}
-    {%- endif %}
-  {%- endfor %}
-  {%- for type in types | sort %}
+  {%- for type in lawTypes %}
   <a href="/type/{{ type }}/" class="browse-item">
     {{ type | lawTypeLabel }}
-    <span class="browse-count">{{ regulations | where("law_type", type) | length }} regulations</span>
+    <span class="browse-count">{{ regulations | where("law_type", type) | length }} regulation{{ 's' if (regulations | where("law_type", type) | length) !== 1 }}</span>
   </a>
   {%- endfor %}
 </div>

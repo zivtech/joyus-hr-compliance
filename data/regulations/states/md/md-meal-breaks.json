@@ -1,0 +1,53 @@
+{
+  "id": "md-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "MD",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Maryland Retail Establishment Meal Break Requirements",
+  "statute_citation": "Md. Code, Lab. & Empl. § 3-710",
+  "regulatory_citation": null,
+  "summary": "Maryland requires retail employers to provide employees with a 15-minute break for shifts of 4 to 6 consecutive hours, and a 30-minute meal break for shifts of more than 6 consecutive hours. This requirement applies specifically to retail establishments.",
+  "effective_date": "1989-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": ["retail"],
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "short_shift_break": {
+      "trigger_hours_min": 4,
+      "trigger_hours_max": 6,
+      "duration_minutes": 15,
+      "description": "Retail employees who work between 4 and 6 consecutive hours must receive a 15-minute break."
+    },
+    "meal_period": {
+      "trigger_hours": 6,
+      "duration_minutes": 30,
+      "duty_free": true,
+      "paid": false,
+      "description": "Retail employees who work more than 6 consecutive hours must receive a 30-minute meal break. The break may be unpaid if the employee is completely relieved of duties."
+    },
+    "industry_limitation": {
+      "description": "This meal break requirement applies only to retail establishments. Other industries in Maryland are not covered by a state meal break law."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate the retail meal break requirement may be subject to enforcement action by the Maryland Department of Labor.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Maryland's meal break law is limited to retail establishments, making it narrower in scope than most state meal break laws. Non-retail employers in Maryland are not required by state law to provide meal breaks to adult employees.",
+  "source_urls": [
+    "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gle&section=3-710",
+    "https://www.dllr.state.md.us/labor/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

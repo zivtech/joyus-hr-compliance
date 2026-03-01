@@ -1,0 +1,48 @@
+{
+  "id": "nd-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "ND",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "North Dakota Meal Break Requirements",
+  "statute_citation": "N.D. Admin. Code 46-02-07-02",
+  "regulatory_citation": "N.D. Admin. Code 46-02-07-02",
+  "summary": "North Dakota requires employers to provide a 30-minute meal break to employees who work 5 or more consecutive hours. The meal break must be provided within a reasonable time during the shift.",
+  "effective_date": "1990-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_period": {
+      "trigger_hours": 5,
+      "duration_minutes": 30,
+      "timing": "Must be provided within a reasonable time during shifts of 5 or more consecutive hours.",
+      "duty_free": true,
+      "paid": false,
+      "description": "A 30-minute meal break is required for employees who work 5 or more consecutive hours. The break may be unpaid if the employee is completely relieved of duties."
+    },
+    "exemptions": {
+      "description": "The meal break may be waived by mutual consent of the employer and employee if the nature of the work allows the employee to eat while working."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide required meal breaks may be subject to enforcement action by the North Dakota Department of Labor and Human Rights.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "North Dakota's meal break requirement is established through administrative code rather than statute. The requirement applies broadly and has a relatively low 5-hour trigger threshold.",
+  "source_urls": [
+    "https://www.ndlegis.gov/information/acdata/html/46-02-07.html",
+    "https://www.nd.gov/labor/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

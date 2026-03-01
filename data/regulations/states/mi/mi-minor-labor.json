@@ -1,0 +1,61 @@
+{
+  "id": "mi-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "MI",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "Michigan Minor Labor Restrictions",
+  "statute_citation": "MCL 409.101 et seq.",
+  "regulatory_citation": null,
+  "summary": "Michigan requires work permits for all minors under 18. Minors aged 14-15 may work a maximum of 3 hours on a school day and are limited to 6 days per week. Minors aged 16-17 have a 10 PM curfew on school nights. The state regulates hours, times, and occupations for minor workers.",
+  "effective_date": "1978-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["16-17", "14-15", "under-14"]
+  },
+  "requirements": {
+    "work_permits": {
+      "description": "Work permits are required for all minors under 18 in Michigan. Permits are issued by the minor's school district.",
+      "required_ages": "under 18",
+      "issuing_authority": "Local school district"
+    },
+    "ages_14_15": {
+      "description": "Minors aged 14-15 may work limited hours with a valid work permit.",
+      "max_hours_school_day": 3,
+      "max_hours_nonschool_day": 8,
+      "max_days_per_week": 6,
+      "work_permit_required": true,
+      "morning_start": "7:00 AM",
+      "evening_curfew": "9:00 PM"
+    },
+    "ages_16_17": {
+      "description": "Minors aged 16-17 may work with a valid work permit and face curfew restrictions on school nights.",
+      "evening_curfew_school_night": "10:00 PM",
+      "work_permit_required": true,
+      "max_hours_school_week": 24,
+      "max_hours_nonschool_week": 48
+    },
+    "under_14": {
+      "description": "Children under 14 are generally prohibited from employment in Michigan, with limited exceptions for agricultural work and entertainment."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate Michigan's child labor laws may be subject to civil fines and criminal penalties. The Michigan Department of Labor and Economic Opportunity enforces these provisions.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Michigan's child labor laws are among the more detailed in the country, with specific rules for different age groups. The work permit requirement for all minors under 18 provides an additional layer of oversight.",
+  "source_urls": [
+    "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Act-90-of-1978",
+    "https://www.michigan.gov/leo/bureaus-agencies/wd/youth"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

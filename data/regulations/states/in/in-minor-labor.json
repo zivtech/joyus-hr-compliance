@@ -1,0 +1,59 @@
+{
+  "id": "in-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "IN",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "Indiana Minor Labor Restrictions",
+  "statute_citation": "IC 20-33-3",
+  "regulatory_citation": null,
+  "summary": "Indiana restricts the employment of minors with specific rules for each age group. Children under 14 generally cannot work. Minors aged 14-15 may work up to 3 hours on a school day and 18 hours during a school week, and cannot work past 7 PM (9 PM June 1 through Labor Day). Minors aged 16-17 may work up to 8 hours on a school day, 30 hours during a school week (40 hours during non-school weeks), and cannot work past 10 PM on school nights.",
+  "effective_date": "2005-07-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["16-17", "14-15", "under-14"]
+  },
+  "requirements": {
+    "under_14": {
+      "description": "Children under 14 are generally prohibited from employment in Indiana, with limited exceptions for agricultural work, newspaper delivery, and entertainment with permits."
+    },
+    "ages_14_15": {
+      "description": "Minors aged 14-15 may work with significant restrictions on hours and timing.",
+      "max_hours_school_day": 3,
+      "max_hours_nonschool_day": 8,
+      "max_hours_school_week": 18,
+      "max_hours_nonschool_week": 40,
+      "evening_curfew": "7:00 PM during school year; 9:00 PM from June 1 through Labor Day",
+      "morning_start": "7:00 AM",
+      "work_permit_required": true
+    },
+    "ages_16_17": {
+      "description": "Minors aged 16-17 may work with fewer restrictions than younger minors but still face hour and curfew limitations during the school year.",
+      "max_hours_school_day": 8,
+      "max_hours_nonschool_day": 8,
+      "max_hours_school_week": 30,
+      "max_hours_nonschool_week": 40,
+      "evening_curfew_school_night": "10:00 PM",
+      "work_permit_required": true
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate Indiana's child labor laws may be subject to fines. Willful violations may result in higher penalties. The Indiana Department of Labor enforces these provisions.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Indiana requires work permits (employment certificates) for all minors under 18. The state's child labor laws are more detailed than many states, with distinct rules for 14-15 and 16-17 age groups. Indiana does not have general meal break or rest break requirements for adult employees.",
+  "source_urls": [
+    "https://www.in.gov/dol/compliance-and-regulations/child-labor-laws/",
+    "https://iga.in.gov/laws/2024/ic/titles/20#20-33-3"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

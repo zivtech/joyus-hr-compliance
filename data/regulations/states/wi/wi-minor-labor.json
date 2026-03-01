@@ -1,0 +1,62 @@
+{
+  "id": "wi-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "WI",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "Wisconsin Minor Labor Restrictions",
+  "statute_citation": "Wis. Stat. § 103.64-103.82",
+  "regulatory_citation": null,
+  "summary": "Wisconsin requires work permits for all minors under 18. Minors aged 16-17 may work up to 26 hours during a school week and 5 hours on a school day. Minors under 16 must receive a 30-minute break for every 6 hours of work. Supervision is required for minors working after 12:30 AM. The state has detailed restrictions on permissible occupations and work hours for each age group.",
+  "effective_date": "2004-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["16-17", "14-15", "under-14"]
+  },
+  "requirements": {
+    "work_permits": {
+      "description": "Work permits are required for all minors under 18 in Wisconsin. Permits are issued by the minor's school district or the Department of Workforce Development.",
+      "required_ages": "under 18",
+      "issuing_authority": "Local school district or Department of Workforce Development"
+    },
+    "ages_16_17": {
+      "description": "Minors aged 16-17 have restrictions on hours during the school year.",
+      "max_hours_school_day": 5,
+      "max_hours_school_week": 26,
+      "max_hours_nonschool_week": 50,
+      "work_permit_required": true,
+      "late_night_supervision": "Adult supervision required for minors working after 12:30 AM"
+    },
+    "under_16_breaks": {
+      "description": "Minors under 16 must receive a 30-minute break for every 6 hours of work.",
+      "meal_break_minutes": 30,
+      "meal_break_trigger_hours": 6
+    },
+    "ages_14_15": {
+      "description": "Minors aged 14-15 face more restrictive hour limitations than 16-17 year olds and may not work in many occupations.",
+      "work_permit_required": true
+    },
+    "under_14": {
+      "description": "Children under 14 are generally prohibited from employment in Wisconsin, with limited exceptions for agricultural work, domestic work, and entertainment."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate Wisconsin's child labor laws may be subject to forfeitures and fines. The Wisconsin Department of Workforce Development enforces these provisions.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Wisconsin's late-night supervision requirement for minors working after 12:30 AM is a distinctive provision not found in many states. The state's child labor laws are administered by the Department of Workforce Development's Equal Rights Division.",
+  "source_urls": [
+    "https://docs.legis.wisconsin.gov/statutes/statutes/103/iv",
+    "https://dwd.wisconsin.gov/er/laborstandards/childlabor/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

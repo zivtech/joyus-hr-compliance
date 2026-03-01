@@ -1,0 +1,50 @@
+{
+  "id": "ga-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "GA",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "Georgia Minor Labor Restrictions",
+  "statute_citation": "Ga. Code § 39-2-1 et seq.",
+  "regulatory_citation": null,
+  "summary": "Georgia restricts the employment of minors under 16. Minors under 16 may work a maximum of 4 hours on a school day, 8 hours on a non-school day, and 40 hours per week during non-school weeks. During the school year, weekly hours are further limited. Minors under 12 are generally prohibited from working.",
+  "effective_date": "1999-07-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["14-15", "under-14"]
+  },
+  "requirements": {
+    "under_12": {
+      "description": "Children under 12 are generally prohibited from employment in Georgia, with limited exceptions for agricultural work."
+    },
+    "ages_12_15": {
+      "description": "Minors aged 12-15 may work with restrictions on hours and types of employment.",
+      "max_hours_school_day": 4,
+      "max_hours_nonschool_day": 8,
+      "max_hours_per_week": 40,
+      "school_week_restrictions": "Hours are further limited during school weeks. Minors may not work during school hours."
+    },
+    "under_16_general": {
+      "description": "Minors under 16 may not work in hazardous occupations. They are limited to 4 hours on school days, 8 hours on non-school days, and 40 hours per week when school is not in session. Employers must maintain records of minor employees."
+    }
+  },
+  "penalties": {
+    "description": "Violations of Georgia's child labor laws may result in misdemeanor charges. Employers may be fined for each violation.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Georgia does not have general meal break or rest break requirements for adult employees. The state's labor laws for minors focus on hour restrictions and prohibited occupations. Georgia does not require work permits for minor employment.",
+  "source_urls": [
+    "https://www.dol.state.ga.us/public/es/childlabor",
+    "https://law.justia.com/codes/georgia/title-39/chapter-2/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

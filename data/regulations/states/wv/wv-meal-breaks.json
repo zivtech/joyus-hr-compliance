@@ -1,0 +1,48 @@
+{
+  "id": "wv-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "WV",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "West Virginia Meal Break Requirements",
+  "statute_citation": "W. Va. Code § 21-3-10a",
+  "regulatory_citation": null,
+  "summary": "West Virginia requires employers to provide a meal break of at least 20 minutes to employees who work shifts of 6 or more hours. The meal break may be unpaid if the employee is completely relieved of duties during the break period.",
+  "effective_date": "2012-06-08",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_period": {
+      "trigger_hours": 6,
+      "duration_minutes": 20,
+      "timing": "Must be provided during shifts of 6 or more hours.",
+      "duty_free": true,
+      "paid": false,
+      "description": "A 20-minute meal break must be provided to employees who work shifts of 6 or more hours. The break may be unpaid if the employee is completely relieved of all duties."
+    },
+    "exemptions": {
+      "description": "Exemptions may apply based on the nature of the work or if the employer and employee agree to a different arrangement that still provides an opportunity to eat."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide required meal breaks may be subject to enforcement action by the West Virginia Division of Labor.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "West Virginia's 20-minute meal break requirement is shorter than the more common 30-minute standard found in most states with meal break laws. The 6-hour trigger is consistent with many other states.",
+  "source_urls": [
+    "https://code.wvlegislature.gov/21-3-10A/",
+    "https://labor.wv.gov/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

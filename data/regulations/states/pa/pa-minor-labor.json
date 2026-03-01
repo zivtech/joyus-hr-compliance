@@ -1,0 +1,62 @@
+{
+  "id": "pa-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "PA",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "Pennsylvania Minor Labor Restrictions",
+  "statute_citation": "43 P.S. § 40",
+  "regulatory_citation": null,
+  "summary": "Pennsylvania requires work permits for all minors under 18. Minors aged 14-15 may work up to 3 hours on a school day and 18 hours during a school week. Minors aged 16-17 may work up to 8 hours on a school day, 28 hours during a school week, and face a midnight curfew. The state has detailed regulations on permissible occupations for each age group.",
+  "effective_date": "2012-07-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["16-17", "14-15", "under-14"]
+  },
+  "requirements": {
+    "work_permits": {
+      "description": "Work permits (employment certificates) are required for all minors under 18 in Pennsylvania. Permits are issued through the minor's school district.",
+      "required_ages": "under 18",
+      "issuing_authority": "Local school district"
+    },
+    "ages_14_15": {
+      "description": "Minors aged 14-15 may work with significant hour restrictions.",
+      "max_hours_school_day": 3,
+      "max_hours_nonschool_day": 8,
+      "max_hours_school_week": 18,
+      "max_hours_nonschool_week": 40,
+      "work_permit_required": true,
+      "evening_curfew": "7:00 PM (9:00 PM June 1 through Labor Day)"
+    },
+    "ages_16_17": {
+      "description": "Minors aged 16-17 may work with fewer restrictions than younger minors but still face hour limits and a curfew.",
+      "max_hours_school_day": 8,
+      "max_hours_school_week": 28,
+      "max_hours_nonschool_week": 44,
+      "evening_curfew": "Midnight",
+      "work_permit_required": true
+    },
+    "under_14": {
+      "description": "Children under 14 are generally prohibited from employment in Pennsylvania, with exceptions for agricultural work, newspaper delivery, entertainment (with special permits), and domestic work in private homes."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate Pennsylvania's child labor laws may face fines of up to $500 per offense. Willful or repeated violations may result in higher penalties and criminal prosecution.",
+    "per_violation_amount": 500,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Pennsylvania's child labor laws are among the more comprehensive in the country, with detailed rules for each age group. The midnight curfew for 16-17 year olds is relatively lenient compared to some states. Employers should note that Pennsylvania law requires permits even for 16-17 year olds, unlike some states that only require permits for younger minors.",
+  "source_urls": [
+    "https://www.legis.state.pa.us/cfdocs/legis/LI/uconsCheck.cfm?txtType=HTM&yr=1915&sessInd=0&smthLwInd=0&act=177",
+    "https://www.dli.pa.gov/Individuals/Labor-Management-Relations/llc/Pages/Child-Labor-Law.aspx"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}
