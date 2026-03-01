@@ -1,0 +1,116 @@
+{
+  "id": "nyc-fast-food-scheduling",
+  "jurisdiction": {
+    "level": "local",
+    "state": "NY",
+    "locality": "New York City"
+  },
+  "law_type": "predictive-scheduling",
+  "title": "NYC Fair Workweek Law — Fast Food Scheduling",
+  "statute_citation": "NYC Admin. Code § 20-1201 et seq.",
+  "regulatory_citation": "6 RCNY § 7-601 et seq.",
+  "summary": "New York City's Fair Workweek Law for fast food workers requires fast food employers with 30 or more locations nationally to provide work schedules at least 14 days in advance, pay tiered schedule change premiums ($10 to $75) for changes made after the posting deadline, observe an 11-hour minimum rest period between closing and opening shifts, and provide just cause protections after 30 days of employment. The law also requires employers to offer regular schedules and provide a good faith estimate of hours at the time of hire. It is one of the most comprehensive predictive scheduling laws in the United States.",
+  "effective_date": "2017-11-26",
+  "sunset_date": null,
+  "last_amended": "2021-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 30,
+    "industries": ["fast food"],
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "advance_notice": {
+      "days": 14,
+      "description": "Fast food employers must provide employees with their work schedules at least 14 days before the first day of the schedule.",
+      "method": "Written schedule posted in a conspicuous location at the workplace and transmitted to each employee, including electronic transmission."
+    },
+    "schedule_change_premiums": {
+      "description": "Employers must pay schedule change premiums when changes are made to the schedule after the 14-day advance posting deadline. Premiums are tiered based on the amount of notice given and the type of change.",
+      "with_at_least_7_days_notice": {
+        "added_hours": {
+          "premium_dollars": 10,
+          "description": "$10 premium per schedule change when the employer adds hours to a shift or adds a previously unscheduled shift with at least 7 days notice."
+        },
+        "reduced_or_cancelled_hours": {
+          "premium_dollars": 20,
+          "description": "$20 premium per schedule change when the employer cancels a shift or reduces hours with at least 7 days notice."
+        }
+      },
+      "with_less_than_7_days_notice": {
+        "added_hours": {
+          "premium_dollars": 15,
+          "description": "$15 premium per schedule change when the employer adds hours to a shift or adds a previously unscheduled shift with less than 7 days notice."
+        },
+        "reduced_or_cancelled_hours": {
+          "premium_dollars": 45,
+          "description": "$45 premium per schedule change when the employer cancels a shift or reduces hours with less than 7 days notice."
+        }
+      },
+      "with_less_than_24_hours_notice": {
+        "added_hours": {
+          "premium_dollars": 15,
+          "description": "$15 premium per schedule change when the employer adds hours to a shift or adds a previously unscheduled shift with less than 24 hours notice."
+        },
+        "reduced_or_cancelled_hours": {
+          "premium_dollars": 75,
+          "description": "$75 premium per schedule change when the employer cancels a shift or reduces hours with less than 24 hours notice."
+        }
+      },
+      "exemptions": [
+        "Employee-requested schedule changes",
+        "Voluntary shift trades between employees with employer approval",
+        "Reductions due to documented employee misconduct",
+        "Operations cannot begin or continue due to threats to employee safety or property",
+        "Operations cannot begin or continue due to public utility or public transportation failure",
+        "Operations cannot begin or continue due to natural disaster or act of God",
+        "Reduction in operations ordered by a government agency"
+      ]
+    },
+    "clopening_protections": {
+      "minimum_rest_hours": 11,
+      "description": "Fast food employers may not schedule or require an employee to work a closing shift and an opening shift (clopening) when there are fewer than 11 hours between the end of the closing shift and the beginning of the opening shift, unless the employee provides written consent.",
+      "written_consent_required": true,
+      "penalty_for_consent": "If the employee consents to working a clopening shift with less than 11 hours of rest, the employer must pay a $100 premium."
+    },
+    "just_cause_protections": {
+      "eligibility_days": 30,
+      "description": "After 30 days of employment, fast food employees may not be discharged or have their hours significantly reduced except for just cause or a bona fide economic reason. Progressive discipline is required before termination for misconduct.",
+      "progressive_discipline_required": true,
+      "bona_fide_economic_reasons_allowed": true
+    },
+    "regular_schedule_requirement": {
+      "description": "Fast food employers must provide a regular schedule — a recurring weekly schedule of shifts with consistent start and end times that the employee will work each week for an indefinite duration. Changes to the regular schedule require consent or a bona fide business reason."
+    },
+    "good_faith_estimate": {
+      "description": "Employers must provide a good faith written estimate of the employee's expected work schedule at the time of hire, including average weekly hours and expected days and times of shifts."
+    },
+    "coverage_thresholds": {
+      "minimum_locations_nationally": 30,
+      "description": "The law applies to fast food establishments that are part of a chain with 30 or more locations nationally. A fast food establishment is defined as a business that primarily serves food or beverages for immediate consumption, offers limited service, and is part of a chain."
+    },
+    "recordkeeping": {
+      "retention_years": 3,
+      "records_required": [
+        "Work schedules as posted and any subsequent changes",
+        "Written consents for clopening shifts",
+        "Premium payments",
+        "Good faith estimates provided at hire",
+        "Documentation of just cause for any terminations or significant hour reductions"
+      ]
+    }
+  },
+  "penalties": {
+    "description": "The NYC Department of Consumer and Worker Protection (DCWP) enforces the Fair Workweek Law. Violations may result in civil penalties of $500 per affected employee for a first violation and up to $750 per employee for subsequent violations, plus back pay, schedule change premiums owed, and compensatory damages. The DCWP may also order reinstatement. Employers who retaliate against employees exercising their rights face additional penalties.",
+    "per_violation_amount": 500,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "NYC's fast food scheduling law is part of the broader Fair Workweek legislative package, which also includes separate provisions for retail employers (NYC Admin. Code § 20-1201 et seq.). The fast food provisions are among the most protective in the nation, with tiered premium structures and the unique just cause protection for fast food workers after 30 days. The 30-location threshold counts all locations nationally, not just those within New York City. The just cause provision was temporarily suspended by court order but was reinstated on appeal. Fast food is defined broadly to include any establishment that primarily serves food or drink for immediate consumption, offers limited service, and is part of a chain with 30 or more locations.",
+  "source_urls": [
+    "https://www.nyc.gov/site/dca/workers/workersrights/fair-workweek-702.page",
+    "https://rules.cityofnewyork.us/content/section-7-601"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

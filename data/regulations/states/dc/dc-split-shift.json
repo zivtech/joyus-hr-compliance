@@ -1,0 +1,44 @@
+{
+  "id": "dc-split-shift",
+  "jurisdiction": {
+    "level": "state",
+    "state": "DC",
+    "locality": null
+  },
+  "law_type": "split-shift",
+  "title": "District of Columbia Split Shift Premium",
+  "statute_citation": "DC Code § 32-1003",
+  "regulatory_citation": "DC Mun. Regs. tit. 7, § 906",
+  "summary": "The District of Columbia requires employers to pay a split shift premium of one additional hour at the minimum wage rate for each day an employee works a split shift. A split shift is defined as a schedule in which the employee's work hours are not consecutive but are interrupted by a non-working period as established by the employer, excluding bona fide meal and rest periods.",
+  "effective_date": "1993-03-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "split_shift_definition": "A work schedule in which the working hours are not consecutive, with a non-working period established by the employer that is not a bona fide meal or rest period.",
+    "premium": {
+      "amount_hours": 1,
+      "rate": "minimum wage",
+      "frequency": "per split shift worked",
+      "description": "Employees who work a split shift are entitled to one additional hour of pay at the applicable DC minimum wage rate for each day a split shift is worked."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to pay the split shift premium may be liable for back wages, liquidated damages, and administrative penalties imposed by the DC Department of Employment Services.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "The DC minimum wage is among the highest in the nation and is adjusted annually. The split shift premium is calculated at the DC minimum wage rate regardless of the employee's regular rate of pay. Bona fide meal and rest periods do not create a split shift.",
+  "source_urls": [
+    "https://code.dccouncil.gov/us/dc/council/code/sections/32-1003",
+    "https://does.dc.gov/service/office-wage-hour-compliance"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

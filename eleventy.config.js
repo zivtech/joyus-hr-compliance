@@ -52,18 +52,24 @@ export default function (eleventyConfig) {
           walkDir(full);
         } else if (entry.name.endsWith(".json")) {
           const reg = JSON.parse(fs.readFileSync(full, "utf-8"));
-          const key =
-            reg.jurisdiction.level === "federal"
-              ? "federal"
-              : (reg.jurisdiction.state || "unknown").toLowerCase();
+          let key, label;
+          if (reg.jurisdiction.level === "federal") {
+            key = "federal";
+            label = "Federal";
+          } else if (reg.jurisdiction.level === "local") {
+            key = `${reg.jurisdiction.locality}-${reg.jurisdiction.state}`
+              .toLowerCase()
+              .replace(/\s+/g, "-");
+            label = `${reg.jurisdiction.locality}, ${reg.jurisdiction.state}`;
+          } else {
+            key = (reg.jurisdiction.state || "unknown").toLowerCase();
+            label = reg.jurisdiction.state;
+          }
           if (!keys.has(key)) {
             keys.add(key);
             result.push({
               key,
-              label:
-                reg.jurisdiction.level === "federal"
-                  ? "Federal"
-                  : reg.jurisdiction.state,
+              label,
               level: reg.jurisdiction.level,
             });
           }
@@ -178,6 +184,45 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("jsonStringify", (val) => {
     return JSON.stringify(val);
+  });
+
+  // Render a requirements object as readable HTML
+  eleventyConfig.addFilter("renderRequirements", (obj) => {
+    function formatKey(key) {
+      return key
+        .replace(/_/g, " ")
+        .replace(/\b\w/g, (c) => c.toUpperCase());
+    }
+
+    function formatValue(val) {
+      if (val === true) return '<span class="req-bool req-true">Yes</span>';
+      if (val === false) return '<span class="req-bool req-false">No</span>';
+      if (val === null || val === undefined) return '<span class="req-null">N/A</span>';
+      if (typeof val === "number") return `<span class="req-number">${val}</span>`;
+      return String(val);
+    }
+
+    function renderObj(o, depth) {
+      if (typeof o !== "object" || o === null || Array.isArray(o)) {
+        return formatValue(o);
+      }
+
+      let html = '<dl class="req-dl' + (depth > 0 ? " req-nested" : "") + '">';
+      for (const [k, v] of Object.entries(o)) {
+        html += `<dt>${formatKey(k)}</dt>`;
+        if (typeof v === "object" && v !== null && !Array.isArray(v)) {
+          html += `<dd>${renderObj(v, depth + 1)}</dd>`;
+        } else if (Array.isArray(v)) {
+          html += `<dd>${v.map((item) => (typeof item === "object" ? renderObj(item, depth + 1) : formatValue(item))).join(", ")}</dd>`;
+        } else {
+          html += `<dd>${formatValue(v)}</dd>`;
+        }
+      }
+      html += "</dl>";
+      return html;
+    }
+
+    return renderObj(obj, 0);
   });
 
   // Pass through static assets

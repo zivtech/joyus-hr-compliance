@@ -23,28 +23,15 @@ title: Search
   <div>
     <h3>By Jurisdiction</h3>
     <ul>
-      <li><a href="/jurisdiction/federal/">Federal</a></li>
-      {%- set states = [] %}
-      {%- for reg in regulations %}
-        {%- if reg.jurisdiction.state and reg.jurisdiction.state not in states %}
-          {%- set states = (states.push(reg.jurisdiction.state), states) %}
-        {%- endif %}
-      {%- endfor %}
-      {%- for state in states | sort %}
-      <li><a href="/jurisdiction/{{ state | lower }}/">{{ state }}</a></li>
+      {%- for jur in jurisdictions %}
+      <li><a href="/jurisdiction/{{ jur.key }}/">{{ jur.label }}</a></li>
       {%- endfor %}
     </ul>
   </div>
   <div>
     <h3>By Law Type</h3>
     <ul>
-      {%- set types = [] %}
-      {%- for reg in regulations %}
-        {%- if reg.law_type not in types %}
-          {%- set types = (types.push(reg.law_type), types) %}
-        {%- endif %}
-      {%- endfor %}
-      {%- for type in types | sort %}
+      {%- for type in lawTypes %}
       <li><a href="/type/{{ type }}/">{{ type | lawTypeLabel }}</a></li>
       {%- endfor %}
     </ul>
@@ -55,13 +42,13 @@ title: Search
 <ul class="reg-list">
   {%- for reg in regulations | sortBy("title") %}
   <li class="reg-card" data-pagefind-body>
-    <div class="reg-card-header" data-pagefind-filter="status:{{ reg.computed_status }}" data-pagefind-filter="jurisdiction:{{ reg.jurisdiction | jurisdictionLabel }}" data-pagefind-filter="type:{{ reg.law_type | lawTypeLabel }}">
+    <div class="reg-card-header">
       <h3 class="reg-card-title"><a href="/regulation/{{ reg.id }}/">{{ reg.title }}</a></h3>
-      <span class="badge {{ reg.computed_status | statusBadgeClass }}">{{ reg.computed_status }}</span>
+      <span class="badge {{ reg.computed_status | statusBadgeClass }}" data-pagefind-filter="status:{{ reg.computed_status }}">{{ reg.computed_status }}</span>
     </div>
     <div class="reg-card-meta">
-      <span>{{ reg.jurisdiction | jurisdictionLabel }}</span>
-      <span>{{ reg.law_type | lawTypeLabel }}</span>
+      <span data-pagefind-filter="jurisdiction:{{ reg.jurisdiction | jurisdictionLabel }}">{{ reg.jurisdiction | jurisdictionLabel }}</span>
+      <span data-pagefind-filter="type:{{ reg.law_type | lawTypeLabel }}">{{ reg.law_type | lawTypeLabel }}</span>
       <span>{{ reg.statute_citation }}</span>
     </div>
     <p data-pagefind-meta="title:{{ reg.title }}">{{ reg.summary }}</p>

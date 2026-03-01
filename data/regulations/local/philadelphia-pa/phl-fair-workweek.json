@@ -1,0 +1,89 @@
+{
+  "id": "phl-fair-workweek",
+  "jurisdiction": {
+    "level": "local",
+    "state": "PA",
+    "locality": "Philadelphia"
+  },
+  "law_type": "predictive-scheduling",
+  "title": "Philadelphia Fair Workweek Employment Standards",
+  "statute_citation": "Phila. Code § 9-4601 et seq.",
+  "regulatory_citation": null,
+  "summary": "Philadelphia's Fair Workweek ordinance requires covered employers in the retail, hospitality, and food service industries with 250 or more employees and 30 or more locations worldwide to provide work schedules at least 14 days in advance. The law includes predictability pay for schedule changes made after the posting deadline, a 9-hour minimum rest period between shifts (clopening protections) with a $40 premium for voluntary waivers, and a requirement to offer additional hours to existing employees before hiring new workers. The ordinance aims to provide greater stability and predictability for workers in scheduling-intensive industries.",
+  "effective_date": "2020-04-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 250,
+    "industries": ["retail", "hospitality", "food service"],
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "advance_notice": {
+      "days": 14,
+      "description": "Covered employers must provide employees with their work schedules at least 14 days before the first day of the schedule.",
+      "method": "Written notice posted in a conspicuous and accessible location or transmitted electronically to each affected employee."
+    },
+    "predictability_pay": {
+      "description": "Employers must pay predictability pay when changes are made to an employee's schedule after the 14-day advance posting deadline.",
+      "changes_after_deadline": {
+        "added_or_changed_hours": "One hour of pay at the employee's regular rate for each shift changed.",
+        "reduced_or_cancelled_hours": "One hour of pay at the employee's regular rate for each shift reduced or cancelled."
+      },
+      "exemptions": [
+        "Employee-requested changes",
+        "Voluntary shift trades between employees with employer knowledge",
+        "Acts of God or unsafe conditions",
+        "Employer operations cannot begin or continue due to threats to employees or property",
+        "Mutually agreed-upon schedule changes documented in writing"
+      ]
+    },
+    "clopening_protections": {
+      "minimum_rest_hours": 9,
+      "description": "Employees may decline to work any shift that begins less than 9 hours after the end of the employee's previous shift.",
+      "voluntary_waiver_premium": {
+        "amount_dollars": 40,
+        "description": "If an employee voluntarily consents in writing to work a shift that begins less than 9 hours after the end of the prior shift, the employer must pay a $40 premium in addition to the employee's regular pay."
+      }
+    },
+    "access_to_hours": {
+      "offer_window_hours": 72,
+      "description": "Before hiring new employees, using temporary staffing agencies, or subcontractors, covered employers must offer available shifts to existing qualified employees and allow a minimum 72-hour response window for employees to accept or decline the additional hours."
+    },
+    "good_faith_estimate": {
+      "description": "Employers must provide a good faith written estimate of the employee's expected work schedule at the time of hire, including average weekly hours and expected days, times, and locations of shifts."
+    },
+    "notice_of_rights": {
+      "description": "Employers must post a notice of employee rights under the Fair Workweek ordinance in a conspicuous location at each workplace and provide a copy to each employee at the time of hire."
+    },
+    "coverage_thresholds": {
+      "minimum_employees": 250,
+      "minimum_locations": 30,
+      "description": "The ordinance applies to employers in the retail, hospitality, and food service industries with 250 or more employees and 30 or more locations worldwide."
+    },
+    "recordkeeping": {
+      "retention_years": 3,
+      "records_required": [
+        "Work schedules",
+        "Good faith estimates",
+        "Written consents for clopening waivers",
+        "Offers of additional hours to existing employees",
+        "Payroll records showing predictability pay"
+      ]
+    }
+  },
+  "penalties": {
+    "description": "The Philadelphia Office of Labor enforces the Fair Workweek ordinance. Employers who violate the ordinance may be subject to fines, required to pay back wages and predictability pay owed, and may face additional administrative penalties. Employees may also file complaints with the Office of Labor. Retaliation against employees exercising their rights is prohibited and subject to additional penalties.",
+    "per_violation_amount": 2000,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Philadelphia's Fair Workweek ordinance was originally scheduled to take effect on January 1, 2020, but enforcement was delayed until April 1, 2020. The dual threshold of 250 employees AND 30 locations means the law primarily targets large chain retailers and restaurant franchises. The $40 flat-rate clopening premium is unique among predictive scheduling laws, which more commonly use a multiplier of the employee's hourly rate. The 72-hour offer window for access to hours is longer than comparable provisions in other jurisdictions.",
+  "source_urls": [
+    "https://www.phila.gov/media/20191212110aborstandards-702.pdf",
+    "https://www.phila.gov/departments/department-of-labor/fair-workweek/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "nj-reporting-time",
+  "jurisdiction": {
+    "level": "state",
+    "state": "NJ",
+    "locality": null
+  },
+  "law_type": "reporting-time-pay",
+  "title": "New Jersey Call-In Pay",
+  "statute_citation": "N.J.S.A. 34:11-56a4",
+  "regulatory_citation": "N.J.A.C. 12:56-5.4",
+  "summary": "New Jersey requires employers to pay one hour of call-in pay at the applicable minimum wage rate for each day an employee reports to work as scheduled but receives no work assignment. This applies when the employee is ready, willing, and able to work but the employer fails to provide any work. The provision is established through administrative regulation implementing the state wage and hour law.",
+  "effective_date": "1966-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "call_in_pay": {
+      "minimum_hours": 1,
+      "rate": "minimum wage",
+      "trigger": "Employee reports to work as scheduled but receives no work assignment.",
+      "description": "One hour of pay at the applicable minimum wage rate must be provided for each day an employee reports to work as scheduled but is not given any work assignment."
+    },
+    "conditions": {
+      "employee_availability": "The employee must be ready, willing, and able to perform work at the time of reporting.",
+      "no_work_provided": "The call-in pay applies when the employer fails to provide any work to the reporting employee."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide call-in pay may be liable for unpaid wages, liquidated damages, and administrative penalties imposed by the New Jersey Department of Labor and Workforce Development.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 6
+  },
+  "notes": "New Jersey's call-in pay is relatively modest at one hour of minimum wage pay, which is among the lowest reporting time pay provisions in the country. The provision specifically covers situations where no work at all is provided, which is a narrower trigger than some other states that require minimum pay whenever fewer than a certain number of hours are worked.",
+  "source_urls": [
+    "https://www.nj.gov/labor/wageandhour/tools-resources/laws/wageandhourlaws.shtml",
+    "https://www.nj.gov/labor/wageandhour/content/wage_and_hour_compliance_FAQs.html"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "nh-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "NH",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "New Hampshire Meal Break Requirements",
+  "statute_citation": "RSA 275:30-a",
+  "regulatory_citation": null,
+  "summary": "New Hampshire requires employers to provide a 30-minute meal break to employees who work more than 5 consecutive hours. The meal break may be waived by mutual agreement between the employer and the employee. If the employee is not completely relieved of duties during the meal break, the time must be paid as hours worked.",
+  "effective_date": "1987-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_period": {
+      "trigger_hours": 5,
+      "duration_minutes": 30,
+      "duty_free": true,
+      "description": "A 30-minute meal break must be provided to employees who work more than 5 consecutive hours. The employee must be relieved of all duties during the meal break."
+    },
+    "waiver": {
+      "allowed": true,
+      "method": "Mutual agreement between employer and employee.",
+      "description": "The meal break requirement may be waived if both the employer and the employee mutually agree. The waiver does not need to be in writing but should be a genuine voluntary agreement."
+    },
+    "on_duty_meal": {
+      "paid": true,
+      "description": "If the employee is required to perform any duties during the meal break or is not completely relieved of responsibilities, the meal period must be compensated as hours worked."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide required meal breaks may face enforcement action by the New Hampshire Department of Labor. Employees may file complaints for violations.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "New Hampshire's meal break law is notable for its waiver provision, which allows employers and employees to mutually agree to skip the meal break. This provides flexibility for short shifts or workplaces where continuous operations make breaks impractical, while still protecting employees who want their break time.",
+  "source_urls": [
+    "https://www.gencourt.state.nh.us/rsa/html/XXIII/275/275-30-a.htm",
+    "https://www.nh.gov/labor/inspection/wage-hour/index.htm"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

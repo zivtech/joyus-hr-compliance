@@ -1,0 +1,47 @@
+{
+  "id": "mn-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "MN",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Minnesota Meal Break Requirements",
+  "statute_citation": "Minn. Stat. § 177.254",
+  "regulatory_citation": null,
+  "summary": "Minnesota requires employers to provide employees with sufficient time to eat a meal for shifts of 8 or more consecutive hours. The employer must provide a reasonable period of time for the meal break. While the statute does not specify an exact duration, the break must be long enough for the employee to consume a meal. The break need not be paid if the employee is completely relieved of duties.",
+  "effective_date": "1988-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_period": {
+      "trigger_hours": 8,
+      "duration_minutes": null,
+      "duration_description": "Sufficient time to eat a meal, as determined to be reasonable under the circumstances.",
+      "duty_free": true,
+      "description": "Employees who work 8 or more consecutive hours must be provided sufficient time to eat a meal. The statute requires a reasonable time but does not specify an exact number of minutes."
+    },
+    "timing": {
+      "description": "The meal break must be provided at a reasonable time during the shift. While no specific window is mandated, it should be provided at a time that allows the employee to eat a meal during the work period."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide meal breaks may face enforcement action by the Minnesota Department of Labor and Industry. Penalties may include fines and orders to comply.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "Minnesota's meal break statute is less prescriptive than many other states in that it does not specify an exact duration or a precise timing window. The standard is reasonableness. In practice, most employers provide at least 30 minutes. The Minnesota Department of Labor and Industry may consider the specific circumstances of the workplace when evaluating compliance.",
+  "source_urls": [
+    "https://www.revisor.mn.gov/statutes/cite/177.254",
+    "https://www.dli.mn.gov/business/employment-practices/work-breaks-background"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

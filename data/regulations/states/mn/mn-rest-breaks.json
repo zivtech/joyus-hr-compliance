@@ -1,0 +1,48 @@
+{
+  "id": "mn-rest-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "MN",
+    "locality": null
+  },
+  "law_type": "rest-breaks",
+  "title": "Minnesota Rest Break and Restroom Time Requirements",
+  "statute_citation": "Minn. Stat. § 177.253",
+  "regulatory_citation": null,
+  "summary": "Minnesota requires employers to provide adequate restroom time within each 4 consecutive hours of work. In addition, MNOSHA guidance establishes that a 10-minute paid rest break per 4 hours of work is standard practice. The restroom time requirement is a statutory mandate, while the 10-minute rest break is enforced through department guidance and workplace safety standards.",
+  "effective_date": "1988-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "restroom_time": {
+      "frequency": "Within each 4 consecutive hours of work",
+      "paid": true,
+      "description": "Employers must allow employees adequate time to use restroom facilities within each 4 consecutive hours of work. This time is compensated as hours worked."
+    },
+    "rest_period": {
+      "duration_minutes": 10,
+      "frequency": "Per 4 hours worked",
+      "paid": true,
+      "description": "MNOSHA guidance establishes that a paid 10-minute rest break per 4 hours of work is standard practice. While the statute specifically mandates restroom time, the department interprets and enforces this as including a general rest break."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide adequate restroom time may face enforcement action by the Minnesota Department of Labor and Industry and MNOSHA. Penalties may include fines and workplace safety orders.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "The statutory language specifically addresses restroom time rather than general rest breaks, but MNOSHA guidance has established the 10-minute rest break standard as best practice that is actively enforced. Employers should provide both adequate restroom access and periodic rest breaks to ensure compliance with both the statute and department guidance.",
+  "source_urls": [
+    "https://www.revisor.mn.gov/statutes/cite/177.253",
+    "https://www.dli.mn.gov/business/employment-practices/work-breaks-background"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

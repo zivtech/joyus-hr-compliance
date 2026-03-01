@@ -1,0 +1,44 @@
+{
+  "id": "nv-rest-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "NV",
+    "locality": null
+  },
+  "law_type": "rest-breaks",
+  "title": "Nevada Rest Break Requirements",
+  "statute_citation": "NRS 608.019",
+  "regulatory_citation": null,
+  "summary": "Nevada requires employers to provide a paid 10-minute rest break for every 4 hours of work, or major fraction thereof. The rest break must be provided as close to the middle of the 4-hour work period as practicable. Rest breaks are counted as hours worked and must be compensated.",
+  "effective_date": "2007-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "rest_period": {
+      "duration_minutes": 10,
+      "frequency": "Per 4 hours worked or major fraction thereof",
+      "paid": true,
+      "timing": "As close to the middle of the 4-hour work period as practicable.",
+      "description": "A paid 10-minute rest break must be provided for every 4 hours of work or major fraction thereof. The break should be scheduled near the midpoint of each 4-hour period."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide required rest breaks may face enforcement action by the Nevada Labor Commissioner, including fines and orders to comply.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "Nevada's rest break requirement is similar to those in California, Colorado, and Washington. The 'major fraction thereof' language means that work periods of more than 2 hours beyond a multiple of 4 trigger an additional rest break. Rest periods are paid time and may not be combined with meal breaks or used to shorten the workday.",
+  "source_urls": [
+    "https://www.leg.state.nv.us/nrs/nrs-608.html#NRS608Sec019",
+    "https://labor.nv.gov/Employer/Employer_Information/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "la-fair-work-week",
+  "jurisdiction": {
+    "level": "local",
+    "state": "CA",
+    "locality": "Los Angeles"
+  },
+  "law_type": "predictive-scheduling",
+  "title": "Los Angeles Fair Work Week Ordinance",
+  "statute_citation": "LAMC § 188.00 et seq.",
+  "regulatory_citation": null,
+  "summary": "The Los Angeles Fair Work Week Ordinance requires covered retail employers (NAICS codes 44-45) with 300 or more employees globally to provide work schedules at least 14 days in advance and pay predictability pay for schedule changes made after the posting deadline. The law includes a 10-hour minimum rest period between shifts with 1.5 times pay for voluntary shorter rest periods, a requirement to provide a good faith estimate of hours at the time of hire, and protections against retaliation for exercising rights under the ordinance.",
+  "effective_date": "2023-04-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 300,
+    "industries": ["retail"],
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "advance_notice": {
+      "days": 14,
+      "description": "Covered employers must provide employees with their work schedules at least 14 calendar days before the first day of the schedule.",
+      "method": "Written notice posted in a conspicuous and accessible location at each worksite, or transmitted electronically to affected employees."
+    },
+    "predictability_pay": {
+      "description": "Employers must pay predictability pay when changes are made to an employee's schedule after the 14-day advance posting deadline.",
+      "schedule_changes": {
+        "time_changes": {
+          "premium": "One hour of pay at the employee's regular rate of pay for each change to the date, time, or location of a shift with no loss of hours.",
+          "description": "Applies when the employer changes the date, time, or location of a work shift but does not reduce the total number of hours."
+        },
+        "hour_reductions_or_cancellations": {
+          "premium": "One-half of the employee's regular rate of pay for each hour the employee does not work as a result of the reduction or cancellation.",
+          "description": "Applies when the employer reduces or cancels scheduled hours."
+        }
+      },
+      "exemptions": [
+        "Employee-requested schedule changes",
+        "Voluntary shift trades between employees",
+        "Acts of God, public utility failures, or other causes not within the employer's control",
+        "Mutually agreed-upon schedule modifications",
+        "Reduction of hours due to documented employee misconduct or disciplinary action"
+      ]
+    },
+    "clopening_protections": {
+      "minimum_rest_hours": 10,
+      "description": "Employees have the right to decline any work hours that are scheduled less than 10 hours after the end of the previous day's shift (clopening shifts).",
+      "voluntary_consent_premium": {
+        "rate_multiplier": 1.5,
+        "description": "If an employee voluntarily consents to work during the 10-hour rest period, the employer must pay the employee 1.5 times the employee's regular rate of pay for all hours worked during that rest period."
+      }
+    },
+    "good_faith_estimate": {
+      "description": "Employers must provide a good faith written estimate of the employee's work schedule at the time of hire, including the average number of weekly hours the employee can expect, and the expected days, times, and locations of work.",
+      "update_trigger": "Employers must update the good faith estimate when there is a significant change to the employee's schedule."
+    },
+    "right_to_additional_hours": {
+      "description": "Employers must offer additional hours to existing qualified employees before hiring new employees, using temporary staffing agencies, or subcontracting for additional labor.",
+      "posting_requirement": "Available shifts must be posted for at least 72 hours before being filled by new hires."
+    },
+    "coverage_thresholds": {
+      "minimum_employees": 300,
+      "industry_codes": "NAICS 44-45 (Retail Trade)",
+      "description": "The ordinance applies to retail trade employers (NAICS sector codes 44-45) with 300 or more employees globally."
+    },
+    "anti_retaliation": {
+      "description": "Employers may not retaliate against any employee for exercising rights protected under the Fair Work Week Ordinance, including requesting schedule changes, declining clopening shifts, or filing a complaint."
+    },
+    "recordkeeping": {
+      "retention_years": 3,
+      "records_required": [
+        "Work schedules as posted and any subsequent changes",
+        "Good faith estimates provided at hire",
+        "Written consents for rest period waivers",
+        "Offers of additional hours to existing employees",
+        "Payroll records documenting predictability pay"
+      ]
+    }
+  },
+  "penalties": {
+    "description": "The Los Angeles Office of Wage Standards enforces the Fair Work Week Ordinance. Violations may result in administrative fines, orders to pay back wages and predictability pay owed, reinstatement, and compensatory damages. Employers who retaliate against employees exercising their rights face additional penalties. Employees may also pursue private legal action.",
+    "per_violation_amount": 500,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "The Los Angeles Fair Work Week Ordinance took effect on April 1, 2023, making LA the largest U.S. city to adopt predictive scheduling regulations for the retail sector. The ordinance specifically uses NAICS codes 44-45 to define covered retail employers, which includes general merchandise stores, food and beverage stores, clothing stores, electronics stores, and other retail establishments. The 300-employee threshold counts all employees globally, not just those working in Los Angeles. The 1.5x pay multiplier for clopening consent mirrors Oregon's statewide approach, in contrast to Philadelphia's flat $40 premium.",
+  "source_urls": [
+    "https://wagesla.lacity.org/fair-work-week",
+    "https://clkrep.lacity.org/onlinedocs/2020/20-1538_ord_187396_12-13-22.pdf"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

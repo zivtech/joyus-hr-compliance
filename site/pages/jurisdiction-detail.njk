@@ -14,7 +14,13 @@ eleventyComputed:
 
 <ul class="reg-list">
   {%- for reg in regulations | sortBy("title") %}
-    {%- set regKey = 'federal' if reg.jurisdiction.level === 'federal' else reg.jurisdiction.state | lower %}
+    {%- if reg.jurisdiction.level === 'federal' %}
+      {%- set regKey = 'federal' %}
+    {%- elif reg.jurisdiction.level === 'local' %}
+      {%- set regKey = (reg.jurisdiction.locality ~ '-' ~ reg.jurisdiction.state) | lower | replace(' ', '-') %}
+    {%- else %}
+      {%- set regKey = reg.jurisdiction.state | lower %}
+    {%- endif %}
     {%- if regKey === jur.key %}
   <li class="reg-card">
     <div class="reg-card-header">

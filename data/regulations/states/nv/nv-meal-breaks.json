@@ -1,0 +1,50 @@
+{
+  "id": "nv-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "NV",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Nevada Meal Break Requirements",
+  "statute_citation": "NRS 608.019",
+  "regulatory_citation": null,
+  "summary": "Nevada requires employers to provide a 30-minute meal break to employees who work a continuous period of 8 or more hours. The meal break should be provided at a reasonable time during the shift. If the nature of the work prevents the employee from being completely relieved of all duties, the on-duty meal period must be paid.",
+  "effective_date": "2007-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_period": {
+      "trigger_hours": 8,
+      "duration_minutes": 30,
+      "continuous_work": true,
+      "duty_free": true,
+      "description": "A 30-minute meal break must be provided to employees who work 8 or more continuous hours. The employee should be completely relieved of duties during the break."
+    },
+    "on_duty_meal": {
+      "allowed": true,
+      "conditions": "Permitted only when the nature of the work prevents the employee from being completely relieved of all duties during the meal period.",
+      "paid": true,
+      "description": "If the employee cannot be relieved of duties due to the nature of the work, the meal period must be paid as hours worked."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide required meal breaks may face enforcement action by the Nevada Labor Commissioner, including fines and orders to comply.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "Nevada's meal break requirement is triggered at 8 continuous hours, which is a higher threshold than many states (California requires a meal break by the 5th hour, for example). The continuous work requirement means that scheduled breaks during the shift may reset the clock for purposes of this provision.",
+  "source_urls": [
+    "https://www.leg.state.nv.us/nrs/nrs-608.html#NRS608Sec019",
+    "https://labor.nv.gov/Employer/Employer_Information/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

@@ -14,10 +14,12 @@ eleventyComputed:
 
   <div class="reg-card-header">
     <h1 data-pagefind-meta="title">{{ reg.title }}</h1>
-    <span class="badge {{ reg.computed_status | statusBadgeClass }}" data-pagefind-filter="status">{{ reg.computed_status }}</span>
+    <span class="badge {{ reg.computed_status | statusBadgeClass }}" data-pagefind-filter="status:{{ reg.computed_status }}">{{ reg.computed_status }}</span>
   </div>
 
-  <p data-pagefind-filter="jurisdiction:{{ reg.jurisdiction | jurisdictionLabel }}" data-pagefind-filter="type:{{ reg.law_type | lawTypeLabel }}">{{ reg.summary }}</p>
+  <p>{{ reg.summary }}</p>
+  <span hidden data-pagefind-filter="jurisdiction:{{ reg.jurisdiction | jurisdictionLabel }}"></span>
+  <span hidden data-pagefind-filter="type:{{ reg.law_type | lawTypeLabel }}"></span>
 
   <div class="meta-grid">
     <div class="meta-item">
@@ -96,7 +98,7 @@ eleventyComputed:
 
   <h2>Requirements</h2>
   <div class="requirements-block">
-    <pre>{{ reg.requirements | jsonStringify }}</pre>
+    {{ reg.requirements | renderRequirements | safe }}
   </div>
 
   {% if reg.penalties %}
