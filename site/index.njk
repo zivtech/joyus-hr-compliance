@@ -6,6 +6,21 @@ title: Search
 <h1>U.S. Labor Law Compliance Database</h1>
 <p class="search-intro">Search federal, state, and local scheduling compliance regulations — overtime, breaks, minor labor, predictive scheduling, and more.</p>
 
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-number">{{ regulations | length }}</span>
+    <span class="stat-label">Regulations</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">{{ jurisdictions | length }}</span>
+    <span class="stat-label">Jurisdictions</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">{{ lawTypes | length }}</span>
+    <span class="stat-label">Law Types</span>
+  </div>
+</div>
+
 <div id="search"></div>
 <script>
   window.addEventListener('DOMContentLoaded', () => {
@@ -19,7 +34,7 @@ title: Search
 </script>
 
 <h2>Browse</h2>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+<div class="browse-columns">
   <div>
     <h3>By Jurisdiction</h3>
     <ul>

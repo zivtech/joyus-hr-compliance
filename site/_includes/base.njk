@@ -5,21 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }} — Joyus HR Compliance</title>
   <meta name="description" content="{{ description | default('Searchable database of U.S. labor law scheduling compliance regulations.') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="site-title"><a href="/">Joyus HR Compliance</a></h1>
-      <nav class="site-nav">
+      <h1 class="site-title">
+        <a href="/">
+          <span class="site-title-icon" aria-hidden="true">&#xA7;</span>
+          Joyus HR Compliance
+        </a>
+      </h1>
+      <nav class="site-nav" aria-label="Main navigation">
         <a href="/">Search</a>
-        <a href="/jurisdiction/">By Jurisdiction</a>
-        <a href="/type/">By Law Type</a>
+        <a href="/jurisdiction/">Jurisdictions</a>
+        <a href="/type/">Law Types</a>
         <a href="/disclaimer/">Disclaimer</a>
       </nav>
     </div>
   </header>
+  <div class="header-accent" aria-hidden="true"></div>
 
   <main>
     <div class="container">
@@ -30,7 +39,7 @@
   <footer class="site-footer">
     <div class="container">
       <p class="disclaimer-text">This database is for informational purposes only and does not constitute legal advice. Laws change frequently. Verify all information against official sources before relying on it.</p>
-      <p>Last built: {{ buildDate }} · <a href="/disclaimer/">Full disclaimer</a> · <a href="https://github.com/zivtech/joyus-hr-compliance">Source on GitHub</a></p>
+      <p>Last built: {{ buildDate }} &middot; <a href="/disclaimer/">Full disclaimer</a> &middot; <a href="https://github.com/zivtech/joyus-hr-compliance">Source on GitHub</a></p>
     </div>
   </footer>
 

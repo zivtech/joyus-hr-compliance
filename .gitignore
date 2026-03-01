@@ -10,3 +10,6 @@ _site/
 
 # Logs
 *.log
+
+# OMC local state
+.omc/
