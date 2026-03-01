@@ -1,0 +1,38 @@
+---
+pagination:
+  data: jurisdictions
+  size: 1
+  alias: jur
+permalink: /jurisdiction/{{ jur.key }}/
+layout: base.njk
+eleventyComputed:
+  title: "{{ jur.label }} Regulations"
+---
+
+<h1>{{ jur.label }} Regulations</h1>
+<p><a href="/jurisdiction/">&larr; All jurisdictions</a></p>
+
+<ul class="reg-list">
+  {%- for reg in regulations | sortBy("title") %}
+    {%- if reg.jurisdiction.level === 'federal' %}
+      {%- set regKey = 'federal' %}
+    {%- elif reg.jurisdiction.level === 'local' %}
+      {%- set regKey = (reg.jurisdiction.locality ~ '-' ~ reg.jurisdiction.state) | lower | replace(' ', '-') %}
+    {%- else %}
+      {%- set regKey = reg.jurisdiction.state | lower %}
+    {%- endif %}
+    {%- if regKey === jur.key %}
+  <li class="reg-card">
+    <div class="reg-card-header">
+      <h3 class="reg-card-title"><a href="/regulation/{{ reg.id }}/">{{ reg.title }}</a></h3>
+      <span class="badge {{ reg.computed_status | statusBadgeClass }}">{{ reg.computed_status }}</span>
+    </div>
+    <div class="reg-card-meta">
+      <span>{{ reg.law_type | lawTypeLabel }}</span>
+      <span>{{ reg.statute_citation }}</span>
+    </div>
+    <p>{{ reg.summary }}</p>
+  </li>
+    {%- endif %}
+  {%- endfor %}
+</ul>

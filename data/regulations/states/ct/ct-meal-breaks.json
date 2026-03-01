@@ -1,0 +1,49 @@
+{
+  "id": "ct-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "CT",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Connecticut Meal Break Requirements",
+  "statute_citation": "Conn. Gen. Stat. § 31-51ii",
+  "regulatory_citation": null,
+  "summary": "Connecticut requires employers to provide a 30-minute meal break to employees who work a shift of 7.5 or more consecutive hours. The meal break must be provided after the first 2 hours of work and before the last 2 hours of work. The break may be unpaid if the employee is completely relieved of all duties. Employers in certain industries may apply to the Labor Commissioner for exemptions.",
+  "effective_date": "2003-10-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_period": {
+      "trigger_hours": 7.5,
+      "duration_minutes": 30,
+      "timing": "Must be provided after the first 2 hours of work and before the last 2 hours of work.",
+      "duty_free": true,
+      "paid": false,
+      "description": "A 30-minute meal break must be provided to employees who work shifts of 7.5 or more consecutive hours. The break must fall after the first 2 hours and before the last 2 hours of the shift."
+    },
+    "exemptions": {
+      "commissioner_exemption": "Employers in certain industries may apply to the Labor Commissioner for an exemption from the meal break requirement if compliance is impractical due to the nature of the business.",
+      "compliance_conditions": "Employers who allow employees to eat while working may satisfy the requirement if the employee is compensated for the time."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate the meal break requirement may be subject to fines imposed by the Connecticut Department of Labor. Employees may file complaints with the department for enforcement.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "Connecticut's meal break law is more specific than many states in requiring the break to fall within a defined window of the shift (after the first 2 hours and before the last 2 hours). The law applies broadly across industries but allows for exemptions by application to the Labor Commissioner.",
+  "source_urls": [
+    "https://www.cga.ct.gov/current/pub/chap_557.htm#sec_31-51ii",
+    "https://portal.ct.gov/dol/knowledge-base/articles/wage-and-workplace-standards/meal-periods"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

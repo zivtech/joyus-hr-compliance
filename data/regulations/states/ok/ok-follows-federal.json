@@ -1,0 +1,37 @@
+{
+  "id": "ok-follows-federal",
+  "jurisdiction": {
+    "level": "state",
+    "state": "OK",
+    "locality": null
+  },
+  "law_type": "overtime",
+  "title": "Oklahoma — Federal Standards Apply",
+  "statute_citation": "No state statute",
+  "regulatory_citation": null,
+  "summary": "Oklahoma has no state overtime, meal break, rest break, or predictive scheduling laws beyond the federal FLSA baseline. Federal rules apply.",
+  "effective_date": "1938-06-25",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "description": "No state-level scheduling requirements beyond federal FLSA. See federal regulations for applicable rules.",
+    "state_meal_break_required": false,
+    "state_rest_break_required": false,
+    "state_overtime_beyond_flsa": false,
+    "state_predictive_scheduling": false
+  },
+  "penalties": null,
+  "notes": "Oklahoma follows the federal Fair Labor Standards Act for overtime, breaks, and scheduling matters. Employers must comply with federal FLSA requirements but face no additional state-level scheduling obligations.",
+  "source_urls": [
+    "https://oklahoma.gov/labor.html"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

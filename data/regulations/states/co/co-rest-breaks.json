@@ -1,0 +1,52 @@
+{
+  "id": "co-rest-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "CO",
+    "locality": null
+  },
+  "law_type": "rest-breaks",
+  "title": "Colorado Rest Break Requirements",
+  "statute_citation": "C.R.S. § 8-12-103",
+  "regulatory_citation": "COMPS Order #39, 7 CCR 1103-1, Rule 5.1",
+  "summary": "Colorado requires employers to provide a paid 10-minute rest break for every 4 hours of work, or major fraction thereof. Rest breaks must be provided as close to the midpoint of each 4-hour work period as practicable. Rest breaks are compensated as time worked.",
+  "effective_date": "1963-01-01",
+  "sunset_date": null,
+  "last_amended": "2024-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 1,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "rest_break_duration_minutes": 10,
+    "hours_worked_per_break": 4,
+    "major_fraction_applies": true,
+    "major_fraction_definition": "A 'major fraction' of 4 hours means more than 2 hours. So an employee working a shift of 6 hours and 1 minute is entitled to 2 rest breaks.",
+    "paid": true,
+    "timing": "Rest breaks should be provided as close to the midpoint of each 4-hour work period as practicable.",
+    "break_schedule_examples": {
+      "2_to_6_hour_shift": 1,
+      "6_to_10_hour_shift": 2,
+      "10_to_14_hour_shift": 3
+    },
+    "cannot_be_waived": true,
+    "cannot_be_combined_with_meal_break": true,
+    "employer_must_authorize_and_permit": true,
+    "note": "Employers must authorize and permit rest breaks. If an employer makes it impossible for an employee to take a rest break, the employer is in violation even if no explicit denial occurred."
+  },
+  "penalties": {
+    "description": "Failure to provide rest breaks may result in the employer owing the employee compensation for the missed rest period plus potential penalties under the Colorado Wage Claim Act.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "The COMPS Order's 'major fraction' rule is an important nuance. An employee working 6 hours and 1 minute is entitled to 2 rest breaks because the time beyond 6 hours constitutes a major fraction of the next 4-hour segment. Rest breaks cannot be combined with meal periods or used to allow an employee to arrive late or leave early.",
+  "source_urls": [
+    "https://cdle.colorado.gov/wage-and-hour-law/meal-and-rest-periods",
+    "https://cdle.colorado.gov/comps-order"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

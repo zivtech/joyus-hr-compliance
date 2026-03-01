@@ -1,0 +1,52 @@
+{
+  "id": "ri-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "RI",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Rhode Island Meal Break Requirements",
+  "statute_citation": "R.I. Gen. Laws § 28-3-14",
+  "regulatory_citation": null,
+  "summary": "Rhode Island requires employers to provide meal breaks based on shift length. Employees who work a 6-hour shift must receive a 20-minute meal break, and employees who work an 8-hour shift must receive a 30-minute meal break. The break must be provided within a reasonable time from the beginning of the shift, consistent with the scheduled break period. The meal break may be unpaid if the employee is completely relieved of all duties.",
+  "effective_date": "1988-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "six_hour_shift_meal": {
+      "trigger_hours": 6,
+      "duration_minutes": 20,
+      "duty_free": true,
+      "description": "Employees who work a 6-hour shift must receive a 20-minute meal break during which they are relieved of all duties."
+    },
+    "eight_hour_shift_meal": {
+      "trigger_hours": 8,
+      "duration_minutes": 30,
+      "duty_free": true,
+      "description": "Employees who work an 8-hour shift must receive a 30-minute meal break during which they are relieved of all duties."
+    },
+    "timing": {
+      "description": "The meal break must be provided within a reasonable time from the scheduled break period. Employers should schedule breaks at appropriate intervals during the shift."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide required meal breaks may face enforcement action by the Rhode Island Department of Labor and Training. Penalties may include fines and orders to comply.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Rhode Island's tiered meal break system, with 20 minutes for 6-hour shifts and 30 minutes for 8-hour shifts, is unusual among state meal break laws. Most states apply a single duration threshold. The law applies broadly across industries and to all employee types.",
+  "source_urls": [
+    "https://webserver.rilegislature.gov/Statutes/TITLE28/28-3/28-3-14.htm",
+    "https://dlt.ri.gov/labor-market-information/labor-relations-and-labor-standards"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "tn-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "TN",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Tennessee Meal Break Requirements",
+  "statute_citation": "Tenn. Code § 50-2-103(h)",
+  "regulatory_citation": null,
+  "summary": "Tennessee requires employers to provide a 30-minute meal break to employees who work shifts of 6 or more consecutive hours. The meal break must be provided and may be unpaid if the employee is completely relieved of duties.",
+  "effective_date": "2009-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_period": {
+      "trigger_hours": 6,
+      "duration_minutes": 30,
+      "timing": "Must be provided during shifts of 6 or more consecutive hours.",
+      "duty_free": true,
+      "paid": false,
+      "description": "A 30-minute unpaid meal break must be provided to employees who work 6 or more consecutive hours. The employee must be completely relieved of duties for the break to be unpaid."
+    },
+    "exemptions": {
+      "description": "The meal break requirement does not apply to workplaces where only one employee is on duty, or in situations where the nature of the business provides ample opportunity to rest or take an appropriate break."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate the meal break requirement may be subject to enforcement action by the Tennessee Department of Labor and Workforce Development.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Tennessee's meal break law is straightforward with a 6-hour trigger and 30-minute duration. The exemptions for single-employee workplaces and businesses that naturally provide break opportunities are notable.",
+  "source_urls": [
+    "https://www.tn.gov/workforce/employees/labor-laws/labor-laws-redirect/meal-breaks.html",
+    "https://advance.lexis.com/documentpage/?pdmfid=1000516&crid=&pdworkfolderid=&ecomp=&prid="
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

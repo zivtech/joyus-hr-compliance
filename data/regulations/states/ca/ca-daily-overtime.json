@@ -1,0 +1,69 @@
+{
+  "id": "ca-daily-overtime",
+  "jurisdiction": {
+    "level": "state",
+    "state": "CA",
+    "locality": null
+  },
+  "law_type": "overtime",
+  "title": "California Daily and Weekly Overtime",
+  "statute_citation": "Cal. Lab. Code § 510",
+  "regulatory_citation": "8 CCR § 11040",
+  "summary": "California requires overtime pay at 1.5 times the regular rate for hours worked beyond 8 in a workday and beyond 40 in a workweek, and double time for hours beyond 12 in a workday. On the seventh consecutive day of work in a workweek, the first 8 hours are paid at 1.5 times the regular rate and all hours beyond 8 are paid at double time. Overtime rates do not pyramid; the highest applicable rate applies. Alternative workweek schedules (such as 4/10) may modify the daily overtime threshold when properly adopted.",
+  "effective_date": "2000-01-01",
+  "sunset_date": null,
+  "last_amended": "2024-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "daily_overtime": {
+      "threshold_hours": 8,
+      "rate_multiplier": 1.5,
+      "description": "Hours worked in excess of 8 in a single workday are compensated at 1.5 times the regular rate of pay."
+    },
+    "daily_double_time": {
+      "threshold_hours": 12,
+      "rate_multiplier": 2.0,
+      "description": "Hours worked in excess of 12 in a single workday are compensated at 2 times the regular rate of pay."
+    },
+    "weekly_overtime": {
+      "threshold_hours": 40,
+      "rate_multiplier": 1.5,
+      "description": "Hours worked in excess of 40 in a single workweek are compensated at 1.5 times the regular rate of pay."
+    },
+    "seventh_consecutive_day": {
+      "first_8_hours": {
+        "rate_multiplier": 1.5,
+        "description": "The first 8 hours worked on the seventh consecutive day of work in a workweek are compensated at 1.5 times the regular rate."
+      },
+      "after_8_hours": {
+        "rate_multiplier": 2.0,
+        "description": "Hours worked beyond 8 on the seventh consecutive day of work in a workweek are compensated at 2 times the regular rate."
+      }
+    },
+    "no_pyramiding": true,
+    "pyramiding_note": "Only the highest applicable overtime rate applies to any given hour; daily and weekly overtime rates do not stack.",
+    "alternative_workweek_schedule": {
+      "enabled": true,
+      "description": "An employer may propose an alternative workweek schedule (e.g., four 10-hour days) through a secret ballot election of affected employees. When properly adopted, the daily overtime threshold is modified to the regularly scheduled shift length (up to 10 hours), with overtime applying beyond that threshold.",
+      "max_daily_hours_before_overtime": 10
+    }
+  },
+  "penalties": {
+    "description": "Failure to pay overtime may result in waiting time penalties, interest, liquidated damages equal to the unpaid overtime, and attorney fees. Willful violations may result in criminal penalties.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "California daily overtime is more protective than federal law, which only requires weekly overtime after 40 hours. The alternative workweek schedule must be adopted through a specific employee election process under Lab. Code § 511. Unauthorized overtime must still be paid but may be subject to discipline.",
+  "source_urls": [
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=510.&lawCode=LAB",
+    "https://www.dir.ca.gov/dlse/faq_overtime.htm"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

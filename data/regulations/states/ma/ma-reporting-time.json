@@ -1,0 +1,47 @@
+{
+  "id": "ma-reporting-time",
+  "jurisdiction": {
+    "level": "state",
+    "state": "MA",
+    "locality": null
+  },
+  "law_type": "reporting-time-pay",
+  "title": "Massachusetts Reporting Time Pay (Three-Hour Minimum)",
+  "statute_citation": "Mass. Gen. Laws ch. 151, § 1A",
+  "regulatory_citation": "454 CMR 27.04",
+  "summary": "Massachusetts requires employers to pay employees a minimum of 3 hours at the minimum wage rate when the employee reports to work as scheduled or at the employer's request. If the employee works fewer than 3 hours, they must still be paid for 3 hours at no less than the applicable minimum wage. This ensures that employees who make themselves available for work receive a guaranteed minimum level of compensation.",
+  "effective_date": "1970-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "reporting_time_pay": {
+      "minimum_hours": 3,
+      "rate": "minimum wage",
+      "trigger": "Employee reports to work as scheduled or at the employer's request.",
+      "description": "An employee who reports to work must be paid for at least 3 hours at no less than the applicable minimum wage rate, even if the employee is sent home or works fewer than 3 hours."
+    },
+    "exceptions": {
+      "scheduled_less_than_3": "If the employee is regularly scheduled to work fewer than 3 hours per shift, the 3-hour minimum still applies when the employee reports as scheduled.",
+      "acts_of_god": "The requirement may not apply when operations cannot begin or continue due to severe weather, utility failures, or other conditions beyond the employer's control."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide reporting time pay may be subject to back pay claims, treble damages, and enforcement actions by the Massachusetts Attorney General's Fair Labor Division.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Massachusetts' 3-hour minimum reporting time pay is established through regulation (454 CMR 27.04) implementing the minimum wage statute. The rate is at least the minimum wage, but if the employee's regular rate is higher and they perform work, the regular rate applies to hours actually worked. Massachusetts allows treble (triple) damages for wage and hour violations under the Wage Act.",
+  "source_urls": [
+    "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151/Section1A",
+    "https://www.mass.gov/info-details/massachusetts-law-about-hours-and-conditions-of-employment"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

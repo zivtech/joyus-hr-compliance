@@ -1,0 +1,55 @@
+{
+  "id": "ny-reporting-time",
+  "jurisdiction": {
+    "level": "state",
+    "state": "NY",
+    "locality": null
+  },
+  "law_type": "reporting-time-pay",
+  "title": "New York Call-In Pay (Reporting Time Pay)",
+  "statute_citation": "NY Labor Law § 162",
+  "regulatory_citation": "12 NYCRR § 142-2.3",
+  "summary": "New York requires employers to pay call-in pay when an employee reports to work as scheduled. An employee who reports to work must be paid for a minimum of 4 hours, or the number of hours in the scheduled shift (whichever is less), at the applicable minimum wage rate. Additional call-in pay rules apply when employees are required to report for split shifts or additional shifts on the same day.",
+  "effective_date": "1960-01-01",
+  "sunset_date": null,
+  "last_amended": "2024-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "call_in_pay": {
+      "minimum_hours": 4,
+      "rate": "applicable minimum wage",
+      "condition": "Employee reports to work as scheduled or requested.",
+      "lesser_of_rule": "The minimum is 4 hours or the number of hours in the regularly scheduled shift, whichever is less.",
+      "description": "When an employee reports to work as scheduled, the employee must receive at least 4 hours of pay (or the number of hours in the regular shift if less than 4) at no less than the applicable minimum wage, regardless of whether work is actually provided."
+    },
+    "split_shift_call_in": {
+      "minimum_hours_per_segment": 4,
+      "description": "An employee required to report to work for a split shift must receive call-in pay for each segment of the shift. Each reporting constitutes a separate call-in with a minimum pay guarantee."
+    },
+    "additional_shift_call_in": {
+      "minimum_hours": 4,
+      "description": "An employee who is called in to work on a day not regularly scheduled, or for an additional shift beyond the regular schedule, is entitled to a minimum of 4 hours of call-in pay at the applicable minimum wage."
+    },
+    "exceptions": {
+      "description": "Call-in pay may not be required when work cannot be performed due to conditions beyond the employer's control, such as severe weather, utility failures, or other emergencies."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to pay call-in pay are liable for unpaid wages plus interest, liquidated damages equal to 100% of the underpayment, and reasonable attorney fees. The New York Department of Labor may also assess civil penalties.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 6
+  },
+  "notes": "New York's call-in pay is more protective than many other states because it guarantees a 4-hour minimum (rather than the 2-hour minimum common in other jurisdictions like California). The rate is at the applicable minimum wage, which varies by region within New York State (NYC, Long Island, Westchester County, and the rest of the state may have different rates). Employers should track regional minimum wage rates to ensure compliance.",
+  "source_urls": [
+    "https://www.nysenate.gov/legislation/laws/LAB/162",
+    "https://dol.ny.gov/wages-and-hours-frequently-asked-questions"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

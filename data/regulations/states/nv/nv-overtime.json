@@ -1,0 +1,55 @@
+{
+  "id": "nv-overtime",
+  "jurisdiction": {
+    "level": "state",
+    "state": "NV",
+    "locality": null
+  },
+  "law_type": "overtime",
+  "title": "Nevada Daily and Weekly Overtime",
+  "statute_citation": "NRS 608.018",
+  "regulatory_citation": null,
+  "summary": "Nevada requires overtime pay at 1.5 times the regular rate of pay for hours worked over 8 in a single workday if the employee is compensated at a rate less than 1.5 times the state minimum wage. Weekly overtime at 1.5 times the regular rate applies for all hours over 40 in a workweek regardless of the employee's hourly rate. The daily overtime provision is unique in that it only applies to lower-paid workers, creating a wage-based threshold for daily overtime eligibility.",
+  "effective_date": "2007-01-01",
+  "sunset_date": null,
+  "last_amended": "2024-07-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "daily_overtime": {
+      "threshold_hours": 8,
+      "rate_multiplier": 1.5,
+      "wage_condition": "Applies only if the employee's regular rate of pay is less than 1.5 times the Nevada minimum wage.",
+      "description": "Hours worked in excess of 8 in a single workday must be compensated at 1.5 times the regular rate of pay, but only for employees whose hourly rate is less than 1.5 times the applicable Nevada minimum wage."
+    },
+    "weekly_overtime": {
+      "threshold_hours": 40,
+      "rate_multiplier": 1.5,
+      "description": "All hours worked in excess of 40 in a single workweek must be compensated at 1.5 times the employee's regular rate of pay. This applies regardless of the employee's hourly rate."
+    },
+    "wage_threshold": {
+      "multiplier": 1.5,
+      "base": "Nevada minimum wage",
+      "description": "The daily overtime requirement applies only to employees earning less than 1.5 times the Nevada minimum wage. Employees earning at or above this threshold are subject only to weekly overtime."
+    },
+    "no_pyramiding": true,
+    "pyramiding_note": "Daily and weekly overtime do not stack. An employee receives only the highest applicable overtime rate for any given hour."
+  },
+  "penalties": {
+    "description": "Employers who fail to pay required overtime may be liable for unpaid wages, administrative penalties, and damages. The Nevada Labor Commissioner may investigate complaints and order payment of back wages.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "Nevada's daily overtime provision is unique among U.S. states because it applies only to lower-wage workers (those earning less than 1.5 times the minimum wage). This wage-based threshold means that as the minimum wage increases, the pool of employees eligible for daily overtime may change. Employers should recalculate eligibility whenever the minimum wage is adjusted.",
+  "source_urls": [
+    "https://www.leg.state.nv.us/nrs/nrs-608.html#NRS608Sec018",
+    "https://labor.nv.gov/Employer/Employer_Information/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

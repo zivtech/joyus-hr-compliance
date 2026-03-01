@@ -1,0 +1,69 @@
+{
+  "id": "ca-rest-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "CA",
+    "locality": null
+  },
+  "law_type": "rest-breaks",
+  "title": "California Rest Break Requirements",
+  "statute_citation": "Cal. Lab. Code § 226.7",
+  "regulatory_citation": "8 CCR § 11040",
+  "summary": "California requires employers to authorize and permit a paid 10-minute rest period for every 4 hours worked, or major fraction thereof. Rest periods must be in the middle of the work period insofar as practicable. Employees who work fewer than 3.5 hours in a day are not entitled to a rest period. If an employer fails to provide a required rest period, the employee is entitled to one additional hour of pay at the regular rate as premium pay for each workday the violation occurs.",
+  "effective_date": "2001-01-01",
+  "sunset_date": null,
+  "last_amended": "2012-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "rest_period": {
+      "duration_minutes": 10,
+      "frequency": "Per 4 hours worked or major fraction thereof",
+      "paid": true,
+      "timing": "In the middle of the work period insofar as practicable.",
+      "description": "A paid 10-minute rest period must be authorized and permitted for every 4 hours worked, or major fraction thereof."
+    },
+    "rest_period_schedule": {
+      "up_to_3_5_hours": {
+        "rest_periods_required": 0,
+        "description": "No rest period required for shifts of 3.5 hours or less."
+      },
+      "3_5_to_6_hours": {
+        "rest_periods_required": 1,
+        "description": "One 10-minute rest period required."
+      },
+      "6_to_10_hours": {
+        "rest_periods_required": 2,
+        "description": "Two 10-minute rest periods required."
+      },
+      "10_to_14_hours": {
+        "rest_periods_required": 3,
+        "description": "Three 10-minute rest periods required."
+      }
+    },
+    "major_fraction_definition": "A 'major fraction' of 4 hours means any time greater than 2 hours. For example, an employee working 6 hours is entitled to two rest periods (one for the first 4 hours and one for the major fraction of the remaining 2 hours).",
+    "violation_premium": {
+      "amount_hours": 1,
+      "rate": "regular rate of pay",
+      "frequency": "per workday the violation occurs",
+      "description": "One additional hour of pay at the employee's regular rate of pay for each workday that a required rest period is not provided."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide required rest periods must pay one additional hour of premium pay at the regular rate for each workday a rest period is not provided. Additional penalties may apply under PAGA.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Rest period premium pay and meal period premium pay are separate obligations; an employer who fails to provide both a rest period and a meal period on the same workday owes two hours of premium pay. Rest periods are counted as hours worked and must be paid. Employers may not require employees to remain on the premises during rest periods.",
+  "source_urls": [
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=226.7.&lawCode=LAB",
+    "https://www.dir.ca.gov/dlse/faq_restperiods.htm"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

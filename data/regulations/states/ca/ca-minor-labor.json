@@ -1,0 +1,70 @@
+{
+  "id": "ca-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "CA",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "California Child Labor Laws",
+  "statute_citation": "Cal. Lab. Code §§ 1290-1312",
+  "regulatory_citation": "8 CCR § 11701-11706",
+  "summary": "California restricts the employment of minors under age 18, requiring work permits for all minors and imposing limits on hours, times of day, and types of work. Minors aged 14-15 may work up to 3 hours on a school day and 8 hours on a non-school day, with weekly limits of 18 hours during school weeks and 40 hours during non-school weeks. Minors aged 16-17 may work up to 4 hours on a school day and up to 48 hours per week, with evening curfews. Meal breaks are required after 5 hours of work.",
+  "effective_date": "1976-01-01",
+  "sunset_date": null,
+  "last_amended": "2023-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt", "all"],
+    "age_groups": ["14-15", "16-17", "under-14"]
+  },
+  "requirements": {
+    "work_permit": {
+      "required": true,
+      "applies_to": "All minors under 18",
+      "issuing_authority": "School district superintendent or designated authority",
+      "description": "A valid work permit (Permit to Employ and Work) must be obtained before a minor under 18 may begin employment. The permit is issued by the minor's school district."
+    },
+    "age_14_15": {
+      "max_hours_school_day": 3,
+      "max_hours_non_school_day": 8,
+      "max_hours_school_week": 18,
+      "max_hours_non_school_week": 40,
+      "earliest_start_time": "07:00",
+      "latest_end_time_school": "19:00",
+      "latest_end_time_summer": "21:00",
+      "summer_period": "June 1 through Labor Day",
+      "description": "Minors aged 14-15 may work no more than 3 hours on a school day, 8 hours on a non-school day, 18 hours in a school week, and 40 hours in a non-school week. Work hours are restricted to between 7:00 AM and 7:00 PM, extended to 9:00 PM from June 1 through Labor Day."
+    },
+    "age_16_17": {
+      "max_hours_school_day": 4,
+      "max_hours_non_school_day": 8,
+      "max_hours_per_week": 48,
+      "latest_end_time_school_night": "22:00",
+      "latest_end_time_non_school_night": "00:30",
+      "description": "Minors aged 16-17 may work no more than 4 hours on a school day, 8 hours on a non-school day, and 48 hours per week. Work must end by 10:00 PM on nights preceding a school day and by 12:30 AM on nights not preceding a school day."
+    },
+    "meal_break": {
+      "trigger_hours": 5,
+      "duration_minutes": 30,
+      "description": "Minors must receive a 30-minute meal break when working 5 or more consecutive hours."
+    },
+    "prohibited_occupations": {
+      "description": "Minors are prohibited from working in hazardous occupations as defined by California law and federal regulations, including but not limited to manufacturing, mining, operating heavy machinery, and working with specified chemicals or explosives."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate child labor laws are subject to civil penalties of $500 to $10,000 per violation. Willful violations may result in criminal penalties including fines and imprisonment. A separate penalty applies for each day a minor is employed in violation.",
+    "per_violation_amount": 10000,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "California child labor laws are generally more restrictive than federal FLSA child labor provisions. The entertainment industry has specific additional requirements under Cal. Lab. Code §§ 1308-1311, including studio teacher requirements and trust account obligations (Coogan's Law). Work permits must be renewed for each new employer.",
+  "source_urls": [
+    "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=LAB&division=2.&title=&part=4.&chapter=1.&article=",
+    "https://www.dir.ca.gov/dlse/childlabor.htm"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

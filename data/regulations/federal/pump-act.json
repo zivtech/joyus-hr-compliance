@@ -1,0 +1,79 @@
+{
+  "id": "pump-act",
+  "jurisdiction": {
+    "level": "federal",
+    "state": null,
+    "locality": null
+  },
+  "law_type": "nursing-breaks",
+  "title": "PUMP for Nursing Mothers Act — Providing Urgent Maternal Protections for Nursing Mothers Act",
+  "statute_citation": "29 U.S.C. § 218d",
+  "regulatory_citation": null,
+  "summary": "The PUMP for Nursing Mothers Act requires employers to provide reasonable break time and a private space (other than a bathroom) for employees to express breast milk for their nursing child for up to one year after the child's birth. Enacted as part of the Consolidated Appropriations Act of 2023, the PUMP Act expanded the protections originally created by Section 7(r) of the FLSA (the Break Time for Nursing Mothers provision of the Affordable Care Act) to cover nearly all employees, including salaried, exempt, and non-exempt workers. The law became effective on December 29, 2022, with the private right of action provisions taking effect on April 28, 2023.",
+  "effective_date": "2022-12-29",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt", "exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "break_time": {
+      "type": "reasonable",
+      "description": "Employers must provide a reasonable break time for an employee to express breast milk each time the employee has a need to express milk. The frequency and duration of breaks will vary depending on factors related to the nursing employee and the child. There is no cap on the number of breaks or their length; the standard is 'reasonable' under the circumstances.",
+      "duration_limit": "one_year_after_birth",
+      "duration_description": "The obligation to provide break time continues for one year after the child's birth.",
+      "compensability": {
+        "description": "Break time for expressing breast milk is not required to be compensated under the FLSA. However, if the employer already provides compensated break time and the employee uses that break time to express milk, the time must be compensated in the same manner as other employees' break time. Additionally, if the employee is not completely relieved from duty during the break, the time must be compensated as hours worked."
+      }
+    },
+    "space_requirements": {
+      "must_provide_private_space": true,
+      "bathroom_exclusion": "A bathroom — even a private or single-occupancy bathroom — does not qualify as an acceptable space under the law.",
+      "requirements": [
+        "The space must be shielded from view of coworkers and the public",
+        "The space must be free from intrusion by coworkers and the public",
+        "The space must be functional as a space for expressing breast milk (i.e., available when needed, not merely a theoretical designation)"
+      ],
+      "additional_considerations": [
+        "The space may be a temporary space that is made available when needed, provided it meets the statutory requirements when in use",
+        "The space does not need to be exclusively dedicated to the nursing employee, but must be available when needed",
+        "Employers with multiple nursing employees may need to provide access to multiple spaces or schedule usage",
+        "A portable, pop-up enclosure or similar structure in an otherwise open area can satisfy the requirement if it provides the requisite shielding from view and intrusion"
+      ]
+    },
+    "covered_employees": {
+      "description": "The PUMP Act applies to all employees covered by the FLSA, including exempt and salaried employees. This is a significant expansion over the prior Break Time for Nursing Mothers provision (Section 7(r) of the FLSA), which applied only to non-exempt employees."
+    },
+    "small_employer_exemption": {
+      "threshold": 50,
+      "description": "An employer with fewer than 50 employees is not subject to the space requirement if compliance would impose an undue hardship by causing the employer significant difficulty or expense when considered in relation to the size, financial resources, nature, and structure of the employer's business. This is the same undue hardship standard as the prior Section 7(r) provision. The exemption does not apply to the break time requirement, only to the space requirement.",
+      "burden_of_proof": "The employer bears the burden of demonstrating that compliance would constitute an undue hardship."
+    },
+    "remedies_and_enforcement": {
+      "notice_requirement": "Before filing a lawsuit, an employee must notify the employer of the alleged failure to comply and provide the employer with 10 days to come into compliance. This notice requirement does not apply if the employee has been discharged for exercising rights under the PUMP Act.",
+      "private_right_of_action": "Employees may bring a private action in court beginning April 28, 2023. Remedies include employment, reinstatement, promotion, payment of lost wages and benefits, compensatory damages, and appropriate equitable relief.",
+      "dol_enforcement": "The Department of Labor Wage and Hour Division may also enforce the PUMP Act through administrative complaints and investigations."
+    },
+    "retaliation_protection": {
+      "description": "Employers may not discharge or in any other manner discriminate against an employee because the employee has exercised or attempted to exercise rights under the PUMP Act, including requesting break time or a compliant space."
+    }
+  },
+  "penalties": {
+    "description": "Remedies for PUMP Act violations include reinstatement, back pay, lost benefits, compensatory damages, and equitable relief such as injunctions. Employers who terminate an employee in retaliation for exercising rights under the PUMP Act are subject to the full range of FLSA remedies, including liquidated damages equal to the amount of unpaid wages or lost compensation. Willful violations are subject to a 3-year statute of limitations rather than the standard 2-year period.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "The PUMP Act was enacted on December 29, 2022, as part of the Consolidated Appropriations Act, 2023 (Public Law 117-328). It amended the FLSA by redesignating the former Section 7(r) nursing break provision (added by the Affordable Care Act in 2010) and expanding its scope to cover all FLSA-covered employees, not just non-exempt workers. The private right of action for employees took effect 120 days later, on April 28, 2023. Railroad and motorcoach employees received delayed coverage, becoming fully covered on December 29, 2025. Many states have their own lactation accommodation laws that may provide greater protections (e.g., longer duration beyond one year, more specific space requirements, or compensation for break time). When both federal and state laws apply, the employer must comply with the law that provides the greater protection to the employee.",
+  "source_urls": [
+    "https://www.congress.gov/bill/117th-congress/house-bill/2617",
+    "https://www.law.cornell.edu/uscode/text/29/218d",
+    "https://www.dol.gov/agencies/whd/pump-at-work",
+    "https://www.dol.gov/agencies/whd/fact-sheets/73-flsa-break-time-nursing-mothers"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} — Joyus HR Compliance</title>
+  <meta name="description" content="{{ description | default('Searchable database of U.S. labor law scheduling compliance regulations.') }}">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Joyus HR Compliance</a></h1>
+      <nav class="site-nav">
+        <a href="/">Search</a>
+        <a href="/jurisdiction/">By Jurisdiction</a>
+        <a href="/type/">By Law Type</a>
+        <a href="/disclaimer/">Disclaimer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      {{ content | safe }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="disclaimer-text">This database is for informational purposes only and does not constitute legal advice. Laws change frequently. Verify all information against official sources before relying on it.</p>
+      <p>Last built: {{ buildDate }} · <a href="/disclaimer/">Full disclaimer</a> · <a href="https://github.com/zivtech/joyus-hr-compliance">Source on GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="/pagefind/pagefind-ui.js"></script>
+</body>
+</html>

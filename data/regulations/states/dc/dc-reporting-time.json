@@ -1,0 +1,46 @@
+{
+  "id": "dc-reporting-time",
+  "jurisdiction": {
+    "level": "state",
+    "state": "DC",
+    "locality": null
+  },
+  "law_type": "reporting-time-pay",
+  "title": "District of Columbia Reporting Time Pay",
+  "statute_citation": "DC Code § 32-1003",
+  "regulatory_citation": "DC Mun. Regs. tit. 7, § 907",
+  "summary": "The District of Columbia requires employers to pay a minimum of 4 hours of pay to employees who report to work as scheduled but are not provided with at least 4 hours of work. This reporting time pay ensures that employees who make themselves available for scheduled shifts receive a minimum level of compensation even when the employer does not need their services.",
+  "effective_date": "1993-03-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "reporting_time_pay": {
+      "minimum_hours": 4,
+      "rate": "regular rate of pay",
+      "trigger": "Employee reports to work as scheduled and is not provided with at least 4 hours of work.",
+      "description": "Employees who report to work as scheduled must be paid for a minimum of 4 hours at their regular rate of pay, even if the employer sends them home before completing 4 hours of work."
+    },
+    "exceptions": {
+      "acts_of_god": "Reporting time pay may not be required when operations cannot commence or continue due to threats to employees or property, civil emergencies, or other conditions beyond the employer's control."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate the reporting time pay requirement may be liable for unpaid wages, liquidated damages, and penalties imposed by the DC Department of Employment Services.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "The DC reporting time pay provision protects employees from the economic impact of last-minute schedule cancellations. The 4-hour minimum is among the more generous reporting time pay requirements in the country.",
+  "source_urls": [
+    "https://code.dccouncil.gov/us/dc/council/code/sections/32-1003",
+    "https://does.dc.gov/service/office-wage-hour-compliance"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "flsa-breaks",
+  "jurisdiction": {
+    "level": "federal",
+    "state": null,
+    "locality": null
+  },
+  "law_type": "rest-breaks",
+  "title": "Fair Labor Standards Act — Break Time Provisions",
+  "statute_citation": "29 U.S.C. § 207",
+  "regulatory_citation": "29 CFR §§ 785.18–785.19",
+  "summary": "Federal law does not require employers to provide meal or rest breaks to adult employees. However, when employers choose to offer short breaks (typically 5 to 20 minutes), these must be counted as compensable hours worked under the FLSA. Bona fide meal periods (typically 30 minutes or longer) are not considered hours worked and need not be compensated, provided the employee is completely relieved of all duties during the meal period. If an employee must perform any duties during the meal period, it is compensable time.",
+  "effective_date": "1938-10-24",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult"]
+  },
+  "requirements": {
+    "meal_breaks": {
+      "required_by_federal_law": false,
+      "description": "The FLSA does not require employers to provide meal breaks. There is no federal mandate for a meal period of any length for adult employees. Many states, however, do have mandatory meal break requirements.",
+      "if_provided": {
+        "minimum_duration_minutes": 30,
+        "compensability": "unpaid",
+        "conditions_for_unpaid_status": "The employee must be completely relieved of all duties for the purpose of eating a regular meal. The employee need not be permitted to leave the premises, but must be free from work responsibilities. If the employee is required to perform any work duties — even minimal tasks — during the meal period, the entire period must be compensated.",
+        "interrupted_meal_periods": "If a meal period is interrupted by a call to duty, the entire meal period becomes compensable work time. Employers may not dock pay for a meal period during which the employee was not fully relieved of duties.",
+        "on_duty_meal_periods": "On-duty meal periods are counted as hours worked and must be compensated. An on-duty meal period is permissible only when the nature of the work prevents the employee from being relieved of all duties, and the employee has agreed to the on-duty meal period in writing."
+      }
+    },
+    "rest_breaks": {
+      "required_by_federal_law": false,
+      "description": "The FLSA does not require employers to provide rest breaks. However, many states mandate paid rest breaks (typically 10 minutes per 4 hours worked).",
+      "if_provided": {
+        "short_break_threshold_minutes": 20,
+        "short_break_compensability": "paid",
+        "short_break_rule": "Rest breaks of short duration, typically 20 minutes or less, must be counted as compensable hours worked. These breaks are considered to primarily benefit the employer by promoting efficiency and cannot be excluded from compensable time.",
+        "longer_break_compensability": "Breaks longer than 20 minutes may be treated as non-compensable bona fide meal periods only if the employee is completely relieved of all duties."
+      }
+    },
+    "key_distinction": {
+      "description": "The critical distinction under federal law is not whether a break is labeled a 'meal break' or 'rest break,' but rather (1) the duration of the break and (2) whether the employee is completely relieved of all duties. Breaks under 20 minutes are always compensable regardless of label. Breaks of 30 minutes or more are non-compensable only if the employee is fully relieved of duties."
+    },
+    "unauthorized_extensions": {
+      "description": "If an employee extends an authorized break beyond the permitted time without authorization, the extended time need not be compensated, provided the employer has expressly and unambiguously communicated that the authorized break may only last a specific length of time, that any extension is contrary to the employer's rules, and that any extension will be punished. (29 CFR § 785.18)"
+    }
+  },
+  "penalties": {
+    "description": "Because break rules under federal law relate to compensability (i.e., whether break time counts as hours worked for wage and overtime purposes), violations are enforced as unpaid wage violations under the FLSA. Employers who fail to compensate short rest breaks or who improperly deduct for meal periods where the employee was not fully relieved face liability for back wages, liquidated damages (an equal amount), and reasonable attorney fees.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "Federal break rules focus exclusively on compensability — whether break time counts as paid hours worked — rather than mandating that breaks be provided. Many states (including California, Colorado, Washington, Oregon, and others) require employers to provide specific meal and rest breaks. The federal rules described here serve as a floor that applies in all states: even in states with no break requirements, if an employer voluntarily provides short breaks, those breaks must be paid. The nursing break requirement for nursing mothers is addressed separately under the PUMP for Nursing Mothers Act (29 U.S.C. § 218d). Breaks for minors may be required under state law; see state-specific child labor regulations.",
+  "source_urls": [
+    "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-VII/subchapter-B/part-785/subpart-C/subject-group-ECFRc3eda05e78ce498",
+    "https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked",
+    "https://www.dol.gov/general/topic/workhours/breaks"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

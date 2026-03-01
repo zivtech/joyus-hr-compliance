@@ -1,0 +1,12 @@
+# Private internal docs — not for public repo
+.private/
+
+# Build output
+node_modules/
+_site/
+
+# OS
+.DS_Store
+
+# Logs
+*.log

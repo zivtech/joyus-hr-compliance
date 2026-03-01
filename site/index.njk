@@ -1,0 +1,57 @@
+---
+layout: base.njk
+title: Search
+---
+
+<h1>U.S. Labor Law Compliance Database</h1>
+<p class="search-intro">Search federal, state, and local scheduling compliance regulations — overtime, breaks, minor labor, predictive scheduling, and more.</p>
+
+<div id="search"></div>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      showImages: false,
+      resetStyles: false
+    });
+  });
+</script>
+
+<h2>Browse</h2>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+  <div>
+    <h3>By Jurisdiction</h3>
+    <ul>
+      {%- for jur in jurisdictions %}
+      <li><a href="/jurisdiction/{{ jur.key }}/">{{ jur.label }}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+  <div>
+    <h3>By Law Type</h3>
+    <ul>
+      {%- for type in lawTypes %}
+      <li><a href="/type/{{ type }}/">{{ type | lawTypeLabel }}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</div>
+
+<h2>All Regulations</h2>
+<ul class="reg-list">
+  {%- for reg in regulations | sortBy("title") %}
+  <li class="reg-card" data-pagefind-body>
+    <div class="reg-card-header">
+      <h3 class="reg-card-title"><a href="/regulation/{{ reg.id }}/">{{ reg.title }}</a></h3>
+      <span class="badge {{ reg.computed_status | statusBadgeClass }}" data-pagefind-filter="status:{{ reg.computed_status }}">{{ reg.computed_status }}</span>
+    </div>
+    <div class="reg-card-meta">
+      <span data-pagefind-filter="jurisdiction:{{ reg.jurisdiction | jurisdictionLabel }}">{{ reg.jurisdiction | jurisdictionLabel }}</span>
+      <span data-pagefind-filter="type:{{ reg.law_type | lawTypeLabel }}">{{ reg.law_type | lawTypeLabel }}</span>
+      <span>{{ reg.statute_citation }}</span>
+    </div>
+    <p data-pagefind-meta="title:{{ reg.title }}">{{ reg.summary }}</p>
+  </li>
+  {%- endfor %}
+</ul>

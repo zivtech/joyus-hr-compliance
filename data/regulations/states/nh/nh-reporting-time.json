@@ -1,0 +1,46 @@
+{
+  "id": "nh-reporting-time",
+  "jurisdiction": {
+    "level": "state",
+    "state": "NH",
+    "locality": null
+  },
+  "law_type": "reporting-time-pay",
+  "title": "New Hampshire Reporting Time Pay (Two-Hour Minimum)",
+  "statute_citation": "RSA 275:43-a",
+  "regulatory_citation": null,
+  "summary": "New Hampshire requires employers to pay employees a minimum of 2 hours of pay when the employee reports to work as scheduled and is sent home before completing 2 hours of work. The pay must be at the employee's regular rate or the applicable minimum wage, whichever is greater. This provides a floor of compensation for employees who make themselves available for work.",
+  "effective_date": "1987-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "reporting_time_pay": {
+      "minimum_hours": 2,
+      "rate": "regular rate of pay or minimum wage, whichever is greater",
+      "trigger": "Employee reports to work as scheduled and is sent home before completing 2 hours of work.",
+      "description": "An employee who reports to work as scheduled must be paid for at least 2 hours at their regular rate or the applicable minimum wage, whichever is greater, even if the employer sends them home before 2 hours of work is completed."
+    },
+    "exceptions": {
+      "acts_of_god": "The reporting time pay requirement may not apply when conditions beyond the employer's control, such as severe weather, utility failures, or other emergencies, prevent work from being performed."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to pay reporting time pay may be subject to enforcement action by the New Hampshire Department of Labor, including back pay claims and penalties.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "New Hampshire's 2-hour minimum reporting time pay is lower than many other states with similar provisions (Connecticut and DC require 4 hours, Massachusetts requires 3 hours). The rate must be at least the minimum wage, which in New Hampshire is the federal minimum wage rate.",
+  "source_urls": [
+    "https://www.gencourt.state.nh.us/rsa/html/XXIII/275/275-43-a.htm",
+    "https://www.nh.gov/labor/inspection/wage-hour/index.htm"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

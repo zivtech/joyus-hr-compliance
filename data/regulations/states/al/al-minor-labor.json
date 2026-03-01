@@ -1,0 +1,49 @@
+{
+  "id": "al-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "AL",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "Alabama Minor Labor Restrictions",
+  "statute_citation": "Ala. Code § 25-8-36 et seq.",
+  "regulatory_citation": null,
+  "summary": "Alabama restricts the employment of minors under the age of 16. Children under 14 are generally prohibited from working. Minors under 16 must receive a 30-minute break for every 5 hours of work. Work permits are required for minors under 16, and employers must comply with hour restrictions during school periods.",
+  "effective_date": "1986-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["14-15", "under-14"]
+  },
+  "requirements": {
+    "under_14": {
+      "description": "Children under 14 are generally prohibited from employment in Alabama, with limited exceptions for agricultural work and entertainment with permits."
+    },
+    "ages_14_15": {
+      "description": "Minors aged 14-15 may work with restrictions. A 30-minute meal break is required for every 5 hours of work. Work permits are required. Hours are restricted during the school year.",
+      "meal_break_minutes": 30,
+      "meal_break_trigger_hours": 5,
+      "work_permit_required": true
+    },
+    "under_16_general": {
+      "description": "Minors under 16 must receive a 30-minute break for every 5 hours worked. They may not work in hazardous occupations and are subject to hour limitations during school periods."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate Alabama child labor laws may be subject to fines and criminal penalties. Each violation constitutes a separate offense.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Alabama's child labor laws primarily focus on minors under 16. The state defers to federal FLSA rules for adult workers regarding overtime, meal breaks, and rest breaks. There are no general state meal break or rest break requirements for adult employees.",
+  "source_urls": [
+    "https://www.labor.alabama.gov/inspections/ChildLabor.aspx",
+    "https://alisondb.legislature.state.al.us/alison/CodeOfAlabama/1975/Coatoc.htm"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

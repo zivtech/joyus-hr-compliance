@@ -1,0 +1,47 @@
+{
+  "id": "ky-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "KY",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Kentucky Meal Break Requirements",
+  "statute_citation": "KRS 337.355",
+  "regulatory_citation": null,
+  "summary": "Kentucky requires employers to provide employees with a reasonable meal break of at least 20 minutes duration between the third and fifth hour of work for any employee scheduled to work 5 or more consecutive hours. The meal break is unpaid if the employee is completely relieved of all duties.",
+  "effective_date": "1974-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_period": {
+      "trigger_hours": 5,
+      "duration_minutes": 20,
+      "timing": "Must be provided between the third and fifth hour of work.",
+      "duty_free": true,
+      "description": "A reasonable meal period of no less than 20 minutes must be provided between the third and fifth hour of the work period for employees who work 5 or more consecutive hours."
+    },
+    "reasonable_proximity": {
+      "description": "The meal period must be provided at a reasonably close time to the middle of the scheduled work period, specifically between the third and fifth hour."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide required meal breaks may be subject to enforcement action by the Kentucky Labor Cabinet. Employees may file complaints for violations.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 5
+  },
+  "notes": "Kentucky is one of the few states that specifies both a minimum duration for the meal break (20 minutes) and a specific window during which it must be provided (between the third and fifth hour). The timing requirement is more prescriptive than most states.",
+  "source_urls": [
+    "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=32081",
+    "https://labor.ky.gov/standards/Pages/Wage-and-Hour.aspx"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

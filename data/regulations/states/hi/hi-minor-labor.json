@@ -1,0 +1,49 @@
+{
+  "id": "hi-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "HI",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "Hawaii Minor Labor Restrictions",
+  "statute_citation": "HRS § 390-1 et seq.",
+  "regulatory_citation": null,
+  "summary": "Hawaii requires work permits for minors aged 14-15. The state restricts the hours and types of work that minors under 16 may perform. Work permits are obtained through the Department of Labor and Industrial Relations.",
+  "effective_date": "1975-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["14-15", "under-14"]
+  },
+  "requirements": {
+    "work_permits": {
+      "description": "Work permits are required for minors aged 14-15. Permits are issued by the Hawaii Department of Labor and Industrial Relations.",
+      "required_ages": "14-15",
+      "issuing_authority": "Hawaii Department of Labor and Industrial Relations"
+    },
+    "ages_14_15": {
+      "description": "Minors aged 14-15 may work with hour and occupation restrictions. They may not work during school hours and are limited in the types of jobs they may hold.",
+      "work_permit_required": true
+    },
+    "under_14": {
+      "description": "Children under 14 are generally prohibited from employment in Hawaii, with limited exceptions."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate Hawaii's child labor laws may be subject to fines and other enforcement actions by the Department of Labor and Industrial Relations.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Hawaii's child labor laws work in conjunction with federal FLSA child labor provisions. Where state and federal standards differ, the stricter standard applies.",
+  "source_urls": [
+    "https://www.capitol.hawaii.gov/hrscurrent/Vol07_Ch0346-0398/HRS0390/",
+    "https://labor.hawaii.gov/wsd/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: Browse by Jurisdiction
+permalink: /jurisdiction/
+---
+
+<h1>Browse by Jurisdiction</h1>
+<p>Select a jurisdiction to see its applicable labor law regulations.</p>
+
+<div class="browse-grid">
+  {%- for jur in jurisdictions %}
+  <a href="/jurisdiction/{{ jur.key }}/" class="browse-item">
+    {{ jur.label }}
+    <span class="browse-count">{{ jur.count }} regulation{{ 's' if jur.count !== 1 }}</span>
+  </a>
+  {%- endfor %}
+</div>

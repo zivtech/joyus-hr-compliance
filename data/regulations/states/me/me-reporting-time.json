@@ -1,0 +1,41 @@
+{
+  "id": "me-reporting-time",
+  "jurisdiction": {
+    "level": "state",
+    "state": "ME",
+    "locality": null
+  },
+  "law_type": "reporting-time-pay",
+  "title": "Maine Reporting Time Pay",
+  "statute_citation": "26 MRS § 664",
+  "regulatory_citation": null,
+  "summary": "Effective September 2025, Maine requires employers to provide reporting time pay to employees who report to work as scheduled but are given less than the scheduled hours. Employees must be compensated for a minimum number of hours when they report to work at the employer's request.",
+  "effective_date": "2025-09-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "reporting_time_pay": {
+      "description": "When an employee reports to work as scheduled or at the employer's request and is given less than the scheduled hours of work, the employer must compensate the employee for the scheduled hours or a minimum number of hours, whichever is less.",
+      "trigger": "Employee reports to work as scheduled but is sent home early or given fewer hours than scheduled."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide reporting time pay may be subject to enforcement action by the Maine Department of Labor, including back pay and penalties.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": "Maine's reporting time pay law became effective in September 2025. This makes Maine one of a growing number of states with reporting time pay protections for workers. Employers should ensure scheduling practices account for this requirement.",
+  "source_urls": [
+    "https://legislature.maine.gov/statutes/26/title26sec664.html",
+    "https://www.maine.gov/labor/"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

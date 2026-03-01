@@ -1,0 +1,48 @@
+{
+  "id": "ky-overtime",
+  "jurisdiction": {
+    "level": "state",
+    "state": "KY",
+    "locality": null
+  },
+  "law_type": "overtime",
+  "title": "Kentucky Overtime — Seventh Consecutive Day",
+  "statute_citation": "KRS 337.285",
+  "regulatory_citation": null,
+  "summary": "Kentucky requires overtime pay at 1.5 times the regular rate of pay for hours worked on the seventh consecutive day of work in any workweek. In addition, Kentucky follows the federal 40-hour weekly overtime threshold. The seventh-day overtime provision provides additional protection beyond the federal FLSA, which does not require overtime based solely on consecutive days worked.",
+  "effective_date": "1974-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "weekly_overtime": {
+      "threshold_hours": 40,
+      "rate_multiplier": 1.5,
+      "description": "All hours worked in excess of 40 in a single workweek must be compensated at 1.5 times the employee's regular rate of pay, consistent with federal FLSA requirements."
+    },
+    "seventh_consecutive_day": {
+      "rate_multiplier": 1.5,
+      "description": "All hours worked on the seventh consecutive day of work in a workweek must be compensated at 1.5 times the employee's regular rate of pay, regardless of total hours worked in the week."
+    },
+    "no_pyramiding": true,
+    "pyramiding_note": "Seventh-day overtime and weekly overtime do not stack. The employee receives the highest applicable overtime rate for any given hour."
+  },
+  "penalties": {
+    "description": "Employers who fail to pay required overtime are liable for unpaid wages plus an additional equal amount as liquidated damages. The Kentucky Labor Cabinet may investigate complaints and take enforcement action.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 5
+  },
+  "notes": "Kentucky's seventh consecutive day overtime provision is similar to California's but without the double-time escalation for hours beyond 8 on the seventh day. Federal law does not require overtime solely for working a seventh consecutive day. Employers should track consecutive workdays to ensure compliance with this state-specific requirement.",
+  "source_urls": [
+    "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=32074",
+    "https://labor.ky.gov/standards/Pages/Wage-and-Hour.aspx"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

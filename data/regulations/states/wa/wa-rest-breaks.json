@@ -1,0 +1,51 @@
+{
+  "id": "wa-rest-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "WA",
+    "locality": null
+  },
+  "law_type": "rest-breaks",
+  "title": "Washington Rest Break Requirements",
+  "statute_citation": "RCW 49.12.480",
+  "regulatory_citation": "WAC 296-126-092",
+  "summary": "Washington requires employers to provide a paid 10-minute rest break for every 4 hours worked. Rest breaks must be provided no later than the end of the third hour of each 4-hour work period. Rest breaks are paid time and may not be deducted from wages.",
+  "effective_date": "1973-01-01",
+  "sunset_date": null,
+  "last_amended": "2023-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 1,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "rest_break_duration_minutes": 10,
+    "hours_worked_per_break": 4,
+    "paid": true,
+    "timing": "Must be provided no later than the end of the third hour of each 4-hour work period.",
+    "break_schedule_examples": {
+      "4_hour_shift": 1,
+      "6_hour_shift": 1,
+      "8_hour_shift": 2,
+      "10_hour_shift": 3,
+      "12_hour_shift": 3
+    },
+    "cannot_be_combined_with_meal_break": true,
+    "cannot_be_waived": true,
+    "note": "Rest breaks may not be added to the meal period or used to shorten the workday. Employers cannot require employees to remain on the work premises during rest breaks."
+  },
+  "penalties": {
+    "description": "Failure to provide rest breaks may result in the employer owing the employee their regular rate for each rest break not provided, plus potential penalties under state wage laws.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Rest breaks are considered hours worked and must be compensated. They are separate from meal breaks and may not be combined. The Washington Supreme Court has ruled that rest breaks must be scheduled as close to the midpoint of each 4-hour work period as practicable.",
+  "source_urls": [
+    "https://app.leg.wa.gov/wac/default.aspx?cite=296-126-092",
+    "https://lni.wa.gov/workers-rights/wages/getting-paid/meals-and-breaks"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

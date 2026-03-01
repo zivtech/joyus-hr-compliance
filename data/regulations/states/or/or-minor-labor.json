@@ -1,0 +1,98 @@
+{
+  "id": "or-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "OR",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "Oregon Minor Labor Standards",
+  "statute_citation": "ORS 653.305-653.370",
+  "regulatory_citation": "OAR 839-021",
+  "summary": "Oregon prohibits employment of children under 14, with limited exceptions. Minors aged 14-15 are subject to federal child labor rules plus additional state restrictions. Minors aged 16-17 have no state-imposed hour limits but are prohibited from working in hazardous occupations. Work permits (employment certificates) are required for all minors under 18.",
+  "effective_date": "1967-01-01",
+  "sunset_date": null,
+  "last_amended": "2024-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 1,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["16-17", "14-15", "under-14"]
+  },
+  "requirements": {
+    "work_permit_required": {
+      "under_18": true,
+      "description": "All minors under 18 must obtain an employment certificate (work permit) before beginning employment. Permits are obtained through the minor's school district or through BOLI."
+    },
+    "age_group_under_14": {
+      "general_prohibition": true,
+      "description": "Children under 14 are prohibited from employment in Oregon.",
+      "exceptions": [
+        "Agricultural work performed outside of school hours with parental consent",
+        "Casual domestic work (babysitting, lawn mowing) in private homes",
+        "Entertainment industry with a BOLI-issued permit",
+        "Newspaper delivery (age 11+)"
+      ]
+    },
+    "age_group_14_15": {
+      "description": "14-15 year olds are subject to federal child labor rules (FLSA) plus Oregon-specific additions.",
+      "school_period": {
+        "max_hours_per_day_school_day": 3,
+        "max_hours_per_day_non_school_day": 8,
+        "max_hours_per_week": 18,
+        "earliest_start_time": "07:00",
+        "latest_end_time": "19:00",
+        "note": "May not work during school hours."
+      },
+      "non_school_period": {
+        "max_hours_per_day": 8,
+        "max_hours_per_week": 40,
+        "earliest_start_time": "07:00",
+        "latest_end_time": "21:00",
+        "note": "From June 1 through Labor Day, the evening hour extends to 9:00 PM."
+      },
+      "additional_state_restrictions": [
+        "May not work in manufacturing, processing, or mining",
+        "May not operate power-driven machinery",
+        "May not work in occupations declared hazardous by BOLI"
+      ]
+    },
+    "age_group_16_17": {
+      "hour_limits": false,
+      "description": "Oregon does not impose state-specific hour limitations on 16-17 year olds. However, they remain subject to hazardous occupation restrictions.",
+      "hazardous_occupation_restrictions": true,
+      "prohibited_occupations": [
+        "Mining or quarrying",
+        "Manufacturing or storing explosives",
+        "Logging and sawmilling",
+        "Operating power-driven hoisting equipment",
+        "Operating power-driven metal forming, punching, or shearing machines",
+        "Slaughtering or meat packing",
+        "Operating power-driven bakery machines",
+        "Roofing operations",
+        "Excavation operations",
+        "Work involving exposure to radioactive substances"
+      ]
+    },
+    "breaks": {
+      "description": "Minors receive the same meal and rest break protections as adult employees under ORS 653.261. Additional protections may apply in specific industries.",
+      "meal_break_duration_minutes": 30,
+      "meal_break_trigger_hours": 6,
+      "rest_break_duration_minutes": 10,
+      "rest_break_frequency_hours": 4
+    }
+  },
+  "penalties": {
+    "description": "Violations of Oregon child labor laws may result in civil penalties imposed by BOLI. Each violation constitutes a separate offense. Willful violations may result in enhanced penalties.",
+    "per_violation_amount": 1000,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "Oregon's approach to minor labor is moderate: it follows federal rules closely for 14-15 year olds and is relatively permissive for 16-17 year olds (no hour limits). The key Oregon-specific requirements are the universal work permit mandate for all minors under 18 and the additional prohibited occupations list maintained by BOLI. Employers must keep employment certificates on file and available for inspection.",
+  "source_urls": [
+    "https://www.oregonlegislature.gov/bills_laws/ors/ors653.html",
+    "https://www.oregon.gov/boli/employers/pages/youth-employment.aspx"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

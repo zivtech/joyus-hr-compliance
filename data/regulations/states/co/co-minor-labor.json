@@ -1,0 +1,80 @@
+{
+  "id": "co-minor-labor",
+  "jurisdiction": {
+    "level": "state",
+    "state": "CO",
+    "locality": null
+  },
+  "law_type": "minor-labor",
+  "title": "Colorado Minor Labor Standards",
+  "statute_citation": "C.R.S. § 8-12-105",
+  "regulatory_citation": null,
+  "summary": "Colorado regulates the employment of minors under 16 with restrictions on maximum hours, time-of-day limitations, and work permit requirements. Minors under 16 may work a maximum of 8 hours per day and 40 hours per week during non-school periods, with more restrictive limits during the school year. Work permits are required for minors under 16.",
+  "effective_date": "1963-01-01",
+  "sunset_date": null,
+  "last_amended": "2024-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 1,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["16-17", "14-15", "under-14"]
+  },
+  "requirements": {
+    "work_permit_required": {
+      "under_16": true,
+      "16_17": false,
+      "description": "Work permits are required for minors under 16. Permits are issued by the minor's school district."
+    },
+    "age_group_under_16": {
+      "non_school_period": {
+        "max_hours_per_day": 8,
+        "max_hours_per_week": 40,
+        "earliest_start_time": "07:00",
+        "latest_end_time": "21:00"
+      },
+      "school_period": {
+        "max_hours_per_day_school_day": 3,
+        "max_hours_per_day_non_school_day": 8,
+        "max_hours_per_week": 18,
+        "earliest_start_time": "07:00",
+        "latest_end_time": "19:30",
+        "note": "During school weeks, minors under 16 may not work during school hours."
+      },
+      "summer_extended_hours": {
+        "latest_end_time": "21:00",
+        "note": "From June 1 through Labor Day, the evening curfew extends to 9:00 PM."
+      }
+    },
+    "age_group_16_17": {
+      "description": "Colorado does not impose state-specific hour limitations on 16-17 year olds beyond federal requirements. However, 16-17 year olds are still prohibited from working in hazardous occupations.",
+      "hazardous_occupation_restrictions": true
+    },
+    "age_group_under_14": {
+      "description": "Children under 14 are generally prohibited from employment, with limited exceptions for agricultural work, entertainment (with permits), and newspaper delivery."
+    },
+    "prohibited_occupations": [
+      "Mining or quarrying",
+      "Manufacturing or processing using power-driven machinery",
+      "Work involving explosives",
+      "Logging and sawmilling",
+      "Slaughtering or meat packing",
+      "Roofing operations",
+      "Excavation operations",
+      "Power-driven bakery machines",
+      "Work in establishments where alcoholic beverages are served (under 16)"
+    ]
+  },
+  "penalties": {
+    "description": "Violations of Colorado child labor laws may result in civil penalties assessed by the Division of Labor Standards and Statistics. Willful violations may result in criminal penalties.",
+    "per_violation_amount": 1000,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Colorado's minor labor laws are less restrictive for 16-17 year olds compared to states like Washington. The primary focus is on minors under 16, who face hour and time-of-day restrictions similar to federal standards. Work permits for minors under 16 are administered through school districts. Employers must maintain records of employment for all minors.",
+  "source_urls": [
+    "https://leg.colorado.gov/sites/default/files/images/olls/crs2023-title-08.pdf",
+    "https://cdle.colorado.gov/wage-and-hour-law/youth-employment"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

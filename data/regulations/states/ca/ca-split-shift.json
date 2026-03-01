@@ -1,0 +1,50 @@
+{
+  "id": "ca-split-shift",
+  "jurisdiction": {
+    "level": "state",
+    "state": "CA",
+    "locality": null
+  },
+  "law_type": "split-shift",
+  "title": "California Split Shift Premium",
+  "statute_citation": "Cal. Lab. Code § 1182.12",
+  "regulatory_citation": "8 CCR § 11040",
+  "summary": "California requires employers to pay a split shift premium of one hour at the state minimum wage to any employee whose workday includes a split shift. A split shift is a work schedule interrupted by non-paid, non-working periods established by the employer, other than bona fide rest or meal periods. The premium is reduced by any amount the employee's hourly rate exceeds the minimum wage, calculated over the total hours worked that day. The current California state minimum wage is $16.50 per hour.",
+  "effective_date": "2001-01-01",
+  "sunset_date": null,
+  "last_amended": "2024-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "split_shift_definition": "A work schedule that is interrupted by non-paid, non-working periods established by the employer, other than bona fide rest or meal periods.",
+    "premium": {
+      "amount_hours": 1,
+      "rate": "minimum wage",
+      "current_minimum_wage": 16.50,
+      "description": "Employees who work a split shift are entitled to one additional hour of pay at the state minimum wage rate."
+    },
+    "offset_rule": {
+      "description": "The split shift premium is offset (reduced) by any amount the employee's regular hourly rate exceeds the applicable minimum wage, multiplied by the total hours worked that day. If the total premium earned from the hourly rate above minimum wage meets or exceeds the one-hour minimum wage premium, no additional split shift premium is owed."
+    },
+    "calculation_example": {
+      "description": "If an employee earns $18.00/hr and works 8 hours in a split shift, the offset is ($18.00 - $16.50) x 8 = $12.00. Since $12.00 exceeds the $16.50 split shift premium, no additional premium is owed."
+    }
+  },
+  "penalties": {
+    "description": "Failure to pay the split shift premium may result in recovery of unpaid wages plus interest, waiting time penalties, and penalties under PAGA. Employees may also recover attorney fees.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "The split shift premium applies based on the state minimum wage even if a local minimum wage is higher, per DLSE guidance. However, some local ordinances may have their own split shift provisions. The offset calculation is based on the state minimum wage, not a local minimum wage. Voluntary schedule changes requested by the employee may not constitute an employer-established split shift.",
+  "source_urls": [
+    "https://www.dir.ca.gov/dlse/faq_splitshift.htm",
+    "https://www.dir.ca.gov/IWC/IWCArticle11702.html"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ky-rest-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "KY",
+    "locality": null
+  },
+  "law_type": "rest-breaks",
+  "title": "Kentucky Rest Break Requirements",
+  "statute_citation": "KRS 337.365",
+  "regulatory_citation": null,
+  "summary": "Kentucky requires employers to provide a paid 10-minute rest period for every 4 hours worked. The rest period must be provided in addition to the meal break and is counted as time worked. Kentucky is one of the few states that mandates paid rest breaks for adult employees by statute.",
+  "effective_date": "1974-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "rest_period": {
+      "duration_minutes": 10,
+      "frequency": "Per 4 hours worked",
+      "paid": true,
+      "timing": "Should be provided near the middle of each 4-hour work period insofar as practicable.",
+      "description": "A paid 10-minute rest period must be provided for every 4 hours of work. The rest break is counted as hours worked and must be compensated."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide required rest breaks may face enforcement action by the Kentucky Labor Cabinet. Employees may file wage complaints for unpaid rest break time.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 5
+  },
+  "notes": "Kentucky's mandatory rest break statute is notable because most states do not require rest breaks for adult employees by law. The 10-minute rest per 4 hours mirrors the standard seen in states like California, Colorado, and Washington, though Kentucky established its requirement independently.",
+  "source_urls": [
+    "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=32082",
+    "https://labor.ky.gov/standards/Pages/Wage-and-Hour.aspx"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

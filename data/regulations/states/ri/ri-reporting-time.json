@@ -1,0 +1,46 @@
+{
+  "id": "ri-reporting-time",
+  "jurisdiction": {
+    "level": "state",
+    "state": "RI",
+    "locality": null
+  },
+  "law_type": "reporting-time-pay",
+  "title": "Rhode Island Reporting Time Pay (Three-Hour Minimum)",
+  "statute_citation": "R.I. Gen. Laws § 28-12-3.2",
+  "regulatory_citation": null,
+  "summary": "Rhode Island requires employers to pay employees a minimum of 3 hours of pay at the applicable minimum wage rate when the employee reports to work as scheduled. If the employee is sent home before completing 3 hours of work, the employer must still pay for the full 3 hours. This ensures that employees who make themselves available for scheduled shifts receive a minimum level of compensation.",
+  "effective_date": "1988-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "reporting_time_pay": {
+      "minimum_hours": 3,
+      "rate": "minimum wage",
+      "trigger": "Employee reports to work as scheduled.",
+      "description": "An employee who reports to work as scheduled must be paid for at least 3 hours at no less than the applicable minimum wage rate, regardless of whether the employer provides 3 hours of actual work."
+    },
+    "exceptions": {
+      "weather_emergencies": "The reporting time pay requirement may not apply in cases of severe weather or other emergency conditions beyond the employer's control that prevent operations from continuing."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide reporting time pay may be liable for unpaid wages and enforcement action by the Rhode Island Department of Labor and Training.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Rhode Island's 3-hour minimum reporting time pay is consistent with the provision in Massachusetts. The rate is at the minimum wage, which provides a floor, though employees who work the full 3 hours or more are entitled to their regular rate for all hours actually worked. The emergency exception is narrowly construed.",
+  "source_urls": [
+    "https://webserver.rilegislature.gov/Statutes/TITLE28/28-12/28-12-3.2.htm",
+    "https://dlt.ri.gov/labor-market-information/labor-relations-and-labor-standards"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

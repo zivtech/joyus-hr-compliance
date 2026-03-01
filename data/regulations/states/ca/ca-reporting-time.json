@@ -1,0 +1,55 @@
+{
+  "id": "ca-reporting-time",
+  "jurisdiction": {
+    "level": "state",
+    "state": "CA",
+    "locality": null
+  },
+  "law_type": "reporting-time-pay",
+  "title": "California Reporting Time Pay",
+  "statute_citation": "Cal. Lab. Code § 1182",
+  "regulatory_citation": "8 CCR § 11040",
+  "summary": "California requires employers to pay reporting time pay when an employee reports to work as scheduled but is not put to work or is furnished less than half of the usual or scheduled day's work. The employee must be paid for half of the usual or scheduled day's work, with a minimum of 2 hours and a maximum of 4 hours, at the employee's regular rate of pay. A second reporting in the same workday entitles the employee to at least 2 hours of pay.",
+  "effective_date": "2001-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "reporting_time_pay": {
+      "trigger": "Employee reports to work as scheduled or at the employer's request and is not put to work or is furnished less than half the usual or scheduled day's work.",
+      "pay_amount": "Half of the usual or scheduled day's work",
+      "minimum_hours": 2,
+      "maximum_hours": 4,
+      "rate": "regular rate of pay",
+      "description": "When an employee reports to work and is not put to work, or is given less than half of the usual or scheduled day's work, the employer must pay for half of the usual or scheduled day's work, with a minimum of 2 hours and a maximum of 4 hours at the employee's regular rate."
+    },
+    "second_reporting": {
+      "minimum_hours": 2,
+      "rate": "regular rate of pay",
+      "description": "If an employee is required to report for a second time in any one workday and is furnished less than 2 hours of work, the employee must be paid for 2 hours at the regular rate."
+    },
+    "exceptions": {
+      "operations_cannot_begin": "Reporting time pay is not required when operations cannot commence or continue due to threats to employees or property, or when civil authorities recommend that work not begin or continue.",
+      "utilities_failure": "Reporting time pay is not required when public utilities fail to supply electricity, water, or gas, or there is a failure in the utilities in the employer's premises.",
+      "acts_of_god": "Reporting time pay is not required for interruptions of work caused by an Act of God or other causes not within the employer's control."
+    }
+  },
+  "penalties": {
+    "description": "Failure to pay reporting time pay may result in recovery of unpaid wages, interest, waiting time penalties, and PAGA penalties. Employees may also recover attorney fees and costs.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Reporting time pay is separate from and in addition to any pay for actual work performed. The 'usual or scheduled day's work' is determined by the employee's regular schedule or past practice. The exceptions for acts of God, utility failures, and threats apply narrowly and require circumstances genuinely outside the employer's control.",
+  "source_urls": [
+    "https://www.dir.ca.gov/dlse/faq_reportingtimepay.htm",
+    "https://www.dir.ca.gov/IWC/IWCArticle11702.html"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

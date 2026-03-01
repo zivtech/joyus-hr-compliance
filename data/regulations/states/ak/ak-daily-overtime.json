@@ -1,0 +1,49 @@
+{
+  "id": "ak-daily-overtime",
+  "jurisdiction": {
+    "level": "state",
+    "state": "AK",
+    "locality": null
+  },
+  "law_type": "overtime",
+  "title": "Alaska Daily and Weekly Overtime",
+  "statute_citation": "AS 23.10.060",
+  "regulatory_citation": null,
+  "summary": "Alaska requires overtime pay at 1.5 times the regular rate of pay for all hours worked over 8 in a single workday and for all hours worked over 40 in a single workweek. Alaska is one of the few states that mandates daily overtime in addition to the federal weekly overtime threshold. The daily and weekly overtime provisions do not pyramid; only the highest applicable rate applies to any given hour.",
+  "effective_date": "1959-01-03",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "daily_overtime": {
+      "threshold_hours": 8,
+      "rate_multiplier": 1.5,
+      "description": "All hours worked in excess of 8 in a single workday must be compensated at 1.5 times the employee's regular rate of pay."
+    },
+    "weekly_overtime": {
+      "threshold_hours": 40,
+      "rate_multiplier": 1.5,
+      "description": "All hours worked in excess of 40 in a single workweek must be compensated at 1.5 times the employee's regular rate of pay."
+    },
+    "no_pyramiding": true,
+    "pyramiding_note": "Daily and weekly overtime do not stack. An employee is entitled only to the highest applicable overtime rate for any given hour worked."
+  },
+  "penalties": {
+    "description": "Employers who fail to pay required overtime are liable for unpaid wages plus liquidated damages. The Alaska Department of Labor may investigate complaints and impose penalties for willful violations.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "Alaska's daily overtime threshold mirrors California's 8-hour daily rule but does not include double time provisions. Agricultural employees, domestic service employees, and certain other categories may be exempt from overtime requirements under AS 23.10.055.",
+  "source_urls": [
+    "https://www.akleg.gov/basis/statutes.asp#23.10.060",
+    "https://labor.alaska.gov/lss/whact.htm"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

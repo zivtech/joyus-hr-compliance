@@ -1,0 +1,52 @@
+{
+  "id": "ma-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "MA",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Massachusetts Meal Break Requirements",
+  "statute_citation": "Mass. Gen. Laws ch. 149, § 100",
+  "regulatory_citation": null,
+  "summary": "Massachusetts requires employers to provide a 30-minute meal break to employees who work 6 or more hours in a day. During the meal break, the employee cannot be required to work and must be free from all duties. If the employer requires the employee to remain at the workplace or to perform any duties during the break, the meal period must be paid. The Attorney General may grant exemptions to specific employers or industries on a case-by-case basis.",
+  "effective_date": "1913-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["all"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "meal_period": {
+      "trigger_hours": 6,
+      "duration_minutes": 30,
+      "duty_free": true,
+      "paid": false,
+      "description": "A 30-minute meal break must be provided to all employees who work 6 or more hours in a calendar day. The employee must be relieved of all duties and free from work during the meal period."
+    },
+    "on_duty_meal_requirement": {
+      "description": "If an employer requires the employee to remain at the workplace or perform any duties during the meal period, the time must be compensated as hours worked.",
+      "paid": true
+    },
+    "exemptions": {
+      "attorney_general_exemption": "The Attorney General may grant exemptions from the meal break requirement for specific employers or industries where compliance would be impractical, upon application.",
+      "iron_works_glass_works": "Certain iron works, glass works, paper mills, and similar establishments with specific operational constraints may qualify for exemptions."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate the meal break requirement may face enforcement action by the Massachusetts Attorney General's Fair Labor Division. Penalties may include fines and orders to provide back pay for missed meal breaks.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Massachusetts' meal break law is one of the oldest in the nation, dating back to the early 20th century. Unlike California, Massachusetts does not provide a premium pay penalty for missed meal breaks, but employees may file complaints with the Attorney General. The law covers all employees, not just non-exempt workers.",
+  "source_urls": [
+    "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter149/Section100",
+    "https://www.mass.gov/info-details/massachusetts-law-about-meal-breaks"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

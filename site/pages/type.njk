@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: Browse by Law Type
+permalink: /type/
+---
+
+<h1>Browse by Law Type</h1>
+<p>Select a category to see regulations of that type across all jurisdictions.</p>
+
+<div class="browse-grid">
+  {%- for type in lawTypes %}
+  <a href="/type/{{ type }}/" class="browse-item">
+    {{ type | lawTypeLabel }}
+    <span class="browse-count">{{ regulations | where("law_type", type) | length }} regulation{{ 's' if (regulations | where("law_type", type) | length) !== 1 }}</span>
+  </a>
+  {%- endfor %}
+</div>

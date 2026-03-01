@@ -1,0 +1,73 @@
+{
+  "id": "ca-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "CA",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "California Meal Break Requirements",
+  "statute_citation": "Cal. Lab. Code § 512",
+  "regulatory_citation": "8 CCR § 11040",
+  "summary": "California requires employers to provide a duty-free 30-minute meal period before the end of an employee's fifth hour of work. A second 30-minute meal period is required before the end of the tenth hour of work. Employees may waive the first meal period if the shift is no longer than 6 hours, and may waive the second meal period if the shift is no longer than 12 hours and the first meal period was not waived. If an employer fails to provide a compliant meal period, the employee is entitled to one additional hour of pay at the regular rate as premium pay for each workday the violation occurs.",
+  "effective_date": "2001-01-01",
+  "sunset_date": null,
+  "last_amended": "2012-01-01",
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17", "14-15"]
+  },
+  "requirements": {
+    "first_meal_period": {
+      "trigger_hours": 5,
+      "duration_minutes": 30,
+      "timing": "Must be provided before the end of the fifth hour of work.",
+      "duty_free": true,
+      "description": "A 30-minute duty-free meal period must be provided no later than the end of the employee's fifth hour of work."
+    },
+    "second_meal_period": {
+      "trigger_hours": 10,
+      "duration_minutes": 30,
+      "timing": "Must be provided before the end of the tenth hour of work.",
+      "duty_free": true,
+      "description": "A second 30-minute duty-free meal period must be provided no later than the end of the employee's tenth hour of work."
+    },
+    "waivers": {
+      "first_meal_waiver": {
+        "max_shift_hours": 6,
+        "description": "The first meal period may be waived by mutual consent if the work period is no more than 6 hours."
+      },
+      "second_meal_waiver": {
+        "max_shift_hours": 12,
+        "condition": "First meal period was not waived.",
+        "description": "The second meal period may be waived by mutual consent if the work period is no more than 12 hours and the first meal period was not waived."
+      }
+    },
+    "on_duty_meal_period": {
+      "allowed": true,
+      "conditions": "Permitted only when the nature of the work prevents relief from all duties and by written agreement between the parties. The agreement must state that the employee may revoke it at any time.",
+      "paid": true
+    },
+    "violation_premium": {
+      "amount_hours": 1,
+      "rate": "regular rate of pay",
+      "frequency": "per workday the violation occurs",
+      "description": "One additional hour of pay at the employee's regular rate of pay for each workday that a compliant meal period is not provided."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide required meal periods must pay one additional hour of premium pay at the regular rate for each workday a meal period is not provided. Additional penalties may apply under PAGA (Private Attorneys General Act) and for willful violations.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 3
+  },
+  "notes": "Under Brinker Restaurant Corp. v. Superior Court (2012), employers must provide meal periods but are not required to ensure employees take them, as long as employees are relieved of all duties and free to leave the premises. On-duty meal periods must be in writing and are only permissible when the nature of work prevents an off-duty break.",
+  "source_urls": [
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=512.&lawCode=LAB",
+    "https://www.dir.ca.gov/dlse/faq_mealperiods.htm"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

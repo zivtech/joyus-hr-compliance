@@ -1,0 +1,38 @@
+{
+  "id": "xx-regulation-name",
+  "jurisdiction": {
+    "level": "state",
+    "state": "XX",
+    "locality": null
+  },
+  "law_type": "overtime",
+  "title": "State Name — Regulation Title",
+  "statute_citation": "State Code § Section",
+  "regulatory_citation": null,
+  "summary": "Plain-language summary of what this regulation requires (minimum 10 characters).",
+  "effective_date": "YYYY-MM-DD",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult"]
+  },
+  "requirements": {
+    "description": "Detailed requirement description",
+    "key_threshold": "value"
+  },
+  "penalties": {
+    "description": "Description of penalties for violations",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": null
+  },
+  "notes": null,
+  "source_urls": [
+    "https://official-source.gov/path/to/law"
+  ],
+  "last_verified": "YYYY-MM-DD",
+  "contributors": ["your-github-username"]
+}

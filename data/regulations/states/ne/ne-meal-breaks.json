@@ -1,0 +1,49 @@
+{
+  "id": "ne-meal-breaks",
+  "jurisdiction": {
+    "level": "state",
+    "state": "NE",
+    "locality": null
+  },
+  "law_type": "meal-breaks",
+  "title": "Nebraska Meal Break Requirements for Assembly and Workshop Employees",
+  "statute_citation": "Neb. Rev. Stat. § 48-212.01",
+  "regulatory_citation": null,
+  "summary": "Nebraska requires employers operating assembling plants, workshops, or mechanical establishments with 25 or more employees to provide a 30-minute meal break during each shift. The meal break must allow employees to leave the premises to eat. This requirement applies specifically to manufacturing and assembly-type workplaces and is not a general meal break mandate for all industries.",
+  "effective_date": "1986-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": 25,
+    "industries": ["assembling plants", "workshops", "mechanical establishments"],
+    "employee_types": ["all"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "meal_period": {
+      "duration_minutes": 30,
+      "off_premises": true,
+      "description": "A 30-minute meal break must be provided during each shift, and employees must be allowed to leave the premises to eat the meal."
+    },
+    "employer_size_threshold": {
+      "minimum_employees": 25,
+      "description": "The meal break requirement applies only to assembling plants, workshops, and mechanical establishments that employ 25 or more employees."
+    },
+    "industry_limitation": {
+      "description": "This regulation applies specifically to assembling plants, workshops, and mechanical establishments. It is not a general meal break law applicable to all industries in Nebraska."
+    }
+  },
+  "penalties": {
+    "description": "Employers who violate the meal break requirement may face enforcement action by the Nebraska Department of Labor. Violations may result in fines and orders to comply.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "Nebraska's meal break law is notably narrow in scope compared to other states, applying only to specific types of manufacturing and assembly workplaces with 25 or more employees. Most other employers in Nebraska are not subject to a state-mandated meal break requirement. The off-premises requirement is a distinctive feature that goes beyond what many states require.",
+  "source_urls": [
+    "https://nebraskalegislature.gov/laws/statutes.php?statute=48-212.01",
+    "https://dol.nebraska.gov/LaborStandards/FAQ/Breaks"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}

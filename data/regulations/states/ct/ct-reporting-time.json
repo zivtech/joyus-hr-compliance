@@ -1,0 +1,47 @@
+{
+  "id": "ct-reporting-time",
+  "jurisdiction": {
+    "level": "state",
+    "state": "CT",
+    "locality": null
+  },
+  "law_type": "reporting-time-pay",
+  "title": "Connecticut Reporting Time Pay",
+  "statute_citation": "Conn. Gen. Stat. § 31-62",
+  "regulatory_citation": "Conn. Agencies Regs. § 31-62-E1",
+  "summary": "Connecticut requires employers to pay a minimum of 4 hours at the minimum wage rate to employees who report to work as scheduled but are sent home before completing 4 hours. If the employer offers work but the employee chooses not to work the 4 hours, the guarantee does not apply. This ensures that employees who make themselves available for work receive a minimum level of compensation.",
+  "effective_date": "1967-01-01",
+  "sunset_date": null,
+  "last_amended": null,
+  "status": "active",
+  "applicability": {
+    "employer_size_minimum": null,
+    "industries": null,
+    "employee_types": ["non-exempt"],
+    "age_groups": ["adult", "16-17"]
+  },
+  "requirements": {
+    "reporting_time_pay": {
+      "minimum_hours": 4,
+      "rate": "minimum wage",
+      "trigger": "Employee reports to work as scheduled and is sent home before completing 4 hours of work.",
+      "description": "Employees who report to work as scheduled must be paid for a minimum of 4 hours at the applicable minimum wage rate, even if the employer does not provide 4 hours of actual work."
+    },
+    "exceptions": {
+      "employee_choice": "The minimum pay guarantee does not apply if the employer offers 4 hours of work and the employee voluntarily declines to work the full 4 hours.",
+      "acts_of_god": "The requirement may not apply when work cannot be performed due to conditions beyond the employer's control, such as severe weather or utility failures."
+    }
+  },
+  "penalties": {
+    "description": "Employers who fail to provide reporting time pay may be subject to back pay claims, penalties, and enforcement actions by the Connecticut Department of Labor.",
+    "per_violation_amount": null,
+    "statute_of_limitations_years": 2
+  },
+  "notes": "Connecticut's reporting time pay regulation is established through administrative regulation rather than statute alone. The 4-hour minimum at minimum wage provides a floor, though employees who work more than 4 hours are entitled to their regular rate for all hours worked.",
+  "source_urls": [
+    "https://www.cga.ct.gov/current/pub/chap_558.htm#sec_31-62",
+    "https://portal.ct.gov/dol/knowledge-base/articles/wage-and-workplace-standards/reporting-time-pay"
+  ],
+  "last_verified": "2026-01-15",
+  "contributors": ["initial-data-load"]
+}
