@@ -6,6 +6,30 @@ This log tracks data additions, regulation updates, schema changes, and site imp
 
 ## [Unreleased]
 
+## 2026-03-02
+
+### Changed
+- Replaced separate jurisdiction and law type browse pages with client-side JavaScript faceted filtering on the homepage
+- Filter bar supports Jurisdiction, Law Type, and Status dropdowns with multi-select checkboxes, cross-filter-aware counts, and URL parameter sync for shareable links
+- Jurisdiction dropdown includes search input for filtering ~50 jurisdictions
+- Removed 4 browse page templates (~60 generated HTML pages eliminated from build output)
+- Simplified site navigation to "Database" + "Disclaimer"
+
+### Added
+- `site/js/facets.js` — vanilla JS faceted filter engine with progressive enhancement
+- Source quality classification system — regulation pages now show warnings for non-government sources and notes for trusted secondary sources (e.g., Cornell LII)
+- `CONTRIBUTING.md` source policy guidance (prefer official .gov sources, Cornell LII acceptable as supplemental)
+- PR CI workflow (`.github/workflows/ci.yml`) runs `npm run check` on all pull requests
+
+### Fixed
+- GitHub Pages asset paths — added `pathPrefix` to Eleventy config and converted all template paths to use `| url` filter
+- Clean build step — `rm -rf _site` runs before Eleventy to prevent stale artifacts
+
+### Improved
+- Jurisdiction schema constraints — `if/then` rules now enforce required fields per level (federal: no state/locality; state: state required; local: state + locality required)
+- Validator enforces local directory naming convention (`{locality}-{state}/`)
+- Replaced non-government source URLs in GA and TN regulation records with official sources
+
 ## 2026-03-01
 
 ### Changed
