@@ -7,11 +7,51 @@ permalink: /jurisdiction/
 <h1>Browse by Jurisdiction</h1>
 <p>Select a jurisdiction to see its applicable labor law regulations.</p>
 
-<div class="browse-grid">
-  {%- for jur in jurisdictions %}
-  <a href="/jurisdiction/{{ jur.key }}/" class="browse-item">
-    {{ jur.label }}
-    <span class="browse-count">{{ jur.count }} regulation{{ 's' if jur.count !== 1 }}</span>
-  </a>
+{# --- Federal --- #}
+<div class="jur-section">
+  <h2 class="jur-level-heading">Federal</h2>
+  <div class="jur-level-grid">
+    {%- for jur in jurisdictions | where("level", "federal") %}
+    <a href="/jurisdiction/{{ jur.key }}/" class="browse-item">
+      {{ jur.label }}
+      <span class="browse-count">{{ jur.count }} regulation{{ 's' if jur.count !== 1 }}</span>
+    </a>
+    {%- endfor %}
+  </div>
+</div>
+
+{# --- State --- #}
+<div class="jur-section">
+  <h2 class="jur-level-heading">State</h2>
+  <div class="jur-state-grid">
+    {%- for jur in jurisdictions | where("level", "state") | sortBy("label") %}
+    <a href="/jurisdiction/{{ jur.key }}/" class="jur-state-item">
+      <span class="jur-state-abbr">{{ jur.key | upper }}</span>
+      <span class="jur-state-name">{{ jur.label }}</span>
+      <span class="browse-count">{{ jur.count }}</span>
+    </a>
+    {%- endfor %}
+  </div>
+</div>
+
+{# --- Municipal / Local --- #}
+{%- set localJurs = jurisdictions | where("level", "local") %}
+{%- if localJurs | length > 0 %}
+<div class="jur-section">
+  <h2 class="jur-level-heading">Municipal / Local</h2>
+  {%- set localByState = localJurs | groupBy("state") %}
+  {%- for group in localByState | sortBy("key") %}
+  <div class="jur-local-group">
+    <h3 class="jur-local-state">{{ group.key }}</h3>
+    <div class="jur-level-grid">
+      {%- for jur in group.items | sortBy("label") %}
+      <a href="/jurisdiction/{{ jur.key }}/" class="browse-item">
+        {{ jur.locality }}
+        <span class="browse-count">{{ jur.count }} regulation{{ 's' if jur.count !== 1 }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
   {%- endfor %}
 </div>
+{%- endif %}

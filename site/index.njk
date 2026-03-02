@@ -37,11 +37,44 @@ title: Search
 <div class="browse-columns">
   <div>
     <h3>By Jurisdiction</h3>
-    <ul>
-      {%- for jur in jurisdictions %}
-      <li><a href="/jurisdiction/{{ jur.key }}/">{{ jur.label }}</a></li>
-      {%- endfor %}
-    </ul>
+
+    <div class="jur-tree">
+      <div class="jur-tree-section">
+        <span class="jur-tree-heading">Federal</span>
+        <ul>
+          {%- for jur in jurisdictions | where("level", "federal") %}
+          <li><a href="/jurisdiction/{{ jur.key }}/">{{ jur.label }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+
+      <div class="jur-tree-section">
+        <span class="jur-tree-heading">State</span>
+        <ul>
+          {%- for jur in jurisdictions | where("level", "state") | sortBy("label") %}
+          <li><a href="/jurisdiction/{{ jur.key }}/">{{ jur.label }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+
+      {%- set localJurs = jurisdictions | where("level", "local") %}
+      {%- if localJurs | length > 0 %}
+      <div class="jur-tree-section">
+        <span class="jur-tree-heading">Municipal</span>
+        {%- set localByState = localJurs | groupBy("state") %}
+        {%- for group in localByState | sortBy("key") %}
+        <div class="jur-tree-sub">
+          <span class="jur-tree-state">{{ group.key }}</span>
+          <ul>
+            {%- for jur in group.items | sortBy("label") %}
+            <li><a href="/jurisdiction/{{ jur.key }}/">{{ jur.locality }}</a></li>
+            {%- endfor %}
+          </ul>
+        </div>
+        {%- endfor %}
+      </div>
+      {%- endif %}
+    </div>
   </div>
   <div>
     <h3>By Law Type</h3>

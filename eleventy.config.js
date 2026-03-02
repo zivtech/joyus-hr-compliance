@@ -54,7 +54,13 @@ export default function (eleventyConfig) {
           jurCounts[key] = (jurCounts[key] || 0) + 1;
           if (!jurKeys.has(key)) {
             jurKeys.add(key);
-            jurisdictions.push({ key, label, level: reg.jurisdiction.level });
+            jurisdictions.push({
+              key,
+              label,
+              level: reg.jurisdiction.level,
+              state: reg.jurisdiction.state || null,
+              locality: reg.jurisdiction.locality || null,
+            });
           }
 
           // Collect law types
