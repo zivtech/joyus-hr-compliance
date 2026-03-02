@@ -31,11 +31,20 @@ Regulation data is stored as individual JSON files in `data/regulations/`, valid
 
 ### Browse the Data
 
-- **By jurisdiction** — federal, then state-by-state
-- **By law type** — overtime, breaks, scheduling, etc.
+- **Faceted filtering** — filter by jurisdiction, law type, and status with combinable dropdowns
 - **Full-text search** — powered by Pagefind
-- **Filter by status** — active, pending, expired, repealed
+- **Shareable filters** — URL parameters persist filter selections for bookmarking and sharing
 - **Source quality notices** — regulation pages flag non-government sources and identify trusted secondary references (such as Cornell LII)
+
+## Install as an Agent Skill
+
+This database is available as a skill for AI coding agents via [skills.sh](https://skills.sh):
+
+```bash
+npx skills add zivtech/joyus-hr-compliance
+```
+
+Once installed, your AI agent can query U.S. labor law scheduling compliance data directly from the structured JSON records.
 
 ## Contributing
 
@@ -66,4 +75,4 @@ This database is for informational purposes only and does not constitute legal a
 
 ## License
 
-MIT
+Apache-2.0
