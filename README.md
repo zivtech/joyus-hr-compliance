@@ -35,6 +35,7 @@ Regulation data is stored as individual JSON files in `data/regulations/`, valid
 - **By law type** — overtime, breaks, scheduling, etc.
 - **Full-text search** — powered by Pagefind
 - **Filter by status** — active, pending, expired, repealed
+- **Source quality notices** — regulation pages flag non-government sources and identify trusted secondary references (such as Cornell LII)
 
 ## Contributing
 

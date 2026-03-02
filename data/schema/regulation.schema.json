@@ -44,12 +44,32 @@
           "description": "City or county name. Null unless jurisdiction.level is 'local'."
         }
       },
-      "if": {
-        "properties": { "level": { "const": "federal" } }
-      },
-      "then": {
-        "properties": { "state": { "const": null }, "locality": { "const": null } }
-      }
+      "allOf": [
+        {
+          "if": { "properties": { "level": { "const": "federal" } } },
+          "then": { "properties": { "state": { "const": null }, "locality": { "const": null } } }
+        },
+        {
+          "if": { "properties": { "level": { "const": "state" } } },
+          "then": {
+            "required": ["state"],
+            "properties": {
+              "state": { "type": "string", "pattern": "^[A-Z]{2}$" },
+              "locality": { "const": null }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "level": { "const": "local" } } },
+          "then": {
+            "required": ["state", "locality"],
+            "properties": {
+              "state": { "type": "string", "pattern": "^[A-Z]{2}$" },
+              "locality": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      ]
     },
     "law_type": {
       "type": "string",

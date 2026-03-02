@@ -46,11 +46,10 @@
   },
   "notes": "Tennessee's meal break law is straightforward with a 6-hour trigger and 30-minute duration. The exemptions for single-employee workplaces and businesses that naturally provide break opportunities are notable.",
   "source_urls": [
-    "https://www.tn.gov/workforce/employees/labor-laws/labor-laws-redirect/meal-breaks.html",
-    "https://advance.lexis.com/documentpage/?pdmfid=1000516&crid=&pdworkfolderid=&ecomp=&prid="
+    "https://www.tn.gov/workforce/employees/labor-laws.html"
   ],
-  "last_verified": "2026-01-15",
-  "record_updated": "2026-01-15",
+  "last_verified": "2026-03-02",
+  "record_updated": "2026-03-02",
   "contributors": [
     "initial-data-load"
   ]

@@ -49,6 +49,9 @@ Place the file in the correct directory:
 - Federal: `29 U.S.C. § 207`, `29 CFR § 785.18`
 - State: `Cal. Lab. Code § 510`, `RCW 49.46.130`
 - Include both statute and regulatory citations when applicable
+- Prefer official government sources (`.gov`, `.us`, state legislature, state labor department, municipal agency pages)
+- Trusted legal references (for example Cornell LII) may be included as supplemental links, but should not be the only source when an official source is available
+- Avoid non-authoritative or paywalled legal summary sources as primary citations
 
 ### 3. Validate Locally
 
@@ -83,6 +86,7 @@ Reviewers will check:
 - [ ] File is in the correct directory for its jurisdiction
 - [ ] Statute citation is correctly formatted
 - [ ] `source_urls` link to official government sources (not third-party summaries)
+- [ ] If a non-government source is included, an official source is also present
 - [ ] `effective_date` matches the official source
 - [ ] `requirements` object captures the key numerical thresholds
 - [ ] `summary` is accurate and plain-language

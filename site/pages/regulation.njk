@@ -128,6 +128,15 @@ eleventyComputed:
   {% endif %}
 
   <h2>Sources</h2>
+  {% if reg.has_non_government_sources %}
+  <div class="source-warning source-warning-risk" role="status">
+    <strong>Source warning:</strong> This record includes non-government sources ({{ reg.non_government_hosts | join(", ") }}). Verify against official government text before relying on it.
+  </div>
+  {% elif reg.has_trusted_secondary_sources %}
+  <div class="source-warning source-warning-note" role="status">
+    <strong>Source note:</strong> This record includes trusted non-government legal references ({{ reg.trusted_secondary_hosts | join(", ") }}). Verify against official government text before relying on it.
+  </div>
+  {% endif %}
   <ul>
     {% for url in reg.source_urls %}
     <li><a href="{{ url }}" target="_blank" rel="noopener">{{ url }}</a></li>

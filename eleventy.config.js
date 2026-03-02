@@ -2,6 +2,73 @@ import fs from "fs";
 import path from "path";
 
 export default function (eleventyConfig) {
+  const trustedSecondaryHosts = new Set([
+    "law.cornell.edu",
+  ]);
+
+  // Government-operated domains that do not end in .gov/.us.
+  const officialNonGovHosts = new Set([
+    "floridajobs.org",
+    "laworks.net",
+    "wagesla.lacity.org",
+    "clkrep.lacity.org",
+  ]);
+
+  function normalizeHost(host) {
+    return host.replace(/^www\./, "");
+  }
+
+  function isOfficialHost(host) {
+    const normalized = normalizeHost(host);
+    return (
+      normalized.endsWith(".gov") ||
+      normalized.includes(".gov.") ||
+      normalized.endsWith(".us") ||
+      normalized.includes(".us.") ||
+      normalized.endsWith(".mil") ||
+      officialNonGovHosts.has(normalized)
+    );
+  }
+
+  function classifySourceHost(host) {
+    const normalized = normalizeHost(host);
+    if (isOfficialHost(normalized)) return "official";
+    if (trustedSecondaryHosts.has(normalized)) return "trusted-secondary";
+    return "non-government";
+  }
+
+  function analyzeSourceUrls(urls = []) {
+    const hosts = [];
+    for (const raw of urls) {
+      try {
+        const host = normalizeHost(new URL(raw).hostname.toLowerCase());
+        if (!hosts.includes(host)) hosts.push(host);
+      } catch {
+        // Ignore malformed URLs; schema validation handles URI structure.
+      }
+    }
+
+    const trustedSecondaryHostsUsed = [];
+    const nonGovernmentHosts = [];
+
+    for (const host of hosts) {
+      const sourceClass = classifySourceHost(host);
+      if (sourceClass === "trusted-secondary") {
+        trustedSecondaryHostsUsed.push(host);
+      } else if (sourceClass === "non-government") {
+        nonGovernmentHosts.push(host);
+      }
+    }
+
+    return {
+      source_hosts: hosts,
+      trusted_secondary_hosts: trustedSecondaryHostsUsed,
+      non_government_hosts: nonGovernmentHosts,
+      has_trusted_secondary_sources: trustedSecondaryHostsUsed.length > 0,
+      has_non_government_sources: nonGovernmentHosts.length > 0,
+    };
+  }
+
   // Single read of all regulation JSON files — derives regulations,
   // jurisdictions, and lawTypes from one pass over the filesystem.
   function loadAllData() {
@@ -20,6 +87,7 @@ export default function (eleventyConfig) {
           walkDir(full);
         } else if (entry.name.endsWith(".json")) {
           const reg = JSON.parse(fs.readFileSync(full, "utf-8"));
+          Object.assign(reg, analyzeSourceUrls(reg.source_urls));
 
           // Compute status based on dates
           if (reg.effective_date > today) {

@@ -68,16 +68,42 @@ function walkDir(dir) {
         continue;
       }
 
-      if (
-        data.jurisdiction.level === "state" &&
-        data.jurisdiction.state &&
-        parentDir !== data.jurisdiction.state.toLowerCase()
-      ) {
-        console.error(
-          `FAIL ${relative}: state "${data.jurisdiction.state}" regulation must be in ${data.jurisdiction.state.toLowerCase()}/ directory`
-        );
-        errors++;
-        continue;
+      if (data.jurisdiction.level === "state") {
+        if (!data.jurisdiction.state) {
+          console.error(
+            `FAIL ${relative}: state-level regulation must have jurisdiction.state`
+          );
+          errors++;
+          continue;
+        }
+        if (parentDir !== data.jurisdiction.state.toLowerCase()) {
+          console.error(
+            `FAIL ${relative}: state "${data.jurisdiction.state}" regulation must be in ${data.jurisdiction.state.toLowerCase()}/ directory`
+          );
+          errors++;
+          continue;
+        }
+      }
+
+      if (data.jurisdiction.level === "local") {
+        if (!data.jurisdiction.state || !data.jurisdiction.locality) {
+          console.error(
+            `FAIL ${relative}: local regulation must have jurisdiction.state and jurisdiction.locality`
+          );
+          errors++;
+          continue;
+        }
+        const expectedDir =
+          data.jurisdiction.locality.toLowerCase().replace(/\s+/g, "-") +
+          "-" +
+          data.jurisdiction.state.toLowerCase();
+        if (parentDir !== expectedDir) {
+          console.error(
+            `FAIL ${relative}: local regulation must be in ${expectedDir}/ directory (got ${parentDir}/)`
+          );
+          errors++;
+          continue;
+        }
       }
 
       console.log(`OK   ${relative}`);
