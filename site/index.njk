@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Search
+title: Database
 ---
 
 <h1>U.S. Labor Law Compliance Database</h1>
@@ -33,63 +33,47 @@ title: Search
   });
 </script>
 
-<h2>Browse</h2>
-<div class="browse-columns">
-  <div>
-    <h3>By Jurisdiction</h3>
+<h2>Regulations</h2>
 
-    <div class="jur-tree">
-      <div class="jur-tree-section">
-        <span class="jur-tree-heading">Federal</span>
-        <ul>
-          {%- for jur in jurisdictions | where("level", "federal") %}
-          <li><a href="{{ ('/jurisdiction/' + jur.key + '/') | url }}">{{ jur.label }}</a></li>
-          {%- endfor %}
-        </ul>
-      </div>
-
-      <div class="jur-tree-section">
-        <span class="jur-tree-heading">State</span>
-        <ul>
-          {%- for jur in jurisdictions | where("level", "state") | sortBy("label") %}
-          <li><a href="{{ ('/jurisdiction/' + jur.key + '/') | url }}">{{ jur.label }}</a></li>
-          {%- endfor %}
-        </ul>
-      </div>
-
-      {%- set localJurs = jurisdictions | where("level", "local") %}
-      {%- if localJurs | length > 0 %}
-      <div class="jur-tree-section">
-        <span class="jur-tree-heading">Municipal</span>
-        {%- set localByState = localJurs | groupBy("state") %}
-        {%- for group in localByState | sortBy("key") %}
-        <div class="jur-tree-sub">
-          <span class="jur-tree-state">{{ group.key }}</span>
-          <ul>
-            {%- for jur in group.items | sortBy("label") %}
-            <li><a href="{{ ('/jurisdiction/' + jur.key + '/') | url }}">{{ jur.locality }}</a></li>
-            {%- endfor %}
-          </ul>
-        </div>
-        {%- endfor %}
-      </div>
-      {%- endif %}
-    </div>
+<div id="facet-bar" class="facet-bar">
+  <div class="facet-group" data-facet="jurisdiction">
+    <button class="facet-group-toggle" aria-expanded="false">
+      Jurisdiction <span class="facet-group-count"></span>
+    </button>
+    <div class="facet-group-panel"></div>
   </div>
-  <div>
-    <h3>By Law Type</h3>
-    <ul>
-      {%- for type in lawTypes %}
-      <li><a href="{{ ('/type/' + type + '/') | url }}">{{ type | lawTypeLabel }}</a></li>
-      {%- endfor %}
-    </ul>
+  <div class="facet-group" data-facet="type">
+    <button class="facet-group-toggle" aria-expanded="false">
+      Law Type <span class="facet-group-count"></span>
+    </button>
+    <div class="facet-group-panel"></div>
+  </div>
+  <div class="facet-group" data-facet="status">
+    <button class="facet-group-toggle" aria-expanded="false">
+      Status <span class="facet-group-count"></span>
+    </button>
+    <div class="facet-group-panel"></div>
   </div>
 </div>
 
-<h2>All Regulations</h2>
+<div class="facet-count">
+  <span id="facet-count-text" class="facet-count-text" role="status" aria-live="polite"></span>
+  <button id="facet-clear" class="facet-clear" hidden>Clear all filters</button>
+</div>
+
+<noscript>
+  <p><em>Enable JavaScript for interactive filtering. All regulations are shown below.</em></p>
+</noscript>
+
+<div id="facet-empty" class="facet-empty">No regulations match the selected filters.</div>
+
 <ul class="reg-list">
   {%- for reg in regulations | sortBy("title") %}
-  <li class="reg-card" data-pagefind-body>
+  <li class="reg-card"
+      data-pagefind-body
+      data-jurisdiction="{{ reg.jurisdiction | jurisdictionLabel }}"
+      data-type="{{ reg.law_type | lawTypeLabel }}"
+      data-status="{{ reg.computed_status }}">
     <div class="reg-card-header">
       <h3 class="reg-card-title"><a href="{{ ('/regulation/' + reg.id + '/') | url }}">{{ reg.title }}</a></h3>
       <span class="badge {{ reg.computed_status | statusBadgeClass }}" data-pagefind-filter="status:{{ reg.computed_status }}">{{ reg.computed_status }}</span>
