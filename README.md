@@ -16,6 +16,8 @@ A structured, schema-validated collection of federal, state, and local labor law
 - **Reporting Time Pay** — minimum pay when sent home early
 - **Split Shift Premiums** — extra pay for non-consecutive shifts
 
+Each regulation includes structured applicability data — employer size thresholds, location requirements, franchise/chain network rules, industry restrictions, and employee type coverage — so you can determine which laws apply to a specific business.
+
 ## Current Coverage
 
 - **Federal** — FLSA overtime, breaks, child labor, PUMP Act
@@ -28,7 +30,7 @@ Regulation data is stored as individual JSON files in `data/regulations/`, valid
 
 ### Browse the Data
 
-- **Faceted filtering** — filter by jurisdiction, law type, and status with combinable dropdowns
+- **Faceted filtering** — filter by jurisdiction, law type, status, and company size with combinable dropdowns
 - **Full-text search** — powered by Pagefind
 - **Shareable filters** — URL parameters persist filter selections for bookmarking and sharing
 - **Source quality notices** — regulation pages flag non-government sources and identify trusted secondary references (such as Cornell LII)

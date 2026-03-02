@@ -15,7 +15,10 @@
   "last_amended": "2021-01-01",
   "status": "active",
   "applicability": {
-    "employer_size_minimum": 30,
+    "employer_size_minimum": null,
+    "minimum_locations": 30,
+    "counting_scope": "nationwide",
+    "includes_franchise_network": true,
     "industries": [
       "fast food"
     ],

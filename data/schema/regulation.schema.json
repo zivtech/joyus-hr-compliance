@@ -133,6 +133,19 @@
           "type": ["integer", "null"],
           "description": "Minimum number of employees for the regulation to apply. Null if no minimum."
         },
+        "minimum_locations": {
+          "type": ["integer", "null"],
+          "description": "Minimum number of business locations for the regulation to apply. Null if no location threshold."
+        },
+        "counting_scope": {
+          "type": ["string", "null"],
+          "enum": ["single_location", "statewide", "nationwide", "worldwide", null],
+          "description": "Geographic scope for counting employees and/or locations toward the threshold."
+        },
+        "includes_franchise_network": {
+          "type": ["boolean", "null"],
+          "description": "Whether franchise/chain network totals count toward size thresholds. True means a franchisee is covered if the brand meets the threshold, even if the individual franchisee does not."
+        },
         "industries": {
           "type": ["array", "null"],
           "items": { "type": "string" },

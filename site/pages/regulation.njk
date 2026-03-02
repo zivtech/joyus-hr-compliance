@@ -78,7 +78,19 @@ eleventyComputed:
     {% if reg.applicability.employer_size_minimum %}
     <div class="meta-item">
       <div class="meta-label">Employer Size</div>
-      <div class="meta-value">{{ reg.applicability.employer_size_minimum }}+ employees</div>
+      <div class="meta-value">{{ reg.applicability.employer_size_minimum }}+ employees{% if reg.applicability.counting_scope %} ({{ reg.applicability.counting_scope }}){% endif %}</div>
+    </div>
+    {% endif %}
+    {% if reg.applicability.minimum_locations %}
+    <div class="meta-item">
+      <div class="meta-label">Location Threshold</div>
+      <div class="meta-value">{{ reg.applicability.minimum_locations }}+ locations{% if reg.applicability.counting_scope %} ({{ reg.applicability.counting_scope }}){% endif %}</div>
+    </div>
+    {% endif %}
+    {% if reg.applicability.includes_franchise_network %}
+    <div class="meta-item">
+      <div class="meta-label">Franchise Networks</div>
+      <div class="meta-value">Franchise/chain network totals count toward thresholds</div>
     </div>
     {% endif %}
     {% if reg.applicability.industries %}

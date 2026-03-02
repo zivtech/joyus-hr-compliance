@@ -54,6 +54,12 @@ title: Database
     </button>
     <div class="facet-group-panel"></div>
   </div>
+  <div class="facet-group" data-facet="size">
+    <button class="facet-group-toggle" aria-expanded="false">
+      Company Size <span class="facet-group-count"></span>
+    </button>
+    <div class="facet-group-panel"></div>
+  </div>
 </div>
 
 <div class="facet-count">
@@ -73,7 +79,11 @@ title: Database
       data-pagefind-body
       data-jurisdiction="{{ reg.jurisdiction | jurisdictionLabel }}"
       data-type="{{ reg.law_type | lawTypeLabel }}"
-      data-status="{{ reg.computed_status }}">
+      data-status="{{ reg.computed_status }}"
+      data-size="{{ reg.applicability | employerSizeLabel }}"
+      data-employer-min="{{ reg.applicability.employer_size_minimum or 0 }}"
+      data-min-locations="{{ reg.applicability.minimum_locations or 0 }}"
+      data-franchise="{{ reg.applicability.includes_franchise_network or false }}">
     <div class="reg-card-header">
       <h3 class="reg-card-title"><a href="{{ ('/regulation/' + reg.id + '/') | url }}">{{ reg.title }}</a></h3>
       <span class="badge {{ reg.computed_status | statusBadgeClass }}" data-pagefind-filter="status:{{ reg.computed_status }}">{{ reg.computed_status }}</span>

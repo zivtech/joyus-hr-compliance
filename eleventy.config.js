@@ -185,6 +185,14 @@ export default function (eleventyConfig) {
       .join(" ");
   });
 
+  eleventyConfig.addFilter("employerSizeLabel", (applicability) => {
+    const min = applicability?.employer_size_minimum;
+    if (min === null || min === undefined || min <= 1) return "No Size Requirement";
+    if (min < 100) return "20+ Employees";
+    if (min < 500) return "250+ Employees";
+    return "500+ Employees";
+  });
+
   eleventyConfig.addFilter("statusBadgeClass", (status) => {
     const classes = {
       active: "badge-active",

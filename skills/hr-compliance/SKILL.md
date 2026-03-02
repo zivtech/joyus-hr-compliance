@@ -102,7 +102,11 @@ Each regulation JSON file contains:
 - **jurisdiction.locality**: City name (only for local)
 - **law_type**: One of the 12 types listed above
 - **status**: `active`, `pending`, `expired`, `repealed`, or `superseded`
-- **applicability**: Who the law applies to (employer size, industries, employee types, age groups)
+- **applicability**: Who the law applies to (employer size, location thresholds, franchise rules, industries, employee types, age groups)
+  - **employer_size_minimum**: Minimum employees (null = no minimum)
+  - **minimum_locations**: Minimum business locations (null = no location threshold)
+  - **counting_scope**: Geographic scope for counting: `single_location`, `statewide`, `nationwide`, `worldwide`, or null
+  - **includes_franchise_network**: `true` if franchise/chain network totals count toward thresholds (a franchisee with 20 employees is covered if the brand meets the threshold)
 - **requirements**: Structured data varying by law type (thresholds, durations, descriptions)
 - **source_urls**: Official government sources for verification
 

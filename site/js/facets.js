@@ -1,9 +1,9 @@
 (function () {
   'use strict';
 
-  var FACETS = ['jurisdiction', 'type', 'status'];
-  var LABELS = { jurisdiction: 'Jurisdiction', type: 'Law Type', status: 'Status' };
-  var active = { jurisdiction: new Set(), type: new Set(), status: new Set() };
+  var FACETS = ['jurisdiction', 'type', 'status', 'size'];
+  var LABELS = { jurisdiction: 'Jurisdiction', type: 'Law Type', status: 'Status', size: 'Company Size' };
+  var active = { jurisdiction: new Set(), type: new Set(), status: new Set(), size: new Set() };
 
   var bar, list, cards, countText, clearBtn, emptyMsg, panels = {};
 
@@ -121,6 +121,9 @@
     if (facet === 'status') {
       var order = ['active', 'pending', 'expired', 'repealed', 'superseded'];
       arr.sort(function (a, b) { return order.indexOf(a.value) - order.indexOf(b.value); });
+    } else if (facet === 'size') {
+      var sizeOrder = ['No Size Requirement', '20+ Employees', '250+ Employees', '500+ Employees'];
+      arr.sort(function (a, b) { return sizeOrder.indexOf(a.value) - sizeOrder.indexOf(b.value); });
     } else {
       arr.sort(function (a, b) { return a.value.localeCompare(b.value); });
     }

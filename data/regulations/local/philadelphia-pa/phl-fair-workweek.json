@@ -16,6 +16,9 @@
   "status": "active",
   "applicability": {
     "employer_size_minimum": 250,
+    "minimum_locations": 30,
+    "counting_scope": "worldwide",
+    "includes_franchise_network": true,
     "industries": [
       "retail",
       "hospitality",
