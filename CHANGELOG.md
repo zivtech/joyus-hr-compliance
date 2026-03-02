@@ -10,12 +10,15 @@ This log tracks data additions, regulation updates, schema changes, and site imp
 
 ### Changed
 - Replaced separate jurisdiction and law type browse pages with client-side JavaScript faceted filtering on the homepage
-- Filter bar supports Jurisdiction, Law Type, and Status dropdowns with multi-select checkboxes, cross-filter-aware counts, and URL parameter sync for shareable links
+- Filter bar supports Jurisdiction, Law Type, Status, and Company Size dropdowns with multi-select checkboxes, cross-filter-aware counts, and URL parameter sync for shareable links
 - Jurisdiction dropdown includes search input for filtering ~50 jurisdictions
 - Removed 4 browse page templates (~60 generated HTML pages eliminated from build output)
 - Simplified site navigation to "Database" + "Disclaimer"
 
 ### Added
+- Company Size facet — 4th filter dropdown categorizing regulations by employer size threshold (No Size Requirement, 20+, 250+, 500+ employees)
+- Employer size schema fields — `minimum_locations`, `counting_scope`, `includes_franchise_network` in `applicability` to capture compound thresholds and franchise network rules
+- Regulation detail pages now show location thresholds and franchise network applicability when present
 - `site/js/facets.js` — vanilla JS faceted filter engine with progressive enhancement
 - Source quality classification system — regulation pages now show warnings for non-government sources and notes for trusted secondary sources (e.g., Cornell LII)
 - `CONTRIBUTING.md` source policy guidance (prefer official .gov sources, Cornell LII acceptable as supplemental)
@@ -27,6 +30,7 @@ This log tracks data additions, regulation updates, schema changes, and site imp
 ### Fixed
 - GitHub Pages asset paths — added `pathPrefix` to Eleventy config and converted all template paths to use `| url` filter
 - Clean build step — `rm -rf _site` runs before Eleventy to prevent stale artifacts
+- NYC fast food scheduling `employer_size_minimum` corrected from 30 to null — the law requires 30 locations nationally (chain membership), not 30 employees
 
 ### Improved
 - Jurisdiction schema constraints — `if/then` rules now enforce required fields per level (federal: no state/locality; state: state required; local: state + locality required)
