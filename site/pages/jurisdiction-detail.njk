@@ -10,7 +10,7 @@ eleventyComputed:
 ---
 
 <h1>{{ jur.label }} Regulations</h1>
-<p><a href="/jurisdiction/">&larr; All jurisdictions</a></p>
+<p><a href="{{ '/jurisdiction/' | url }}">&larr; All jurisdictions</a></p>
 
 <ul class="reg-list">
   {%- for reg in regulations | sortBy("title") %}
@@ -24,7 +24,7 @@ eleventyComputed:
     {%- if regKey === jur.key %}
   <li class="reg-card">
     <div class="reg-card-header">
-      <h3 class="reg-card-title"><a href="/regulation/{{ reg.id }}/">{{ reg.title }}</a></h3>
+      <h3 class="reg-card-title"><a href="{{ ('/regulation/' + reg.id + '/') | url }}">{{ reg.title }}</a></h3>
       <span class="badge {{ reg.computed_status | statusBadgeClass }}">{{ reg.computed_status }}</span>
     </div>
     <div class="reg-card-meta">

@@ -43,7 +43,7 @@ title: Search
         <span class="jur-tree-heading">Federal</span>
         <ul>
           {%- for jur in jurisdictions | where("level", "federal") %}
-          <li><a href="/jurisdiction/{{ jur.key }}/">{{ jur.label }}</a></li>
+          <li><a href="{{ ('/jurisdiction/' + jur.key + '/') | url }}">{{ jur.label }}</a></li>
           {%- endfor %}
         </ul>
       </div>
@@ -52,7 +52,7 @@ title: Search
         <span class="jur-tree-heading">State</span>
         <ul>
           {%- for jur in jurisdictions | where("level", "state") | sortBy("label") %}
-          <li><a href="/jurisdiction/{{ jur.key }}/">{{ jur.label }}</a></li>
+          <li><a href="{{ ('/jurisdiction/' + jur.key + '/') | url }}">{{ jur.label }}</a></li>
           {%- endfor %}
         </ul>
       </div>
@@ -67,7 +67,7 @@ title: Search
           <span class="jur-tree-state">{{ group.key }}</span>
           <ul>
             {%- for jur in group.items | sortBy("label") %}
-            <li><a href="/jurisdiction/{{ jur.key }}/">{{ jur.locality }}</a></li>
+            <li><a href="{{ ('/jurisdiction/' + jur.key + '/') | url }}">{{ jur.locality }}</a></li>
             {%- endfor %}
           </ul>
         </div>
@@ -80,7 +80,7 @@ title: Search
     <h3>By Law Type</h3>
     <ul>
       {%- for type in lawTypes %}
-      <li><a href="/type/{{ type }}/">{{ type | lawTypeLabel }}</a></li>
+      <li><a href="{{ ('/type/' + type + '/') | url }}">{{ type | lawTypeLabel }}</a></li>
       {%- endfor %}
     </ul>
   </div>
@@ -91,7 +91,7 @@ title: Search
   {%- for reg in regulations | sortBy("title") %}
   <li class="reg-card" data-pagefind-body>
     <div class="reg-card-header">
-      <h3 class="reg-card-title"><a href="/regulation/{{ reg.id }}/">{{ reg.title }}</a></h3>
+      <h3 class="reg-card-title"><a href="{{ ('/regulation/' + reg.id + '/') | url }}">{{ reg.title }}</a></h3>
       <span class="badge {{ reg.computed_status | statusBadgeClass }}" data-pagefind-filter="status:{{ reg.computed_status }}">{{ reg.computed_status }}</span>
     </div>
     <div class="reg-card-meta">

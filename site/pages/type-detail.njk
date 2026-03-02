@@ -10,13 +10,13 @@ eleventyComputed:
 ---
 
 <h1>{{ lawType | lawTypeLabel }} Regulations</h1>
-<p><a href="/type/">&larr; All law types</a></p>
+<p><a href="{{ '/type/' | url }}">&larr; All law types</a></p>
 
 <ul class="reg-list">
   {%- for reg in regulations | where("law_type", lawType) | sortBy("title") %}
   <li class="reg-card">
     <div class="reg-card-header">
-      <h3 class="reg-card-title"><a href="/regulation/{{ reg.id }}/">{{ reg.title }}</a></h3>
+      <h3 class="reg-card-title"><a href="{{ ('/regulation/' + reg.id + '/') | url }}">{{ reg.title }}</a></h3>
       <span class="badge {{ reg.computed_status | statusBadgeClass }}">{{ reg.computed_status }}</span>
     </div>
     <div class="reg-card-meta">
