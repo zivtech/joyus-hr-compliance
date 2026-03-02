@@ -7,7 +7,7 @@
   },
   "law_type": "meal-breaks",
   "title": "Hawaii Meal Break Requirements",
-  "statute_citation": "HRS § 387-7",
+  "statute_citation": "HRS \u00a7 387-7",
   "regulatory_citation": null,
   "summary": "Hawaii requires employers to provide a 45-minute meal break to employees who work shifts of at least 5 consecutive hours. A 30-minute meal break may be permitted if there is a collective bargaining agreement in place. The meal break must be duty-free and may be unpaid.",
   "effective_date": "1975-01-01",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "meal_period": {
@@ -44,5 +50,8 @@
     "https://labor.hawaii.gov/wsd/"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

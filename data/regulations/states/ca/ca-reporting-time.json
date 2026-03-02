@@ -7,8 +7,8 @@
   },
   "law_type": "reporting-time-pay",
   "title": "California Reporting Time Pay",
-  "statute_citation": "Cal. Lab. Code § 1182",
-  "regulatory_citation": "8 CCR § 11040",
+  "statute_citation": "Cal. Lab. Code \u00a7 1182",
+  "regulatory_citation": "8 CCR \u00a7 11040",
   "summary": "California requires employers to pay reporting time pay when an employee reports to work as scheduled but is not put to work or is furnished less than half of the usual or scheduled day's work. The employee must be paid for half of the usual or scheduled day's work, with a minimum of 2 hours and a maximum of 4 hours, at the employee's regular rate of pay. A second reporting in the same workday entitles the employee to at least 2 hours of pay.",
   "effective_date": "2001-01-01",
   "sunset_date": null,
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "reporting_time_pay": {
@@ -51,5 +57,8 @@
     "https://www.dir.ca.gov/IWC/IWCArticle11702.html"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

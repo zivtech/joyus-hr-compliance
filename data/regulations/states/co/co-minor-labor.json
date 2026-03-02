@@ -7,7 +7,7 @@
   },
   "law_type": "minor-labor",
   "title": "Colorado Minor Labor Standards",
-  "statute_citation": "C.R.S. § 8-12-105",
+  "statute_citation": "C.R.S. \u00a7 8-12-105",
   "regulatory_citation": null,
   "summary": "Colorado regulates the employment of minors under 16 with restrictions on maximum hours, time-of-day limitations, and work permit requirements. Minors under 16 may work a maximum of 8 hours per day and 40 hours per week during non-school periods, with more restrictive limits during the school year. Work permits are required for minors under 16.",
   "effective_date": "1963-01-01",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": 1,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["16-17", "14-15", "under-14"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "16-17",
+      "14-15",
+      "under-14"
+    ]
   },
   "requirements": {
     "work_permit_required": {
@@ -76,5 +82,8 @@
     "https://cdle.colorado.gov/wage-and-hour-law/youth-employment"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

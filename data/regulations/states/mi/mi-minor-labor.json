@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["all"],
-    "age_groups": ["16-17", "14-15", "under-14"]
+    "employee_types": [
+      "all"
+    ],
+    "age_groups": [
+      "16-17",
+      "14-15",
+      "under-14"
+    ]
   },
   "requirements": {
     "work_permits": {
@@ -57,5 +63,8 @@
     "https://www.michigan.gov/leo/bureaus-agencies/wd/youth"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

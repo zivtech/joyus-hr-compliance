@@ -7,8 +7,8 @@
   },
   "law_type": "split-shift",
   "title": "California Split Shift Premium",
-  "statute_citation": "Cal. Lab. Code § 1182.12",
-  "regulatory_citation": "8 CCR § 11040",
+  "statute_citation": "Cal. Lab. Code \u00a7 1182.12",
+  "regulatory_citation": "8 CCR \u00a7 11040",
   "summary": "California requires employers to pay a split shift premium of one hour at the state minimum wage to any employee whose workday includes a split shift. A split shift is a work schedule interrupted by non-paid, non-working periods established by the employer, other than bona fide rest or meal periods. The premium is reduced by any amount the employee's hourly rate exceeds the minimum wage, calculated over the total hours worked that day. The current California state minimum wage is $16.50 per hour.",
   "effective_date": "2001-01-01",
   "sunset_date": null,
@@ -17,15 +17,21 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "split_shift_definition": "A work schedule that is interrupted by non-paid, non-working periods established by the employer, other than bona fide rest or meal periods.",
     "premium": {
       "amount_hours": 1,
       "rate": "minimum wage",
-      "current_minimum_wage": 16.50,
+      "current_minimum_wage": 16.5,
       "description": "Employees who work a split shift are entitled to one additional hour of pay at the state minimum wage rate."
     },
     "offset_rule": {
@@ -46,5 +52,8 @@
     "https://www.dir.ca.gov/IWC/IWCArticle11702.html"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

@@ -7,7 +7,7 @@
   },
   "law_type": "minor-labor",
   "title": "Pennsylvania Minor Labor Restrictions",
-  "statute_citation": "43 P.S. § 40",
+  "statute_citation": "43 P.S. \u00a7 40",
   "regulatory_citation": null,
   "summary": "Pennsylvania requires work permits for all minors under 18. Minors aged 14-15 may work up to 3 hours on a school day and 18 hours during a school week. Minors aged 16-17 may work up to 8 hours on a school day, 28 hours during a school week, and face a midnight curfew. The state has detailed regulations on permissible occupations for each age group.",
   "effective_date": "2012-07-01",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["all"],
-    "age_groups": ["16-17", "14-15", "under-14"]
+    "employee_types": [
+      "all"
+    ],
+    "age_groups": [
+      "16-17",
+      "14-15",
+      "under-14"
+    ]
   },
   "requirements": {
     "work_permits": {
@@ -58,5 +64,8 @@
     "https://www.dli.pa.gov/Individuals/Labor-Management-Relations/llc/Pages/Child-Labor-Law.aspx"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

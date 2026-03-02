@@ -7,7 +7,7 @@
   },
   "law_type": "minor-labor",
   "title": "New York Child Labor Laws",
-  "statute_citation": "NY Labor Law §§ 130-135",
+  "statute_citation": "NY Labor Law \u00a7\u00a7 130-135",
   "regulatory_citation": "12 NYCRR Part 190",
   "summary": "New York restricts employment of minors under 18, requiring work permits (employment certificates) for all working minors. Minors aged 14-15 face strict hour and time-of-day limits similar to federal standards. Minors aged 16-17 may work up to 28 hours during school weeks, 4 hours on school days, with a 10:00 PM curfew (extendable to midnight with written parental consent for non-school nights). New York uses a color-coded permit system: blue for 14-15 year olds, green for 16-17 year olds, and other colors for special circumstances.",
   "effective_date": "1960-01-01",
@@ -17,8 +17,15 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt", "all"],
-    "age_groups": ["14-15", "16-17", "under-14"]
+    "employee_types": [
+      "non-exempt",
+      "all"
+    ],
+    "age_groups": [
+      "14-15",
+      "16-17",
+      "under-14"
+    ]
   },
   "requirements": {
     "work_permit": {
@@ -83,5 +90,8 @@
     "https://dol.ny.gov/child-labor"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

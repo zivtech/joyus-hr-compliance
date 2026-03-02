@@ -7,8 +7,8 @@
   },
   "law_type": "overtime",
   "title": "California Daily and Weekly Overtime",
-  "statute_citation": "Cal. Lab. Code § 510",
-  "regulatory_citation": "8 CCR § 11040",
+  "statute_citation": "Cal. Lab. Code \u00a7 510",
+  "regulatory_citation": "8 CCR \u00a7 11040",
   "summary": "California requires overtime pay at 1.5 times the regular rate for hours worked beyond 8 in a workday and beyond 40 in a workweek, and double time for hours beyond 12 in a workday. On the seventh consecutive day of work in a workweek, the first 8 hours are paid at 1.5 times the regular rate and all hours beyond 8 are paid at double time. Overtime rates do not pyramid; the highest applicable rate applies. Alternative workweek schedules (such as 4/10) may modify the daily overtime threshold when properly adopted.",
   "effective_date": "2000-01-01",
   "sunset_date": null,
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "daily_overtime": {
@@ -59,11 +65,14 @@
     "per_violation_amount": null,
     "statute_of_limitations_years": 3
   },
-  "notes": "California daily overtime is more protective than federal law, which only requires weekly overtime after 40 hours. The alternative workweek schedule must be adopted through a specific employee election process under Lab. Code § 511. Unauthorized overtime must still be paid but may be subject to discipline.",
+  "notes": "California daily overtime is more protective than federal law, which only requires weekly overtime after 40 hours. The alternative workweek schedule must be adopted through a specific employee election process under Lab. Code \u00a7 511. Unauthorized overtime must still be paid but may be subject to discipline.",
   "source_urls": [
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=510.&lawCode=LAB",
     "https://www.dir.ca.gov/dlse/faq_overtime.htm"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

@@ -7,7 +7,7 @@
   },
   "law_type": "reporting-time-pay",
   "title": "Rhode Island Reporting Time Pay (Three-Hour Minimum)",
-  "statute_citation": "R.I. Gen. Laws § 28-12-3.2",
+  "statute_citation": "R.I. Gen. Laws \u00a7 28-12-3.2",
   "regulatory_citation": null,
   "summary": "Rhode Island requires employers to pay employees a minimum of 3 hours of pay at the applicable minimum wage rate when the employee reports to work as scheduled. If the employee is sent home before completing 3 hours of work, the employer must still pay for the full 3 hours. This ensures that employees who make themselves available for scheduled shifts receive a minimum level of compensation.",
   "effective_date": "1988-01-01",
@@ -17,8 +17,13 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17"
+    ]
   },
   "requirements": {
     "reporting_time_pay": {
@@ -42,5 +47,8 @@
     "https://dlt.ri.gov/labor-market-information/labor-relations-and-labor-standards"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

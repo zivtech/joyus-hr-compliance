@@ -7,7 +7,7 @@
   },
   "law_type": "meal-breaks",
   "title": "West Virginia Meal Break Requirements",
-  "statute_citation": "W. Va. Code § 21-3-10a",
+  "statute_citation": "W. Va. Code \u00a7 21-3-10a",
   "regulatory_citation": null,
   "summary": "West Virginia requires employers to provide a meal break of at least 20 minutes to employees who work shifts of 6 or more hours. The meal break may be unpaid if the employee is completely relieved of duties during the break period.",
   "effective_date": "2012-06-08",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "meal_period": {
@@ -44,5 +50,8 @@
     "https://labor.wv.gov/"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

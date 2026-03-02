@@ -7,8 +7,8 @@
   },
   "law_type": "reporting-time-pay",
   "title": "New York Call-In Pay (Reporting Time Pay)",
-  "statute_citation": "NY Labor Law § 162",
-  "regulatory_citation": "12 NYCRR § 142-2.3",
+  "statute_citation": "NY Labor Law \u00a7 162",
+  "regulatory_citation": "12 NYCRR \u00a7 142-2.3",
   "summary": "New York requires employers to pay call-in pay when an employee reports to work as scheduled. An employee who reports to work must be paid for a minimum of 4 hours, or the number of hours in the scheduled shift (whichever is less), at the applicable minimum wage rate. Additional call-in pay rules apply when employees are required to report for split shifts or additional shifts on the same day.",
   "effective_date": "1960-01-01",
   "sunset_date": null,
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "call_in_pay": {
@@ -51,5 +57,8 @@
     "https://dol.ny.gov/wages-and-hours-frequently-asked-questions"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

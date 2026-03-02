@@ -7,7 +7,7 @@
   },
   "law_type": "minor-labor",
   "title": "Iowa Minor Labor Restrictions",
-  "statute_citation": "Iowa Code § 92",
+  "statute_citation": "Iowa Code \u00a7 92",
   "regulatory_citation": null,
   "summary": "Iowa restricts the employment of minors under 16. Minors aged 14-15 may work a maximum of 4 hours on a school day and 28 hours during a school week. Minors may not work in hazardous occupations. Iowa also regulates the types of equipment and machinery that minors may operate.",
   "effective_date": "1976-01-01",
@@ -17,8 +17,13 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["all"],
-    "age_groups": ["14-15", "under-14"]
+    "employee_types": [
+      "all"
+    ],
+    "age_groups": [
+      "14-15",
+      "under-14"
+    ]
   },
   "requirements": {
     "under_14": {
@@ -48,5 +53,8 @@
     "https://www.iowadivisionoflabor.gov/child-labor"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

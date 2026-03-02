@@ -15,7 +15,8 @@
     "status",
     "requirements",
     "source_urls",
-    "last_verified"
+    "last_verified",
+    "record_updated"
   ],
   "additionalProperties": false,
   "properties": {
@@ -168,7 +169,12 @@
     "last_verified": {
       "type": "string",
       "format": "date",
-      "description": "ISO 8601 date when this data was last verified against official sources."
+      "description": "ISO 8601 date when this data was last retrieved/verified against official sources."
+    },
+    "record_updated": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date when this database record was last modified."
     },
     "contributors": {
       "type": "array",

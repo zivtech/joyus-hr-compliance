@@ -7,7 +7,7 @@
   },
   "law_type": "reporting-time-pay",
   "title": "Maine Reporting Time Pay",
-  "statute_citation": "26 MRS § 664",
+  "statute_citation": "26 MRS \u00a7 664",
   "regulatory_citation": null,
   "summary": "Effective September 2025, Maine requires employers to provide reporting time pay to employees who report to work as scheduled but are given less than the scheduled hours. Employees must be compensated for a minimum number of hours when they report to work at the employer's request.",
   "effective_date": "2025-09-01",
@@ -17,8 +17,13 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17"
+    ]
   },
   "requirements": {
     "reporting_time_pay": {
@@ -37,5 +42,8 @@
     "https://www.maine.gov/labor/"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

@@ -7,7 +7,7 @@
   },
   "law_type": "minor-labor",
   "title": "Maryland Minor Labor Restrictions",
-  "statute_citation": "Md. Code, Lab. & Empl. § 3-201 et seq.",
+  "statute_citation": "Md. Code, Lab. & Empl. \u00a7 3-201 et seq.",
   "regulatory_citation": null,
   "summary": "Maryland requires work permits for all minors under 18. The state restricts the hours, times, and types of work that minors may perform, with specific rules varying by age group. Maryland's child labor laws are enforced by the Maryland Department of Labor.",
   "effective_date": "1992-01-01",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["all"],
-    "age_groups": ["16-17", "14-15", "under-14"]
+    "employee_types": [
+      "all"
+    ],
+    "age_groups": [
+      "16-17",
+      "14-15",
+      "under-14"
+    ]
   },
   "requirements": {
     "work_permits": {
@@ -49,5 +55,8 @@
     "https://www.dllr.state.md.us/labor/wages/esschildlabor.shtml"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

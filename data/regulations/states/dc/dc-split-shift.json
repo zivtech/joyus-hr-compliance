@@ -7,8 +7,8 @@
   },
   "law_type": "split-shift",
   "title": "District of Columbia Split Shift Premium",
-  "statute_citation": "DC Code § 32-1003",
-  "regulatory_citation": "DC Mun. Regs. tit. 7, § 906",
+  "statute_citation": "DC Code \u00a7 32-1003",
+  "regulatory_citation": "DC Mun. Regs. tit. 7, \u00a7 906",
   "summary": "The District of Columbia requires employers to pay a split shift premium of one additional hour at the minimum wage rate for each day an employee works a split shift. A split shift is defined as a schedule in which the employee's work hours are not consecutive but are interrupted by a non-working period as established by the employer, excluding bona fide meal and rest periods.",
   "effective_date": "1993-03-01",
   "sunset_date": null,
@@ -17,8 +17,13 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17"
+    ]
   },
   "requirements": {
     "split_shift_definition": "A work schedule in which the working hours are not consecutive, with a non-working period established by the employer that is not a bona fide meal or rest period.",
@@ -40,5 +45,8 @@
     "https://does.dc.gov/service/office-wage-hour-compliance"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

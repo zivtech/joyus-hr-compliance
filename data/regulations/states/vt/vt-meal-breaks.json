@@ -7,7 +7,7 @@
   },
   "law_type": "meal-breaks",
   "title": "Vermont Meal Break Requirements",
-  "statute_citation": "21 V.S.A. § 304",
+  "statute_citation": "21 V.S.A. \u00a7 304",
   "regulatory_citation": null,
   "summary": "Vermont requires employers to provide employees with a reasonable opportunity to eat and use toilet facilities during work. While the statute does not mandate a specific duration for meal breaks, employers must ensure that employees have adequate time to eat during their shifts.",
   "effective_date": "1995-01-01",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["all"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "all"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "meal_opportunity": {
@@ -38,5 +44,8 @@
     "https://labor.vermont.gov/"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

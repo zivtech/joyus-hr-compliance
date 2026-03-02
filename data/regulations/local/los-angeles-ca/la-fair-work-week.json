@@ -7,7 +7,7 @@
   },
   "law_type": "predictive-scheduling",
   "title": "Los Angeles Fair Work Week Ordinance",
-  "statute_citation": "LAMC § 188.00 et seq.",
+  "statute_citation": "LAMC \u00a7 188.00 et seq.",
   "regulatory_citation": null,
   "summary": "The Los Angeles Fair Work Week Ordinance requires covered retail employers (NAICS codes 44-45) with 300 or more employees globally to provide work schedules at least 14 days in advance and pay predictability pay for schedule changes made after the posting deadline. The law includes a 10-hour minimum rest period between shifts with 1.5 times pay for voluntary shorter rest periods, a requirement to provide a good faith estimate of hours at the time of hire, and protections against retaliation for exercising rights under the ordinance.",
   "effective_date": "2023-04-01",
@@ -16,9 +16,16 @@
   "status": "active",
   "applicability": {
     "employer_size_minimum": 300,
-    "industries": ["retail"],
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17"]
+    "industries": [
+      "retail"
+    ],
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17"
+    ]
   },
   "requirements": {
     "advance_notice": {
@@ -92,5 +99,8 @@
     "https://clkrep.lacity.org/onlinedocs/2020/20-1538_ord_187396_12-13-22.pdf"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": 1,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "meal_break_duration_minutes": 30,
@@ -46,5 +52,8 @@
     "https://lni.wa.gov/workers-rights/wages/getting-paid/meals-and-breaks"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

@@ -7,8 +7,8 @@
   },
   "law_type": "reporting-time-pay",
   "title": "District of Columbia Reporting Time Pay",
-  "statute_citation": "DC Code § 32-1003",
-  "regulatory_citation": "DC Mun. Regs. tit. 7, § 907",
+  "statute_citation": "DC Code \u00a7 32-1003",
+  "regulatory_citation": "DC Mun. Regs. tit. 7, \u00a7 907",
   "summary": "The District of Columbia requires employers to pay a minimum of 4 hours of pay to employees who report to work as scheduled but are not provided with at least 4 hours of work. This reporting time pay ensures that employees who make themselves available for scheduled shifts receive a minimum level of compensation even when the employer does not need their services.",
   "effective_date": "1993-03-01",
   "sunset_date": null,
@@ -17,8 +17,13 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17"
+    ]
   },
   "requirements": {
     "reporting_time_pay": {
@@ -42,5 +47,8 @@
     "https://does.dc.gov/service/office-wage-hour-compliance"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

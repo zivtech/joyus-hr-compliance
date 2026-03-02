@@ -7,7 +7,7 @@
   },
   "law_type": "rest-breaks",
   "title": "Colorado Rest Break Requirements",
-  "statute_citation": "C.R.S. § 8-12-103",
+  "statute_citation": "C.R.S. \u00a7 8-12-103",
   "regulatory_citation": "COMPS Order #39, 7 CCR 1103-1, Rule 5.1",
   "summary": "Colorado requires employers to provide a paid 10-minute rest break for every 4 hours of work, or major fraction thereof. Rest breaks must be provided as close to the midpoint of each 4-hour work period as practicable. Rest breaks are compensated as time worked.",
   "effective_date": "1963-01-01",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": 1,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "rest_break_duration_minutes": 10,
@@ -48,5 +54,8 @@
     "https://cdle.colorado.gov/comps-order"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

@@ -7,7 +7,7 @@
   },
   "law_type": "predictive-scheduling",
   "title": "Philadelphia Fair Workweek Employment Standards",
-  "statute_citation": "Phila. Code § 9-4601 et seq.",
+  "statute_citation": "Phila. Code \u00a7 9-4601 et seq.",
   "regulatory_citation": null,
   "summary": "Philadelphia's Fair Workweek ordinance requires covered employers in the retail, hospitality, and food service industries with 250 or more employees and 30 or more locations worldwide to provide work schedules at least 14 days in advance. The law includes predictability pay for schedule changes made after the posting deadline, a 9-hour minimum rest period between shifts (clopening protections) with a $40 premium for voluntary waivers, and a requirement to offer additional hours to existing employees before hiring new workers. The ordinance aims to provide greater stability and predictability for workers in scheduling-intensive industries.",
   "effective_date": "2020-04-01",
@@ -16,9 +16,18 @@
   "status": "active",
   "applicability": {
     "employer_size_minimum": 250,
-    "industries": ["retail", "hospitality", "food service"],
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17"]
+    "industries": [
+      "retail",
+      "hospitality",
+      "food service"
+    ],
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17"
+    ]
   },
   "requirements": {
     "advance_notice": {
@@ -85,5 +94,8 @@
     "https://www.phila.gov/departments/department-of-labor/fair-workweek/"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

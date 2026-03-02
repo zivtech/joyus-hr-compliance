@@ -7,7 +7,7 @@
   },
   "law_type": "minor-labor",
   "title": "Alabama Minor Labor Restrictions",
-  "statute_citation": "Ala. Code § 25-8-36 et seq.",
+  "statute_citation": "Ala. Code \u00a7 25-8-36 et seq.",
   "regulatory_citation": null,
   "summary": "Alabama restricts the employment of minors under the age of 16. Children under 14 are generally prohibited from working. Minors under 16 must receive a 30-minute break for every 5 hours of work. Work permits are required for minors under 16, and employers must comply with hour restrictions during school periods.",
   "effective_date": "1986-01-01",
@@ -17,8 +17,13 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["all"],
-    "age_groups": ["14-15", "under-14"]
+    "employee_types": [
+      "all"
+    ],
+    "age_groups": [
+      "14-15",
+      "under-14"
+    ]
   },
   "requirements": {
     "under_14": {
@@ -45,5 +50,8 @@
     "https://alisondb.legislature.state.al.us/alison/CodeOfAlabama/1975/Coatoc.htm"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

@@ -7,7 +7,7 @@
   },
   "law_type": "meal-breaks",
   "title": "Connecticut Meal Break Requirements",
-  "statute_citation": "Conn. Gen. Stat. § 31-51ii",
+  "statute_citation": "Conn. Gen. Stat. \u00a7 31-51ii",
   "regulatory_citation": null,
   "summary": "Connecticut requires employers to provide a 30-minute meal break to employees who work a shift of 7.5 or more consecutive hours. The meal break must be provided after the first 2 hours of work and before the last 2 hours of work. The break may be unpaid if the employee is completely relieved of all duties. Employers in certain industries may apply to the Labor Commissioner for exemptions.",
   "effective_date": "2003-10-01",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "meal_period": {
@@ -45,5 +51,8 @@
     "https://portal.ct.gov/dol/knowledge-base/articles/wage-and-workplace-standards/meal-periods"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

@@ -6,7 +6,7 @@
     "locality": null
   },
   "law_type": "overtime",
-  "title": "Kentucky Overtime — Seventh Consecutive Day",
+  "title": "Kentucky Overtime \u2014 Seventh Consecutive Day",
   "statute_citation": "KRS 337.285",
   "regulatory_citation": null,
   "summary": "Kentucky requires overtime pay at 1.5 times the regular rate of pay for hours worked on the seventh consecutive day of work in any workweek. In addition, Kentucky follows the federal 40-hour weekly overtime threshold. The seventh-day overtime provision provides additional protection beyond the federal FLSA, which does not require overtime based solely on consecutive days worked.",
@@ -17,8 +17,13 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17"
+    ]
   },
   "requirements": {
     "weekly_overtime": {
@@ -44,5 +49,8 @@
     "https://labor.ky.gov/standards/Pages/Wage-and-Hour.aspx"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

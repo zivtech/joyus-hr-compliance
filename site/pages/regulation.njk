@@ -64,6 +64,12 @@ eleventyComputed:
       <div class="meta-label">Last Verified</div>
       <div class="meta-value">{{ reg.last_verified }}</div>
     </div>
+    {% if reg.record_updated %}
+    <div class="meta-item">
+      <div class="meta-label">Record Updated</div>
+      <div class="meta-value">{{ reg.record_updated }}</div>
+    </div>
+    {% endif %}
   </div>
 
   {% if reg.applicability %}

@@ -7,7 +7,7 @@
   },
   "law_type": "meal-breaks",
   "title": "Massachusetts Meal Break Requirements",
-  "statute_citation": "Mass. Gen. Laws ch. 149, § 100",
+  "statute_citation": "Mass. Gen. Laws ch. 149, \u00a7 100",
   "regulatory_citation": null,
   "summary": "Massachusetts requires employers to provide a 30-minute meal break to employees who work 6 or more hours in a day. During the meal break, the employee cannot be required to work and must be free from all duties. If the employer requires the employee to remain at the workplace or to perform any duties during the break, the meal period must be paid. The Attorney General may grant exemptions to specific employers or industries on a case-by-case basis.",
   "effective_date": "1913-01-01",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["all"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "all"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "meal_period": {
@@ -48,5 +54,8 @@
     "https://www.mass.gov/info-details/massachusetts-law-about-meal-breaks"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

@@ -6,8 +6,8 @@
     "locality": null
   },
   "law_type": "overtime",
-  "title": "Fair Labor Standards Act — Overtime Pay Requirements",
-  "statute_citation": "29 U.S.C. § 207",
+  "title": "Fair Labor Standards Act \u2014 Overtime Pay Requirements",
+  "statute_citation": "29 U.S.C. \u00a7 207",
   "regulatory_citation": "29 CFR Part 541",
   "summary": "The federal FLSA requires covered employers to pay non-exempt employees overtime at a rate of not less than 1.5 times their regular rate of pay for all hours worked over 40 in a workweek. There is no federal requirement for daily overtime. Certain employees are exempt from overtime based on salary level and duties tests, including executive, administrative, professional, outside sales, and computer employees. The standard salary threshold for the white-collar exemptions is $684 per week ($35,568 annually). Highly compensated employees earning at least $107,432 annually may also qualify for exemption under a reduced duties test. Computer employees may alternatively be paid at an hourly rate of not less than $27.63 per hour.",
   "effective_date": "1938-10-24",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "overtime_threshold": {
@@ -66,7 +72,7 @@
     "calculation_notes": {
       "regular_rate_inclusions": "The regular rate includes hourly pay, salary, piecework earnings, commissions, non-discretionary bonuses, and shift differentials.",
       "regular_rate_exclusions": "The regular rate excludes gifts and special-occasion payments, expense reimbursements, discretionary bonuses, employer contributions to benefit plans, premium pay for weekend/holiday/overtime work, and income from stock options.",
-      "fluctuating_workweek": "Under the fluctuating workweek method (29 CFR § 778.114), if an employee works hours that vary from week to week and is paid a fixed salary as straight-time compensation for all hours worked, the overtime premium is calculated at 0.5 times (not 1.5 times) the regular rate for hours over 40."
+      "fluctuating_workweek": "Under the fluctuating workweek method (29 CFR \u00a7 778.114), if an employee works hours that vary from week to week and is paid a fixed salary as straight-time compensation for all hours worked, the overtime premium is calculated at 0.5 times (not 1.5 times) the regular rate for hours over 40."
     }
   },
   "penalties": {
@@ -82,5 +88,8 @@
     "https://www.dol.gov/agencies/whd/fact-sheets/17a-overtime"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

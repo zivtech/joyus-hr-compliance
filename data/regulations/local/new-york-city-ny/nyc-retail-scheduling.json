@@ -6,9 +6,9 @@
     "locality": "New York City"
   },
   "law_type": "predictive-scheduling",
-  "title": "NYC Fair Workweek Law — Retail Scheduling",
-  "statute_citation": "NYC Admin. Code § 20-1201 et seq.",
-  "regulatory_citation": "6 RCNY § 7-601 et seq.",
+  "title": "NYC Fair Workweek Law \u2014 Retail Scheduling",
+  "statute_citation": "NYC Admin. Code \u00a7 20-1201 et seq.",
+  "regulatory_citation": "6 RCNY \u00a7 7-601 et seq.",
   "summary": "New York City's Fair Workweek Law for retail workers requires retail employers with 20 or more employees to provide work schedules at least 72 hours in advance and prohibits the practice of on-call scheduling. The law bans employers from requiring retail employees to be available to work on-call shifts, canceling or adding shifts with less than 72 hours notice without the employee's consent, and requiring employees to contact the employer or be contacted by the employer less than 72 hours before a shift to confirm whether the employee should report for the shift.",
   "effective_date": "2017-11-26",
   "sunset_date": null,
@@ -16,9 +16,16 @@
   "status": "active",
   "applicability": {
     "employer_size_minimum": 20,
-    "industries": ["retail"],
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17"]
+    "industries": [
+      "retail"
+    ],
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17"
+    ]
   },
   "requirements": {
     "advance_notice": {
@@ -56,11 +63,14 @@
     "per_violation_amount": 500,
     "statute_of_limitations_years": 2
   },
-  "notes": "The retail scheduling provisions are part of NYC's broader Fair Workweek legislative package, which includes separate and more extensive provisions for fast food workers. The retail provisions are notably more limited in scope than the fast food provisions — retail workers receive a 72-hour advance notice requirement and an on-call ban, while fast food workers receive 14-day advance notice, tiered schedule change premiums, clopening protections, and just cause protections. The 20-employee threshold is significantly lower than the fast food threshold (30 locations nationally), reflecting a different policy approach for retail versus fast food sectors.",
+  "notes": "The retail scheduling provisions are part of NYC's broader Fair Workweek legislative package, which includes separate and more extensive provisions for fast food workers. The retail provisions are notably more limited in scope than the fast food provisions \u2014 retail workers receive a 72-hour advance notice requirement and an on-call ban, while fast food workers receive 14-day advance notice, tiered schedule change premiums, clopening protections, and just cause protections. The 20-employee threshold is significantly lower than the fast food threshold (30 locations nationally), reflecting a different policy approach for retail versus fast food sectors.",
   "source_urls": [
     "https://www.nyc.gov/site/dca/workers/workersrights/fair-workweek-702.page",
     "https://rules.cityofnewyork.us/content/section-7-601"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

@@ -7,7 +7,7 @@
   },
   "law_type": "meal-breaks",
   "title": "Delaware Meal Break Requirements",
-  "statute_citation": "19 Del. C. § 707",
+  "statute_citation": "19 Del. C. \u00a7 707",
   "regulatory_citation": null,
   "summary": "Delaware requires employers to provide a 30-minute meal break to employees who work shifts of 7.5 or more consecutive hours. The meal break must be given after the first 2 hours of work and before the last 2 hours of the shift. The break may be unpaid if the employee is completely relieved of duties.",
   "effective_date": "1957-07-01",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "meal_period": {
@@ -44,5 +50,8 @@
     "https://labor.delaware.gov/divisions/industrial-affairs/labor-law/"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

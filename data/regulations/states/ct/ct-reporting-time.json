@@ -7,8 +7,8 @@
   },
   "law_type": "reporting-time-pay",
   "title": "Connecticut Reporting Time Pay",
-  "statute_citation": "Conn. Gen. Stat. § 31-62",
-  "regulatory_citation": "Conn. Agencies Regs. § 31-62-E1",
+  "statute_citation": "Conn. Gen. Stat. \u00a7 31-62",
+  "regulatory_citation": "Conn. Agencies Regs. \u00a7 31-62-E1",
   "summary": "Connecticut requires employers to pay a minimum of 4 hours at the minimum wage rate to employees who report to work as scheduled but are sent home before completing 4 hours. If the employer offers work but the employee chooses not to work the 4 hours, the guarantee does not apply. This ensures that employees who make themselves available for work receive a minimum level of compensation.",
   "effective_date": "1967-01-01",
   "sunset_date": null,
@@ -17,8 +17,13 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17"
+    ]
   },
   "requirements": {
     "reporting_time_pay": {
@@ -43,5 +48,8 @@
     "https://portal.ct.gov/dol/knowledge-base/articles/wage-and-workplace-standards/reporting-time-pay"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

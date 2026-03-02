@@ -7,7 +7,7 @@
   },
   "law_type": "minor-labor",
   "title": "Hawaii Minor Labor Restrictions",
-  "statute_citation": "HRS § 390-1 et seq.",
+  "statute_citation": "HRS \u00a7 390-1 et seq.",
   "regulatory_citation": null,
   "summary": "Hawaii requires work permits for minors aged 14-15. The state restricts the hours and types of work that minors under 16 may perform. Work permits are obtained through the Department of Labor and Industrial Relations.",
   "effective_date": "1975-01-01",
@@ -17,8 +17,13 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["all"],
-    "age_groups": ["14-15", "under-14"]
+    "employee_types": [
+      "all"
+    ],
+    "age_groups": [
+      "14-15",
+      "under-14"
+    ]
   },
   "requirements": {
     "work_permits": {
@@ -45,5 +50,8 @@
     "https://labor.hawaii.gov/wsd/"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

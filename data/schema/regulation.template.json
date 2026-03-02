@@ -34,5 +34,6 @@
     "https://official-source.gov/path/to/law"
   ],
   "last_verified": "YYYY-MM-DD",
+  "record_updated": "YYYY-MM-DD",
   "contributors": ["your-github-username"]
 }

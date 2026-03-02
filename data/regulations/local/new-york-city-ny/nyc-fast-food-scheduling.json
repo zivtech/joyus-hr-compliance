@@ -6,9 +6,9 @@
     "locality": "New York City"
   },
   "law_type": "predictive-scheduling",
-  "title": "NYC Fair Workweek Law — Fast Food Scheduling",
-  "statute_citation": "NYC Admin. Code § 20-1201 et seq.",
-  "regulatory_citation": "6 RCNY § 7-601 et seq.",
+  "title": "NYC Fair Workweek Law \u2014 Fast Food Scheduling",
+  "statute_citation": "NYC Admin. Code \u00a7 20-1201 et seq.",
+  "regulatory_citation": "6 RCNY \u00a7 7-601 et seq.",
   "summary": "New York City's Fair Workweek Law for fast food workers requires fast food employers with 30 or more locations nationally to provide work schedules at least 14 days in advance, pay tiered schedule change premiums ($10 to $75) for changes made after the posting deadline, observe an 11-hour minimum rest period between closing and opening shifts, and provide just cause protections after 30 days of employment. The law also requires employers to offer regular schedules and provide a good faith estimate of hours at the time of hire. It is one of the most comprehensive predictive scheduling laws in the United States.",
   "effective_date": "2017-11-26",
   "sunset_date": null,
@@ -16,9 +16,16 @@
   "status": "active",
   "applicability": {
     "employer_size_minimum": 30,
-    "industries": ["fast food"],
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17"]
+    "industries": [
+      "fast food"
+    ],
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17"
+    ]
   },
   "requirements": {
     "advance_notice": {
@@ -81,7 +88,7 @@
       "bona_fide_economic_reasons_allowed": true
     },
     "regular_schedule_requirement": {
-      "description": "Fast food employers must provide a regular schedule — a recurring weekly schedule of shifts with consistent start and end times that the employee will work each week for an indefinite duration. Changes to the regular schedule require consent or a bona fide business reason."
+      "description": "Fast food employers must provide a regular schedule \u2014 a recurring weekly schedule of shifts with consistent start and end times that the employee will work each week for an indefinite duration. Changes to the regular schedule require consent or a bona fide business reason."
     },
     "good_faith_estimate": {
       "description": "Employers must provide a good faith written estimate of the employee's expected work schedule at the time of hire, including average weekly hours and expected days and times of shifts."
@@ -106,11 +113,14 @@
     "per_violation_amount": 500,
     "statute_of_limitations_years": 2
   },
-  "notes": "NYC's fast food scheduling law is part of the broader Fair Workweek legislative package, which also includes separate provisions for retail employers (NYC Admin. Code § 20-1201 et seq.). The fast food provisions are among the most protective in the nation, with tiered premium structures and the unique just cause protection for fast food workers after 30 days. The 30-location threshold counts all locations nationally, not just those within New York City. The just cause provision was temporarily suspended by court order but was reinstated on appeal. Fast food is defined broadly to include any establishment that primarily serves food or drink for immediate consumption, offers limited service, and is part of a chain with 30 or more locations.",
+  "notes": "NYC's fast food scheduling law is part of the broader Fair Workweek legislative package, which also includes separate provisions for retail employers (NYC Admin. Code \u00a7 20-1201 et seq.). The fast food provisions are among the most protective in the nation, with tiered premium structures and the unique just cause protection for fast food workers after 30 days. The 30-location threshold counts all locations nationally, not just those within New York City. The just cause provision was temporarily suspended by court order but was reinstated on appeal. Fast food is defined broadly to include any establishment that primarily serves food or drink for immediate consumption, offers limited service, and is part of a chain with 30 or more locations.",
   "source_urls": [
     "https://www.nyc.gov/site/dca/workers/workersrights/fair-workweek-702.page",
     "https://rules.cityofnewyork.us/content/section-7-601"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

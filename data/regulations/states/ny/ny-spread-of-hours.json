@@ -7,8 +7,8 @@
   },
   "law_type": "split-shift",
   "title": "New York Spread of Hours Pay",
-  "statute_citation": "NY Labor Law § 652",
-  "regulatory_citation": "12 NYCRR § 142-2.4",
+  "statute_citation": "NY Labor Law \u00a7 652",
+  "regulatory_citation": "12 NYCRR \u00a7 142-2.4",
   "summary": "New York requires employers to pay an extra hour at the applicable minimum wage rate when an employee's workday spread of hours exceeds 10 hours. The spread of hours is the interval between the beginning and end of an employee's workday, including any breaks or time off. This provision applies to all employees in industries covered by New York wage orders, including hospitality, building service, and miscellaneous industries.",
   "effective_date": "1960-01-01",
   "sunset_date": null,
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "spread_of_hours_threshold": {
@@ -52,5 +58,8 @@
     "https://dol.ny.gov/wages-and-hours-frequently-asked-questions"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

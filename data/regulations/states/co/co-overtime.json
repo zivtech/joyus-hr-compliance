@@ -7,7 +7,7 @@
   },
   "law_type": "overtime",
   "title": "Colorado Overtime Requirements",
-  "statute_citation": "C.R.S. § 8-12-103",
+  "statute_citation": "C.R.S. \u00a7 8-12-103",
   "regulatory_citation": "COMPS Order #39, 7 CCR 1103-1",
   "summary": "Colorado requires overtime pay at 1.5 times the regular rate for hours worked over 40 in a workweek (weekly overtime) and for hours worked over 12 in a single workday (daily overtime). Colorado is one of the few states that mandates both daily and weekly overtime. The COMPS Order (Colorado Overtime and Minimum Pay Standards) governs these requirements.",
   "effective_date": "1963-01-01",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": 1,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "weekly_overtime_threshold_hours": 40,
@@ -58,5 +64,8 @@
     "https://cdle.colorado.gov/wage-and-hour-law/overtime"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

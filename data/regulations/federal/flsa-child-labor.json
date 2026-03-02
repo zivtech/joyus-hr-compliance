@@ -6,10 +6,10 @@
     "locality": null
   },
   "law_type": "minor-labor",
-  "title": "Fair Labor Standards Act — Federal Child Labor Provisions",
-  "statute_citation": "29 U.S.C. §§ 212–213",
+  "title": "Fair Labor Standards Act \u2014 Federal Child Labor Provisions",
+  "statute_citation": "29 U.S.C. \u00a7\u00a7 212\u2013213",
   "regulatory_citation": "29 CFR Parts 570, 579, 580",
-  "summary": "Federal child labor provisions under the FLSA establish minimum age requirements for employment, restrict the hours and times of day that minors aged 14 and 15 may work, and prohibit minors under 18 from working in occupations declared hazardous by the Secretary of Labor. Children under 14 are generally prohibited from employment, with narrow exceptions for agriculture, acting, and family businesses. Youth aged 14–15 may work in permitted occupations outside school hours with strict limits on hours, times of day, and types of work. Youth aged 16–17 may work unlimited hours but are barred from 17 federally designated Hazardous Occupations (HO Orders). The FLSA imposes civil money penalties of up to $15,629 per minor for child labor violations.",
+  "summary": "Federal child labor provisions under the FLSA establish minimum age requirements for employment, restrict the hours and times of day that minors aged 14 and 15 may work, and prohibit minors under 18 from working in occupations declared hazardous by the Secretary of Labor. Children under 14 are generally prohibited from employment, with narrow exceptions for agriculture, acting, and family businesses. Youth aged 14\u201315 may work in permitted occupations outside school hours with strict limits on hours, times of day, and types of work. Youth aged 16\u201317 may work unlimited hours but are barred from 17 federally designated Hazardous Occupations (HO Orders). The FLSA imposes civil money penalties of up to $15,629 per minor for child labor violations.",
   "effective_date": "1938-10-24",
   "sunset_date": null,
   "last_amended": "2024-01-12",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["all"],
-    "age_groups": ["under-14", "14-15", "16-17"]
+    "employee_types": [
+      "all"
+    ],
+    "age_groups": [
+      "under-14",
+      "14-15",
+      "16-17"
+    ]
   },
   "requirements": {
     "minimum_age": {
@@ -33,13 +39,13 @@
       ]
     },
     "age_14_15_restrictions": {
-      "permitted_occupations": "Youth aged 14–15 may work only in occupations specifically permitted by 29 CFR § 570.34, including retail, food service, and gasoline service establishments. They are prohibited from manufacturing, mining, processing, and other occupations not specifically listed as permitted.",
+      "permitted_occupations": "Youth aged 14\u201315 may work only in occupations specifically permitted by 29 CFR \u00a7 570.34, including retail, food service, and gasoline service establishments. They are prohibited from manufacturing, mining, processing, and other occupations not specifically listed as permitted.",
       "hours_limits": {
         "school_day_max_hours": 3,
         "non_school_day_max_hours": 8,
         "school_week_max_hours": 18,
         "non_school_week_max_hours": 40,
-        "description": "During weeks when school is in session, 14–15 year olds may work no more than 3 hours on a school day and 18 hours in a school week. During weeks when school is not in session (summer, holidays), they may work up to 8 hours per day and 40 hours per week."
+        "description": "During weeks when school is in session, 14\u201315 year olds may work no more than 3 hours on a school day and 18 hours in a school week. During weeks when school is not in session (summer, holidays), they may work up to 8 hours per day and 40 hours per week."
       },
       "time_of_day_restrictions": {
         "school_year_earliest": "07:00",
@@ -47,7 +53,7 @@
         "summer_earliest": "07:00",
         "summer_latest": "21:00",
         "summer_period": "June 1 through Labor Day",
-        "description": "During the school year, 14–15 year olds may work only between 7:00 a.m. and 7:00 p.m. From June 1 through Labor Day, the evening limit is extended to 9:00 p.m."
+        "description": "During the school year, 14\u201315 year olds may work only between 7:00 a.m. and 7:00 p.m. From June 1 through Labor Day, the evening limit is extended to 9:00 p.m."
       },
       "prohibited_activities": [
         "Baking and cooking (except at soda fountains, lunch counters, snack bars, and cafeteria serving counters, with certain equipment restrictions)",
@@ -66,7 +72,7 @@
         "description": "There are no federal limits on the number of hours or times of day that 16- and 17-year-olds may work. State laws may impose additional hour and time restrictions for this age group."
       },
       "hazardous_occupations_orders": {
-        "description": "Youth aged 16 and 17 may not work in any occupation declared hazardous by the Secretary of Labor. The 17 Hazardous Occupations Orders (HO 1–17) are codified at 29 CFR §§ 570.51–570.68.",
+        "description": "Youth aged 16 and 17 may not work in any occupation declared hazardous by the Secretary of Labor. The 17 Hazardous Occupations Orders (HO 1\u201317) are codified at 29 CFR \u00a7\u00a7 570.51\u2013570.68.",
         "orders": [
           {
             "ho_number": 1,
@@ -152,7 +158,7 @@
     "per_violation_amount": 15629,
     "statute_of_limitations_years": null
   },
-  "notes": "Child labor penalty amounts are adjusted annually for inflation; the amounts listed here reflect the most recent adjustment. State child labor laws may be more restrictive than federal law (e.g., requiring work permits, imposing tighter hour restrictions, setting additional prohibited occupations, or raising the minimum age). When both state and federal child labor laws apply, the employer must comply with the more protective standard. Agricultural employment has separate, less restrictive child labor rules under 29 U.S.C. § 213(c) and 29 CFR § 570.2, which are not fully detailed in this record. The DOL's Wage and Hour Division enforces federal child labor provisions through investigations, complaints, and targeted industry enforcement initiatives.",
+  "notes": "Child labor penalty amounts are adjusted annually for inflation; the amounts listed here reflect the most recent adjustment. State child labor laws may be more restrictive than federal law (e.g., requiring work permits, imposing tighter hour restrictions, setting additional prohibited occupations, or raising the minimum age). When both state and federal child labor laws apply, the employer must comply with the more protective standard. Agricultural employment has separate, less restrictive child labor rules under 29 U.S.C. \u00a7 213(c) and 29 CFR \u00a7 570.2, which are not fully detailed in this record. The DOL's Wage and Hour Division enforces federal child labor provisions through investigations, complaints, and targeted industry enforcement initiatives.",
   "source_urls": [
     "https://www.law.cornell.edu/uscode/text/29/212",
     "https://www.law.cornell.edu/uscode/text/29/213",
@@ -161,5 +167,8 @@
     "https://www.dol.gov/agencies/whd/fact-sheets/43-child-labor-non-agriculture"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

@@ -7,7 +7,7 @@
   },
   "law_type": "minor-labor",
   "title": "Georgia Minor Labor Restrictions",
-  "statute_citation": "Ga. Code § 39-2-1 et seq.",
+  "statute_citation": "Ga. Code \u00a7 39-2-1 et seq.",
   "regulatory_citation": null,
   "summary": "Georgia restricts the employment of minors under 16. Minors under 16 may work a maximum of 4 hours on a school day, 8 hours on a non-school day, and 40 hours per week during non-school weeks. During the school year, weekly hours are further limited. Minors under 12 are generally prohibited from working.",
   "effective_date": "1999-07-01",
@@ -17,8 +17,13 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["all"],
-    "age_groups": ["14-15", "under-14"]
+    "employee_types": [
+      "all"
+    ],
+    "age_groups": [
+      "14-15",
+      "under-14"
+    ]
   },
   "requirements": {
     "under_12": {
@@ -46,5 +51,8 @@
     "https://law.justia.com/codes/georgia/title-39/chapter-2/"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

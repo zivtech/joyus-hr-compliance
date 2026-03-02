@@ -6,7 +6,7 @@
     "locality": null
   },
   "law_type": "meal-breaks",
-  "title": "Illinois One Day Rest in Seven Act — Meal Breaks",
+  "title": "Illinois One Day Rest in Seven Act \u2014 Meal Breaks",
   "statute_citation": "820 ILCS 140/3",
   "regulatory_citation": null,
   "summary": "Illinois requires employers to provide a 20-minute meal break to employees who work 7.5 or more continuous hours. The meal break must be provided no later than 5 hours after the beginning of the shift. For shifts of 12 or more hours, an additional 20-minute meal break is required. The meal break must be provided beginning no later than 5 hours after the end of the first meal break. The law applies to all employers in Illinois.",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["all"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "all"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "first_meal_period": {
@@ -47,5 +53,8 @@
     "https://labor.illinois.gov/laws-rules/conmed/one-day-rest-in-seven-act.html"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

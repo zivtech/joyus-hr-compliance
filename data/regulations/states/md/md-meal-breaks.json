@@ -7,7 +7,7 @@
   },
   "law_type": "meal-breaks",
   "title": "Maryland Retail Establishment Meal Break Requirements",
-  "statute_citation": "Md. Code, Lab. & Empl. § 3-710",
+  "statute_citation": "Md. Code, Lab. & Empl. \u00a7 3-710",
   "regulatory_citation": null,
   "summary": "Maryland requires retail employers to provide employees with a 15-minute break for shifts of 4 to 6 consecutive hours, and a 30-minute meal break for shifts of more than 6 consecutive hours. This requirement applies specifically to retail establishments.",
   "effective_date": "1989-01-01",
@@ -16,9 +16,17 @@
   "status": "active",
   "applicability": {
     "employer_size_minimum": null,
-    "industries": ["retail"],
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "industries": [
+      "retail"
+    ],
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "short_shift_break": {
@@ -49,5 +57,8 @@
     "https://www.dllr.state.md.us/labor/"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

@@ -7,8 +7,8 @@
   },
   "law_type": "meal-breaks",
   "title": "California Meal Break Requirements",
-  "statute_citation": "Cal. Lab. Code § 512",
-  "regulatory_citation": "8 CCR § 11040",
+  "statute_citation": "Cal. Lab. Code \u00a7 512",
+  "regulatory_citation": "8 CCR \u00a7 11040",
   "summary": "California requires employers to provide a duty-free 30-minute meal period before the end of an employee's fifth hour of work. A second 30-minute meal period is required before the end of the tenth hour of work. Employees may waive the first meal period if the shift is no longer than 6 hours, and may waive the second meal period if the shift is no longer than 12 hours and the first meal period was not waived. If an employer fails to provide a compliant meal period, the employee is entitled to one additional hour of pay at the regular rate as premium pay for each workday the violation occurs.",
   "effective_date": "2001-01-01",
   "sunset_date": null,
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "first_meal_period": {
@@ -69,5 +75,8 @@
     "https://www.dir.ca.gov/dlse/faq_mealperiods.htm"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

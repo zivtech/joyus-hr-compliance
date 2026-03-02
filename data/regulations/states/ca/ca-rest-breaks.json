@@ -7,8 +7,8 @@
   },
   "law_type": "rest-breaks",
   "title": "California Rest Break Requirements",
-  "statute_citation": "Cal. Lab. Code § 226.7",
-  "regulatory_citation": "8 CCR § 11040",
+  "statute_citation": "Cal. Lab. Code \u00a7 226.7",
+  "regulatory_citation": "8 CCR \u00a7 11040",
   "summary": "California requires employers to authorize and permit a paid 10-minute rest period for every 4 hours worked, or major fraction thereof. Rest periods must be in the middle of the work period insofar as practicable. Employees who work fewer than 3.5 hours in a day are not entitled to a rest period. If an employer fails to provide a required rest period, the employee is entitled to one additional hour of pay at the regular rate as premium pay for each workday the violation occurs.",
   "effective_date": "2001-01-01",
   "sunset_date": null,
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt"],
-    "age_groups": ["adult", "16-17", "14-15"]
+    "employee_types": [
+      "non-exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17",
+      "14-15"
+    ]
   },
   "requirements": {
     "rest_period": {
@@ -65,5 +71,8 @@
     "https://www.dir.ca.gov/dlse/faq_restperiods.htm"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }

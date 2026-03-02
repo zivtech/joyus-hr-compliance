@@ -2,6 +2,8 @@
 
 A searchable static database of U.S. labor law scheduling compliance regulations, built with [Eleventy](https://www.11ty.dev/) and [Pagefind](https://pagefind.app/), deployed on GitHub Pages.
 
+Search through the current data sets on the GitHub Pages demo here: [zivtech.github.io/joyus-hr-compliance](https://zivtech.github.io/joyus-hr-compliance/)
+
 ## What This Is
 
 A structured, schema-validated collection of federal, state, and local labor law regulations covering:

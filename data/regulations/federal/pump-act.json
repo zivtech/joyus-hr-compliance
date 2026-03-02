@@ -6,8 +6,8 @@
     "locality": null
   },
   "law_type": "nursing-breaks",
-  "title": "PUMP for Nursing Mothers Act — Providing Urgent Maternal Protections for Nursing Mothers Act",
-  "statute_citation": "29 U.S.C. § 218d",
+  "title": "PUMP for Nursing Mothers Act \u2014 Providing Urgent Maternal Protections for Nursing Mothers Act",
+  "statute_citation": "29 U.S.C. \u00a7 218d",
   "regulatory_citation": null,
   "summary": "The PUMP for Nursing Mothers Act requires employers to provide reasonable break time and a private space (other than a bathroom) for employees to express breast milk for their nursing child for up to one year after the child's birth. Enacted as part of the Consolidated Appropriations Act of 2023, the PUMP Act expanded the protections originally created by Section 7(r) of the FLSA (the Break Time for Nursing Mothers provision of the Affordable Care Act) to cover nearly all employees, including salaried, exempt, and non-exempt workers. The law became effective on December 29, 2022, with the private right of action provisions taking effect on April 28, 2023.",
   "effective_date": "2022-12-29",
@@ -17,8 +17,14 @@
   "applicability": {
     "employer_size_minimum": null,
     "industries": null,
-    "employee_types": ["non-exempt", "exempt"],
-    "age_groups": ["adult", "16-17"]
+    "employee_types": [
+      "non-exempt",
+      "exempt"
+    ],
+    "age_groups": [
+      "adult",
+      "16-17"
+    ]
   },
   "requirements": {
     "break_time": {
@@ -32,7 +38,7 @@
     },
     "space_requirements": {
       "must_provide_private_space": true,
-      "bathroom_exclusion": "A bathroom — even a private or single-occupancy bathroom — does not qualify as an acceptable space under the law.",
+      "bathroom_exclusion": "A bathroom \u2014 even a private or single-occupancy bathroom \u2014 does not qualify as an acceptable space under the law.",
       "requirements": [
         "The space must be shielded from view of coworkers and the public",
         "The space must be free from intrusion by coworkers and the public",
@@ -75,5 +81,8 @@
     "https://www.dol.gov/agencies/whd/fact-sheets/73-flsa-break-time-nursing-mothers"
   ],
   "last_verified": "2026-01-15",
-  "contributors": ["initial-data-load"]
+  "record_updated": "2026-01-15",
+  "contributors": [
+    "initial-data-load"
+  ]
 }
