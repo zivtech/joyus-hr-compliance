@@ -19,11 +19,8 @@ A structured, schema-validated collection of federal, state, and local labor law
 ## Current Coverage
 
 - **Federal** — FLSA overtime, breaks, child labor, PUMP Act
-- **California** — daily/weekly overtime, meal breaks, rest breaks, minor labor, split shift, reporting time
-- **New York** — spread of hours, minor labor, reporting time
-- **Washington** — overtime, meal breaks, rest breaks, minor labor
-- **Colorado** — overtime (daily + weekly), meal breaks, rest breaks, minor labor
-- **Oregon** — meal breaks, rest breaks, predictive scheduling, minor labor
+- **All 50 states + DC** — 88 regulations covering overtime, meal breaks, rest breaks, minor labor, predictive scheduling, reporting time pay, split shift, and more
+- **Select municipalities** — Los Angeles, New York City, Philadelphia
 
 ## How It Works
 
