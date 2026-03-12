@@ -296,7 +296,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("site/js");
 
   return {
-    pathPrefix: "/joyus-hr-compliance/",
+    pathPrefix: "/hr-compliance/",
     dir: {
       input: "site",
       output: "_site",

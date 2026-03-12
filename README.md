@@ -1,8 +1,8 @@
-# joyus-hr-compliance
+# hr-compliance
 
 A searchable static database of U.S. labor law scheduling compliance regulations, built with [Eleventy](https://www.11ty.dev/) and [Pagefind](https://pagefind.app/), deployed on GitHub Pages.
 
-Search through the current data sets on the GitHub Pages demo here: [zivtech.github.io/joyus-hr-compliance](https://zivtech.github.io/joyus-hr-compliance/)
+Search through the current data sets on the GitHub Pages demo here: [zivtech.github.io/hr-compliance](https://zivtech.github.io/hr-compliance/)
 
 ## What This Is
 
@@ -40,7 +40,7 @@ Regulation data is stored as individual JSON files in `data/regulations/`, valid
 This database is available as a skill for AI coding agents via [skills.sh](https://skills.sh):
 
 ```bash
-npx skills add zivtech/joyus-hr-compliance
+npx skills add zivtech/hr-compliance
 ```
 
 Once installed, your AI agent can query U.S. labor law scheduling compliance data directly from the structured JSON records.

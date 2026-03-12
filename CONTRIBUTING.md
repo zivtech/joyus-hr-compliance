@@ -1,4 +1,4 @@
-# Contributing to Joyus HR Compliance
+# Contributing to HR Compliance
 
 Thank you for helping build a comprehensive, accurate database of U.S. labor law compliance regulations. This guide covers how to add or update regulation data.
 
@@ -11,7 +11,7 @@ Thank you for helping build a comprehensive, accurate database of U.S. labor law
 
 ## Before You Start
 
-1. Check [existing issues](https://github.com/zivtech/joyus-hr-compliance/issues) to see if someone is already working on the regulation you want to add.
+1. Check [existing issues](https://github.com/zivtech/hr-compliance/issues) to see if someone is already working on the regulation you want to add.
 2. Familiarize yourself with the [JSON Schema](data/schema/regulation.schema.json) that all regulation files must conform to.
 
 ## Adding a New Regulation

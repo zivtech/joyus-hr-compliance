@@ -151,4 +151,4 @@ Run `npm run validate` to check all records against the JSON Schema at `data/sch
 
 ## Live Site
 
-Browse the database at: https://zivtech.github.io/joyus-hr-compliance/
+Browse the database at: https://zivtech.github.io/hr-compliance/

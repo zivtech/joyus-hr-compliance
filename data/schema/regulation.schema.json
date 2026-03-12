@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/zivtech/joyus-hr-compliance/data/schema/regulation.schema.json",
+  "$id": "https://github.com/zivtech/hr-compliance/data/schema/regulation.schema.json",
   "title": "HR Compliance Regulation",
-  "description": "Schema for a single labor law regulation record in the Joyus HR Compliance database.",
+  "description": "Schema for a single labor law regulation record in the HR Compliance database.",
   "type": "object",
   "required": [
     "id",

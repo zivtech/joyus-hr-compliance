@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the Joyus HR Compliance database are documented in this file.
+All notable changes to the HR Compliance database are documented in this file.
 
 This log tracks data additions, regulation updates, schema changes, and site improvements. For individual regulation changes, check the `record_updated` and `last_verified` fields on each record.
 
@@ -23,7 +23,7 @@ This log tracks data additions, regulation updates, schema changes, and site imp
 - Source quality classification system — regulation pages now show warnings for non-government sources and notes for trusted secondary sources (e.g., Cornell LII)
 - `CONTRIBUTING.md` source policy guidance (prefer official .gov sources, Cornell LII acceptable as supplemental)
 - PR CI workflow (`.github/workflows/ci.yml`) runs `npm run check` on all pull requests
-- Published as an agent skill on [skills.sh](https://skills.sh) — `npx skills add zivtech/joyus-hr-compliance`
+- Published as an agent skill on [skills.sh](https://skills.sh) — `npx skills add zivtech/hr-compliance`
 - Updated README with current coverage (all 50 states + DC), skills.sh install instructions, and faceted filtering description
 - Fixed license to Apache-2.0 in README and package.json
 

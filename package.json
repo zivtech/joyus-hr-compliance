@@ -1,5 +1,5 @@
 {
-  "name": "joyus-hr-compliance",
+  "name": "hr-compliance",
   "version": "0.1.0",
   "description": "Searchable static database of U.S. labor law scheduling compliance regulations",
   "type": "module",
